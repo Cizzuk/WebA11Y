@@ -2,8 +2,8 @@
     "manifest_version": 3,
     "default_locale": "en",
 
-    "name": "__MSG_extension_name__",
-    "description": "__MSG_extension_description__",
+    "name": "WebA11Y",
+    "description": "Improves web accessibility",
     "version": "1.0",
 
     "icons": {
@@ -15,12 +15,13 @@
     },
 
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "background.js",
+        "persistent": false
     },
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [ "<all_urls>" ]
     }],
 
     "action": {
@@ -35,5 +36,5 @@
         }
     },
 
-    "permissions": [ ]
+    "permissions": [ "nativeMessaging" ]
 }
