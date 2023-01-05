@@ -5,6 +5,12 @@ var tsg0o0_weba11y_fontChange = "false";
 var tsg0o0_weba11y_fontFamily = "sans-serif";
 var tsg0o0_weba11y_blockARIAHidden = "false";
 
+browser.runtime.onMessage.addListener(handleMessage);
+function handleMessage(request, sender, sendResponse) {
+    console.log(request["data"]);
+    
+}
+
 browser.runtime.sendMessage({
     type: "content"
 },
@@ -44,7 +50,6 @@ function tsg0o0_weba11y_doA11Y() {
     if (tsg0o0_weba11y_blockARIAHidden == "true") {
         $('*').attr('aria-hidden', 'false');
     }
-    console.log("a");
 }
 
 //jquery

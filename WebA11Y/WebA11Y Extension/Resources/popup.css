@@ -3,13 +3,30 @@
 }
 
 body {
-    width: 100px;
+    width: 90%;
     padding: 10px;
-
+    margin: 15px auto;
     font-family: system-ui;
     text-align: center;
 }
 
+div {
+    width: 90%;
+    border-radius: 20px;
+    border: solid;
+    border-color: #00b0ff;
+    border-width: 2px;
+    text-align: center;
+    margin: 15px auto 0;
+}
+div a {
+    display: block;
+    padding: 5px 8px 5px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
 @media (prefers-color-scheme: dark) {
-    /* Dark Mode styles go here. */
+    div {border-color:#0050a0}
+    div a {color:#00b0ff}
 }

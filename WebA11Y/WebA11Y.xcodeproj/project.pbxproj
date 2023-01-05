@@ -21,7 +21,6 @@
 		909691B729668D2D009AE45F /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 909691B629668D2D009AE45F /* content.js */; };
 		909691B929668D2D009AE45F /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 909691B829668D2D009AE45F /* popup.html */; };
 		909691BB29668D2D009AE45F /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 909691BA29668D2D009AE45F /* popup.css */; };
-		909691BD29668D2D009AE45F /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 909691BC29668D2D009AE45F /* popup.js */; };
 		909691BF29668D2D009AE45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909691A029668D2D009AE45F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +66,6 @@
 		909691B629668D2D009AE45F /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
 		909691B829668D2D009AE45F /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		909691BA29668D2D009AE45F /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
-		909691BC29668D2D009AE45F /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		909691BE29668D2D009AE45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909691C929669E3A009AE45F /* WebA11Y.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebA11Y.entitlements; sourceTree = "<group>"; };
 		909691CA29669E69009AE45F /* WebA11Y Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebA11Y Extension.entitlements"; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 				909691B629668D2D009AE45F /* content.js */,
 				909691B829668D2D009AE45F /* popup.html */,
 				909691BA29668D2D009AE45F /* popup.css */,
-				909691BC29668D2D009AE45F /* popup.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -248,7 +245,6 @@
 				909691B329668D2D009AE45F /* manifest.json in Resources */,
 				909691AF29668D2D009AE45F /* _locales in Resources */,
 				909691B729668D2D009AE45F /* content.js in Resources */,
-				909691BD29668D2D009AE45F /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
