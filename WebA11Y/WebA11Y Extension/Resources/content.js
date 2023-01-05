@@ -18,7 +18,11 @@ browser.runtime.sendMessage({
     tsg0o0_weba11y_boldText = response.boldText;
     tsg0o0_weba11y_buttonShape = response.buttonShape;
     tsg0o0_weba11y_fontChange = response.fontChange;
-    tsg0o0_weba11y_fontFamily = response.fontFamily;
+    if (response.fontFamily != "sans-serif") {
+        tsg0o0_weba11y_fontFamily = response.fontFamily + ", sans-serif";
+    }else{
+        tsg0o0_weba11y_fontFamily = response.fontFamily;
+    }
     tsg0o0_weba11y_blockARIAHidden = response.blockARIAHidden;
     console.log("WebA11Y: Loaded");
     if (tsg0o0_weba11y_loadedFlag == true) {

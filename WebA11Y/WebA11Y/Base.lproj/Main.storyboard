@@ -51,6 +51,9 @@
                                                 <rect key="frame" x="302" y="22" width="49" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" label="Bold Text"/>
+                                                <connections>
+                                                    <action selector="boldTextChange:" destination="eX0-7f-1K5" eventType="valueChanged" id="hwh-w8-5p7"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt8-Y1-25Z">
                                                 <rect key="frame" x="46" y="61" width="303" height="57"/>
@@ -97,6 +100,9 @@ Already bold text will not be bolded further.</string>
                                                 <rect key="frame" x="302" y="157" width="49" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" label="Button Shapes"/>
+                                                <connections>
+                                                    <action selector="buttonShapesChange:" destination="eX0-7f-1K5" eventType="valueChanged" id="gs7-Sr-yLP"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47M-pW-vhv">
                                                 <rect key="frame" x="45" y="194" width="304" height="57"/>
@@ -170,6 +176,9 @@ You can use the system font by entering the one listed below.</string>
                                                 <rect key="frame" x="302" y="291" width="49" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" label="Font Change"/>
+                                                <connections>
+                                                    <action selector="fontChangeChange:" destination="eX0-7f-1K5" eventType="valueChanged" id="ctX-qD-iCY"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naw-bD-Bph">
                                                 <rect key="frame" x="45" y="331" width="304" height="43"/>
@@ -186,6 +195,10 @@ Icons will not display correctly on some websites.</string>
                                                 <accessibility key="accessibilityConfiguration" label="Enter the font name"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="editFontChangeInput:" destination="eX0-7f-1K5" eventType="editingChanged" id="1Y3-Ww-L8w"/>
+                                                    <action selector="endFontChangeInput:" destination="eX0-7f-1K5" eventType="editingDidEndOnExit" id="BN6-DS-WL1"/>
+                                                </connections>
                                             </textField>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W9x-Lu-2Dg">
                                                 <rect key="frame" x="20" y="603" width="350" height="216"/>
@@ -215,6 +228,9 @@ Icons will not display correctly on some websites.</string>
                                                 <rect key="frame" x="302" y="618" width="49" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" label="Block aria-hidden"/>
+                                                <connections>
+                                                    <action selector="blockARIAHiddenChange:" destination="eX0-7f-1K5" eventType="valueChanged" id="G14-Ld-ePJ"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This setting is not recommended." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5s-Mr-hFF">
                                                 <rect key="frame" x="45" y="655" width="304" height="23"/>
@@ -292,6 +308,11 @@ Icons will not display correctly on some websites.</string>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="QUa-pD-1Ab"/>
                     <connections>
+                        <outlet property="blockARIAHiddenSwitch" destination="txi-t6-vDH" id="O1h-te-KNI"/>
+                        <outlet property="boldTextSwitch" destination="GKE-Hb-buc" id="cIM-Qy-f1r"/>
+                        <outlet property="buttonShapesSwitch" destination="jGR-U6-1Y8" id="HRY-SC-jc9"/>
+                        <outlet property="fontChangeInput" destination="Gbr-xS-cq0" id="yCo-OX-frk"/>
+                        <outlet property="fontChangeSwitch" destination="q6F-Ob-mry" id="YzZ-wy-UJo"/>
                         <outlet property="versionLabel" destination="0md-rG-7yy" id="L2R-qA-wsL"/>
                     </connections>
                 </viewController>
