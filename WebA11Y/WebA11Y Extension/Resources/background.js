@@ -1,6 +1,11 @@
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received request: ", request);
-
-    if (request.greeting === "hello")
-        sendResponse({ farewell: "goodbye" });
+    if (request.type == "content") {
+        browser.runtime.sendNativeMessage("com.tsg0o0.a11y.Extension", {message: "Hello"}, function(response) {
+            const obj = JSON.parse(response);
+            if (obj.type == "native") {
+                sendResponse(obj);
+            }
+        });
+    }
+    return true;
 });
