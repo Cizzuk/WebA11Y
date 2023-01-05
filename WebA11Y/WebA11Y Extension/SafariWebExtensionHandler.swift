@@ -11,8 +11,14 @@ import os.log
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     
     let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.weba11y")
+    var fontFamilyString:String = "sans-serif"
     
     func beginRequest(with context: NSExtensionContext) {
+        
+        fontFamilyString = userDefaults!.string(forKey: "fontFamily") ?? "sans-serif"
+        if fontFamilyString == "" {
+            fontFamilyString = "sans-serif"
+        }
         
         let body: Dictionary<String, String> =
         [
@@ -20,7 +26,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             "boldText": userDefaults!.string(forKey: "boldText") ?? "false",
             "buttonShape": userDefaults!.string(forKey: "buttonShape") ?? "false",
             "fontChange": userDefaults!.string(forKey: "fontChange") ?? "false",
-            "fontFamily": userDefaults!.string(forKey: "fontFamily") ?? "sans-serif",
+            "fontFamily": fontFamilyString,
             "blockARIAHidden": userDefaults!.string(forKey: "blockARIAHidden") ?? "false"
         ]
         do {

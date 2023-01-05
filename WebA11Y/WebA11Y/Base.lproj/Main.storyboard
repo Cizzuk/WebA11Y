@@ -12,13 +12,13 @@
         <!--Settings-->
         <scene sceneID="EeH-Ix-ebX">
             <objects>
-                <viewController id="eX0-7f-1K5" sceneMemberID="viewController">
+                <viewController id="eX0-7f-1K5" customClass="ViewController" customModule="WebA11Y" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XB6-LU-p4a">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0A9-XT-I25">
-                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zac-P2-bl3">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
@@ -284,13 +284,16 @@ Icons will not display correctly on some websites.</string>
                         <viewLayoutGuide key="safeArea" id="AZw-Br-yPt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0A9-XT-I25" firstAttribute="bottom" secondItem="AZw-Br-yPt" secondAttribute="bottom" id="ACW-Pr-6tb"/>
+                            <constraint firstItem="0A9-XT-I25" firstAttribute="bottom" secondItem="XB6-LU-p4a" secondAttribute="bottom" id="ACW-Pr-6tb"/>
                             <constraint firstItem="0A9-XT-I25" firstAttribute="top" secondItem="AZw-Br-yPt" secondAttribute="top" id="UcA-88-G9l"/>
                             <constraint firstItem="0A9-XT-I25" firstAttribute="trailing" secondItem="AZw-Br-yPt" secondAttribute="trailing" id="bbe-Kc-ADf"/>
                             <constraint firstItem="0A9-XT-I25" firstAttribute="leading" secondItem="AZw-Br-yPt" secondAttribute="leading" id="wtY-Bj-TDS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="QUa-pD-1Ab"/>
+                    <connections>
+                        <outlet property="versionLabel" destination="0md-rG-7yy" id="L2R-qA-wsL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cz4-Jz-tAA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
