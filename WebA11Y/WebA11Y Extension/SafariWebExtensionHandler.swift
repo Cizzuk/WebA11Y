@@ -2,7 +2,7 @@
 //  SafariWebExtensionHandler.swift
 //  WebA11Y Extension
 //
-//  Created by tsukasa takura on 2023/01/05.
+//  Created by tsg0o0 on 2023/01/05.
 //
 
 import SafariServices
