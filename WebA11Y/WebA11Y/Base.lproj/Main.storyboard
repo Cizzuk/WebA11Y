@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0A9-XT-I25">
-                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zac-P2-bl3">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
@@ -37,8 +37,8 @@
                                                 </collectionViewFlowLayout>
                                                 <cells/>
                                             </collectionView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bold Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E1v-Yw-q1T">
-                                                <rect key="frame" x="45" y="8" width="102" height="59"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bold Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="E1v-Yw-q1T">
+                                                <rect key="frame" x="45" y="8" width="249" height="59"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
@@ -47,7 +47,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="Bold Text" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-Hb-buc">
+                                            <switch toolTip="Bold Text" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-Hb-buc">
                                                 <rect key="frame" x="302" y="22" width="49" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" label="Bold Text"/>
@@ -80,7 +80,7 @@ Already bold text will not be bolded further.</string>
                                                 <cells/>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R7Q-Mj-gQN">
-                                                <rect key="frame" x="45" y="143" width="129" height="59"/>
+                                                <rect key="frame" x="45" y="143" width="249" height="59"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
@@ -96,7 +96,7 @@ Already bold text will not be bolded further.</string>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="Bold Text" translatesAutoresizingMaskIntoConstraints="NO" id="jGR-U6-1Y8">
+                                            <switch toolTip="Bold Text" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jGR-U6-1Y8">
                                                 <rect key="frame" x="302" y="157" width="49" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" label="Button Shapes"/>
@@ -163,7 +163,7 @@ You can use the system font by entering the one listed below.</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Change" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9jG-0z-5BA">
-                                                <rect key="frame" x="46" y="277" width="129" height="59"/>
+                                                <rect key="frame" x="46" y="277" width="248" height="59"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
@@ -172,7 +172,7 @@ You can use the system font by entering the one listed below.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="Bold Text" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-Ob-mry">
+                                            <switch toolTip="Bold Text" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-Ob-mry">
                                                 <rect key="frame" x="302" y="291" width="49" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" label="Font Change"/>
@@ -215,7 +215,7 @@ Icons will not display correctly on some websites.</string>
                                                 <cells/>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block aria-hidden" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4iB-R1-lxp">
-                                                <rect key="frame" x="45" y="604" width="155" height="59"/>
+                                                <rect key="frame" x="45" y="604" width="249" height="59"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
@@ -224,7 +224,7 @@ Icons will not display correctly on some websites.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="Bold Text" translatesAutoresizingMaskIntoConstraints="NO" id="txi-t6-vDH">
+                                            <switch toolTip="Bold Text" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="txi-t6-vDH">
                                                 <rect key="frame" x="302" y="618" width="49" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" label="Block aria-hidden"/>
@@ -301,7 +301,7 @@ Icons will not display correctly on some websites.</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0A9-XT-I25" firstAttribute="bottom" secondItem="XB6-LU-p4a" secondAttribute="bottom" id="ACW-Pr-6tb"/>
-                            <constraint firstItem="0A9-XT-I25" firstAttribute="top" secondItem="AZw-Br-yPt" secondAttribute="top" id="UcA-88-G9l"/>
+                            <constraint firstItem="0A9-XT-I25" firstAttribute="top" secondItem="XB6-LU-p4a" secondAttribute="top" id="UcA-88-G9l"/>
                             <constraint firstItem="0A9-XT-I25" firstAttribute="trailing" secondItem="AZw-Br-yPt" secondAttribute="trailing" id="bbe-Kc-ADf"/>
                             <constraint firstItem="0A9-XT-I25" firstAttribute="leading" secondItem="AZw-Br-yPt" secondAttribute="leading" id="wtY-Bj-TDS"/>
                         </constraints>
