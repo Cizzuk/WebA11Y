@@ -32,6 +32,22 @@ class ViewController: UIViewController {
         versionLabel.text = "WebA11Y / Ver: \(version)"
         versionLabel.accessibilityLabel = "WebA11Y. Version \(version)"
         
+        //Automatic configuration at first startup
+        if userDefaults!.string(forKey: "boldText") == nil {
+            if UIAccessibility.isBoldTextEnabled {
+                userDefaults!.set("true", forKey: "boldText")
+            }else{
+                userDefaults!.set("false", forKey: "boldText")
+            }
+        }
+        if userDefaults!.string(forKey: "buttonShape") == nil {
+            if UIAccessibility.buttonShapesEnabled {
+                userDefaults!.set("true", forKey: "buttonShape")
+            }else{
+                userDefaults!.set("false", forKey: "buttonShape")
+            }
+        }
+        
         boldText = userDefaults!.string(forKey: "boldText") ?? "false"
         buttonShape = userDefaults!.string(forKey: "buttonShape") ?? "false"
         fontChange = userDefaults!.string(forKey: "fontChange") ?? "false"
