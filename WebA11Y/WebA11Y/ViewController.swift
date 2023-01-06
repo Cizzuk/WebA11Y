@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        versionLabel.text = "WebA11Y / Ver:  \(version)"
+        versionLabel.text = "WebA11Y / Ver: \(version)"
         versionLabel.accessibilityLabel = "WebA11Y. Version \(version)"
         
         boldText = userDefaults!.string(forKey: "boldText") ?? "false"

@@ -27,6 +27,7 @@ browser.runtime.sendMessage({
     console.log("WebA11Y: Loaded");
     if (tsg0o0_weba11y_loadedFlag == true) {
         tsg0o0_weba11y_doA11Y();
+        tsg0o0_weba11y_doA11YLoop()
     }else{
         tsg0o0_weba11y_loadedFlag = true;
     }
@@ -35,6 +36,7 @@ browser.runtime.sendMessage({
 window.onload = function() {
     if (tsg0o0_weba11y_loadedFlag == true) {
         tsg0o0_weba11y_doA11Y();
+        tsg0o0_weba11y_doA11YLoop()
     }else{
         tsg0o0_weba11y_loadedFlag = true;
     }
@@ -54,6 +56,11 @@ function tsg0o0_weba11y_doA11Y() {
     if (tsg0o0_weba11y_blockARIAHidden == "true") {
         $('*').attr('aria-hidden', 'false');
     }
+}
+
+function tsg0o0_weba11y_doA11YLoop() {
+    tsg0o0_weba11y_doA11Y();
+    setTimeout(() => tsg0o0_weba11y_doA11YLoop(), 1000);
 }
 
 //jquery
