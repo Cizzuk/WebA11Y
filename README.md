@@ -34,11 +34,6 @@ It is recommended to enable it temporarily when accessing sites that cannot be r
 
 [Download on the App Store](https://apps.apple.com/app/weba11y/id1663119196)
 
-### AltStore
-
-- AltStore Source: [https://tsg0o0.com/altstore.json](https://a.tsg0o0.com/as/)
-- [Download on the AltStore](https://a.tsg0o0.com/as/weba11y/)
-
 ### Download
 
 #### iOS/iPadOS
