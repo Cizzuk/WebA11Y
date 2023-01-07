@@ -1,0 +1,63 @@
+
+/* Class = "UILabel"; text = "WebA11Y"; ObjectID = "0md-rG-7yy"; */
+"0md-rG-7yy.text" = "WebA11Y";
+
+/* Class = "UILabel"; text = "Underlines links and buttons.\nText that is already underlined will not change.\nSettings do not affect those without text."; ObjectID = "47M-pW-vhv"; */
+"47M-pW-vhv.text" = "リンクやボタンに下線を引きます。\n既に下線があるテキストに変化はありません。\nテキストのないものには設定は影響しません。";
+
+/* Class = "UILabel"; text = "Block aria-hidden"; ObjectID = "4iB-R1-lxp"; */
+"4iB-R1-lxp.text" = "aria-hiddenをブロック";
+
+/* Class = "UILabel"; text = "Font Change"; ObjectID = "9jG-0z-5BA"; */
+"9jG-0z-5BA.text" = "フォントを変更";
+
+/* Class = "UILabel"; text = "It is recommended to enable it temporarily when accessing sites that cannot be read correctly due to aria-hidden."; ObjectID = "DZF-a5-fTy"; */
+"DZF-a5-fTy.text" = "aria-hiddenにより正しく読めないサイトにアクセスする際に、一時的に有効にすることをお勧めします。";
+
+/* Class = "UILabel"; text = "Bold Text"; ObjectID = "E1v-Yw-q1T"; */
+"E1v-Yw-q1T.text" = "文字を太くする";
+
+/* Class = "UISwitch"; accessibilityLabel = "Bold Text"; ObjectID = "GKE-Hb-buc"; */
+"GKE-Hb-buc.accessibilityLabel" = "文字を太くする";
+
+/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "GKE-Hb-buc"; */
+"GKE-Hb-buc.ibShadowedToolTip" = "文字を太くする";
+
+/* Class = "UITextField"; accessibilityLabel = "Enter the font name"; ObjectID = "Gbr-xS-cq0"; */
+"Gbr-xS-cq0.accessibilityLabel" = "フォントの名前を入力してください。";
+
+/* Class = "UILabel"; text = "This setting is not recommended."; ObjectID = "K5s-Mr-hFF"; */
+"K5s-Mr-hFF.text" = "この設定は推奨されていません。";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "QUa-pD-1Ab"; */
+"QUa-pD-1Ab.title" = "設定";
+
+/* Class = "UILabel"; text = "Boldens all text.\nSome fonts may not be bolded.\nAlready bold text will not be bolded further."; ObjectID = "bt8-Y1-25Z"; */
+"bt8-Y1-25Z.text" = "全ての文字を太くします。\n一部のフォントは太くなりません。\n既に太い字はそれ以上太くなりません。";
+
+/* Class = "UISwitch"; accessibilityLabel = "Button Shapes"; ObjectID = "jGR-U6-1Y8"; */
+"jGR-U6-1Y8.accessibilityLabel" = "ボタンの形";
+
+/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "jGR-U6-1Y8"; */
+"jGR-U6-1Y8.ibShadowedToolTip" = "文字を太くする";
+
+/* Class = "UILabel"; text = "Enter the name of the font.\nYou can use the system font by entering the one listed below."; ObjectID = "m3p-zv-Vrc"; */
+"m3p-zv-Vrc.text" = "フォントの名前を入力してください。\n以下にリストされているものを入力すれば、システムフォントを利用できます。";
+
+/* Class = "UILabel"; text = "Change the font.\nIcons will not display correctly on some websites."; ObjectID = "naw-bD-Bph"; */
+"naw-bD-Bph.text" = "フォントを変更します。\nアイコンが正しく表示されないことがあります。";
+
+/* Class = "UILabel"; text = "Blocking aria-hidden may cause VoiceOver to read something irrelevant to the content of the Web site."; ObjectID = "p9F-6F-xeh"; */
+"p9F-6F-xeh.text" = "aria-hiddenをブロックすると、VoiceOverがWebサイトの内容と無関係なものを読み上げる可能性があります。";
+
+/* Class = "UISwitch"; accessibilityLabel = "Font Change"; ObjectID = "q6F-Ob-mry"; */
+"q6F-Ob-mry.accessibilityLabel" = "フォントを変更";
+
+/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "q6F-Ob-mry"; */
+"q6F-Ob-mry.ibShadowedToolTip" = "文字を太くする";
+
+/* Class = "UISwitch"; accessibilityLabel = "Block aria-hidden"; ObjectID = "txi-t6-vDH"; */
+"txi-t6-vDH.accessibilityLabel" = "aria-hiddenをブロック";
+
+/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "txi-t6-vDH"; */
+"txi-t6-vDH.ibShadowedToolTip" = "文字を太くする";

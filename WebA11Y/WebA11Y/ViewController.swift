@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var fontChangeInput: UITextField!
     
     
+    @IBOutlet weak var buttonShapeTitle: UILabel!
     @IBOutlet weak var versionLabel: UILabel!
     let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     
@@ -31,6 +32,10 @@ class ViewController: UIViewController {
         
         versionLabel.text = "WebA11Y / Ver: \(version)"
         versionLabel.accessibilityLabel = "WebA11Y. Version \(version)"
+        if Locale.current.languageCode == "ja" {
+            buttonShapeTitle.text = "ボタンの形"
+        }
+        
         
         //Automatic configuration at first startup
         if userDefaults!.string(forKey: "boldText") == nil {

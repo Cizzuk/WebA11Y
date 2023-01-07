@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dCV-OE-9Ju">
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <accessibilityOverrides dynamicTypePreference="2"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -310,6 +311,7 @@ Icons will not display correctly on some websites.</string>
                     <connections>
                         <outlet property="blockARIAHiddenSwitch" destination="txi-t6-vDH" id="O1h-te-KNI"/>
                         <outlet property="boldTextSwitch" destination="GKE-Hb-buc" id="cIM-Qy-f1r"/>
+                        <outlet property="buttonShapeTitle" destination="R7Q-Mj-gQN" id="qQf-5u-ync"/>
                         <outlet property="buttonShapesSwitch" destination="jGR-U6-1Y8" id="HRY-SC-jc9"/>
                         <outlet property="fontChangeInput" destination="Gbr-xS-cq0" id="yCo-OX-frk"/>
                         <outlet property="fontChangeSwitch" destination="q6F-Ob-mry" id="YzZ-wy-UJo"/>
