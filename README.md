@@ -48,6 +48,6 @@ It is recommended to enable it temporarily when accessing sites that cannot be r
 - [tsg4o4zjaknpkbefs2k47a7emkl54moz2t2k4py4gbyhz6v7vubsjbad.onion](http://tsg4o4zjaknpkbefs2k47a7emkl54moz2t2k4py4gbyhz6v7vubsjbad.onion/resource/app/weba11y/macos/WebA11Y.zip)
 - [GitHub](https://github.com/tsg0o0/WebA11Y/releases)
 
-## Credit
+## Licence
 
-by tsg0o0
+This software is licensed under the terms of the GNU GPL v2.0.
