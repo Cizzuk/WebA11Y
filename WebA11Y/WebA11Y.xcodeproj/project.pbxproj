@@ -70,6 +70,11 @@
 		909691BE29668D2D009AE45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909691C929669E3A009AE45F /* WebA11Y.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebA11Y.entitlements; sourceTree = "<group>"; };
 		909691CA29669E69009AE45F /* WebA11Y Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebA11Y Extension.entitlements"; sourceTree = "<group>"; };
+		90CEA26B29A8A0EA0010109D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		90CEA26C29A8A0F80010109D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		90CEA26D29A8A1020010109D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		90CEA26E29A8A10C0010109D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		90CEA26F29A8A1190010109D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +218,11 @@
 				en,
 				Base,
 				ja,
+				fr,
+				de,
+				ru,
+				"zh-Hans",
+				es,
 			);
 			mainGroup = 9096918029668D2B009AE45F;
 			productRefGroup = 9096918A29668D2B009AE45F /* Products */;
@@ -295,6 +305,11 @@
 			children = (
 				9096919E29668D2B009AE45F /* Base */,
 				90232EE02968595B00F1D505 /* ja */,
+				90CEA26B29A8A0EA0010109D /* fr */,
+				90CEA26C29A8A0F80010109D /* de */,
+				90CEA26D29A8A1020010109D /* ru */,
+				90CEA26E29A8A10C0010109D /* zh-Hans */,
+				90CEA26F29A8A1190010109D /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
