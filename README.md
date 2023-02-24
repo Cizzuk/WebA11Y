@@ -32,7 +32,7 @@ It is recommended to enable it temporarily when accessing sites that cannot be r
 
 ### App Store
 
-[Download on the App Store](https://apps.apple.com/app/weba11y/id1663119196)
+[Download on the App Store](https://apps.apple.com/app/weba11y/id6445839110)
 
 ### Download
 
