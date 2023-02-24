@@ -1,90 +1,27 @@
 
-/* Class = "UILabel"; text = "WebA11Y"; ObjectID = "0md-rG-7yy"; */
-"0md-rG-7yy.text" = "WebA11Y";
-
 /* Class = "UILabel"; text = "Underlines links and buttons.\nText that is already underlined will not change.\nSettings do not affect those without text."; ObjectID = "47M-pW-vhv"; */
-"47M-pW-vhv.text" = "Underlines links and buttons.\nText that is already underlined will not change.\nSettings do not affect those without text.";
-
-/* Class = "UILabel"; text = "Block aria-hidden"; ObjectID = "4iB-R1-lxp"; */
-"4iB-R1-lxp.text" = "Block aria-hidden";
-
-/* Class = "UILabel"; text = "Font Change"; ObjectID = "9jG-0z-5BA"; */
-"9jG-0z-5BA.text" = "Font Change";
+"47M-pW-vhv.text" = "給鏈接和按鈕加下劃線。\n已經有下劃線的文本不會改變。\n設置不影響那些沒有文字的內容。";
 
 /* Class = "UILabel"; text = "It is recommended to enable it temporarily when accessing sites that cannot be read correctly due to aria-hidden."; ObjectID = "DZF-a5-fTy"; */
-"DZF-a5-fTy.text" = "It is recommended to enable it temporarily when accessing sites that cannot be read correctly due to aria-hidden.";
-
-/* Class = "UILabel"; text = "Bold Text"; ObjectID = "E1v-Yw-q1T"; */
-"E1v-Yw-q1T.text" = "Bold Text";
-
-/* Class = "UISwitch"; accessibilityLabel = "Bold Text"; ObjectID = "GKE-Hb-buc"; */
-"GKE-Hb-buc.accessibilityLabel" = "Bold Text";
-
-/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "GKE-Hb-buc"; */
-"GKE-Hb-buc.ibShadowedToolTip" = "Bold Text";
-
-/* Class = "UILabel"; text = "This software is licensed under the terms of the GNU GPL v2.0."; ObjectID = "GZZ-43-kSu"; */
-"GZZ-43-kSu.text" = "This software is licensed under the terms of the GNU GPL v2.0.";
+"DZF-a5-fTy.text" = "建議在訪問由於 aria-hidden 而無法正確閱讀的網站時，暫時啟用它。";
 
 /* Class = "UITextField"; accessibilityLabel = "Enter the font name"; ObjectID = "Gbr-xS-cq0"; */
-"Gbr-xS-cq0.accessibilityLabel" = "Enter the font name";
-
-/* Class = "UITextField"; placeholder = "sans-serif"; ObjectID = "Gbr-xS-cq0"; */
-"Gbr-xS-cq0.placeholder" = "sans-serif";
+"Gbr-xS-cq0.accessibilityLabel" = "輸入字體名稱";
 
 /* Class = "UILabel"; text = "This setting is not recommended."; ObjectID = "K5s-Mr-hFF"; */
-"K5s-Mr-hFF.text" = "This setting is not recommended.";
+"K5s-Mr-hFF.text" = "不建議使用此設置。";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "QUa-pD-1Ab"; */
-"QUa-pD-1Ab.title" = "Settings";
-
-/* Class = "UILabel"; accessibilityLabel = "sans-serif"; ObjectID = "Upl-Kz-rUn"; */
-"Upl-Kz-rUn.accessibilityLabel" = "sans-serif";
-
-/* Class = "UILabel"; text = "sans-serif : ABC 123 inm"; ObjectID = "Upl-Kz-rUn"; */
-"Upl-Kz-rUn.text" = "sans-serif : ABC 123 inm";
+"QUa-pD-1Ab.title" = "設置";
 
 /* Class = "UILabel"; text = "Boldens all text.\nSome fonts may not be bolded.\nAlready bold text will not be bolded further."; ObjectID = "bt8-Y1-25Z"; */
-"bt8-Y1-25Z.text" = "Boldens all text.\nSome fonts may not be bolded.\nAlready bold text will not be bolded further.";
-
-/* Class = "UISwitch"; accessibilityLabel = "Button Shapes"; ObjectID = "jGR-U6-1Y8"; */
-"jGR-U6-1Y8.accessibilityLabel" = "Button Shapes";
-
-/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "jGR-U6-1Y8"; */
-"jGR-U6-1Y8.ibShadowedToolTip" = "Bold Text";
-
-/* Class = "UILabel"; accessibilityLabel = "serif"; ObjectID = "kM2-hX-5aQ"; */
-"kM2-hX-5aQ.accessibilityLabel" = "serif";
-
-/* Class = "UILabel"; text = "serif\t : ABC 123 inm"; ObjectID = "kM2-hX-5aQ"; */
-"kM2-hX-5aQ.text" = "serif\t : ABC 123 inm";
+"bt8-Y1-25Z.text" = "將所有文字加粗。\n有些字體可能不會被加粗。\n已經加粗的文本將不再加粗。";
 
 /* Class = "UILabel"; text = "Enter the name of the font.\nYou can use the system font by entering the one listed below."; ObjectID = "m3p-zv-Vrc"; */
-"m3p-zv-Vrc.text" = "Enter the name of the font.\nYou can use the system font by entering the one listed below.";
+"m3p-zv-Vrc.text" = "輸入字體的名稱。\n你可以通過輸入下面列出的字體來使用系統字體。";
 
 /* Class = "UILabel"; text = "Change the font.\nIcons will not display correctly on some websites."; ObjectID = "naw-bD-Bph"; */
-"naw-bD-Bph.text" = "Change the font.\nIcons will not display correctly on some websites.";
+"naw-bD-Bph.text" = "改變字體。\n圖標在某些網站上將不能正確顯示。";
 
 /* Class = "UILabel"; text = "Blocking aria-hidden may cause VoiceOver to read something irrelevant to the content of the Web site."; ObjectID = "p9F-6F-xeh"; */
-"p9F-6F-xeh.text" = "Blocking aria-hidden may cause VoiceOver to read something irrelevant to the content of the Web site.";
-
-/* Class = "UILabel"; accessibilityLabel = "monospace"; ObjectID = "piO-Sy-gsC"; */
-"piO-Sy-gsC.accessibilityLabel" = "monospace";
-
-/* Class = "UILabel"; text = "monospace : ABC 123 inm"; ObjectID = "piO-Sy-gsC"; */
-"piO-Sy-gsC.text" = "monospace : ABC 123 inm";
-
-/* Class = "UISwitch"; accessibilityLabel = "Font Change"; ObjectID = "q6F-Ob-mry"; */
-"q6F-Ob-mry.accessibilityLabel" = "Font Change";
-
-/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "q6F-Ob-mry"; */
-"q6F-Ob-mry.ibShadowedToolTip" = "Bold Text";
-
-/* Class = "UISwitch"; accessibilityLabel = "Block aria-hidden"; ObjectID = "txi-t6-vDH"; */
-"txi-t6-vDH.accessibilityLabel" = "Block aria-hidden";
-
-/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "txi-t6-vDH"; */
-"txi-t6-vDH.ibShadowedToolTip" = "Bold Text";
-
-/* Class = "UILabel"; text = "© 2023 tsg0o0"; ObjectID = "wN7-dS-NHw"; */
-"wN7-dS-NHw.text" = "© 2023 tsg0o0";
+"p9F-6F-xeh.text" = "屏蔽 ria-hidden 可能導致 VoiceOver 讀取與網站內容無關的內容。";

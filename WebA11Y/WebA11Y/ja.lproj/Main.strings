@@ -1,7 +1,4 @@
 
-/* Class = "UILabel"; text = "WebA11Y"; ObjectID = "0md-rG-7yy"; */
-"0md-rG-7yy.text" = "WebA11Y";
-
 /* Class = "UILabel"; text = "Underlines links and buttons.\nText that is already underlined will not change.\nSettings do not affect those without text."; ObjectID = "47M-pW-vhv"; */
 "47M-pW-vhv.text" = "リンクやボタンに下線を引きます。\n既に下線があるテキストに変化はありません。\nテキストのないものには設定は影響しません。";
 

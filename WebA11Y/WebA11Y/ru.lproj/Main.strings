@@ -1,90 +1,27 @@
 
-/* Class = "UILabel"; text = "WebA11Y"; ObjectID = "0md-rG-7yy"; */
-"0md-rG-7yy.text" = "WebA11Y";
-
 /* Class = "UILabel"; text = "Underlines links and buttons.\nText that is already underlined will not change.\nSettings do not affect those without text."; ObjectID = "47M-pW-vhv"; */
-"47M-pW-vhv.text" = "Underlines links and buttons.\nText that is already underlined will not change.\nSettings do not affect those without text.";
-
-/* Class = "UILabel"; text = "Block aria-hidden"; ObjectID = "4iB-R1-lxp"; */
-"4iB-R1-lxp.text" = "Block aria-hidden";
-
-/* Class = "UILabel"; text = "Font Change"; ObjectID = "9jG-0z-5BA"; */
-"9jG-0z-5BA.text" = "Font Change";
+"47M-pW-vhv.text" = "Подчеркивает ссылки и кнопки.\nТекст, который уже подчеркнут, не изменяется.\nНастройки не влияют на те, в которых нет текста.";
 
 /* Class = "UILabel"; text = "It is recommended to enable it temporarily when accessing sites that cannot be read correctly due to aria-hidden."; ObjectID = "DZF-a5-fTy"; */
-"DZF-a5-fTy.text" = "It is recommended to enable it temporarily when accessing sites that cannot be read correctly due to aria-hidden.";
-
-/* Class = "UILabel"; text = "Bold Text"; ObjectID = "E1v-Yw-q1T"; */
-"E1v-Yw-q1T.text" = "Bold Text";
-
-/* Class = "UISwitch"; accessibilityLabel = "Bold Text"; ObjectID = "GKE-Hb-buc"; */
-"GKE-Hb-buc.accessibilityLabel" = "Bold Text";
-
-/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "GKE-Hb-buc"; */
-"GKE-Hb-buc.ibShadowedToolTip" = "Bold Text";
-
-/* Class = "UILabel"; text = "This software is licensed under the terms of the GNU GPL v2.0."; ObjectID = "GZZ-43-kSu"; */
-"GZZ-43-kSu.text" = "This software is licensed under the terms of the GNU GPL v2.0.";
+"DZF-a5-fTy.text" = "Рекомендуется временно включать при посещении сайтов, которые не могут быть правильно прочитаны из-за aria-hidden.";
 
 /* Class = "UITextField"; accessibilityLabel = "Enter the font name"; ObjectID = "Gbr-xS-cq0"; */
-"Gbr-xS-cq0.accessibilityLabel" = "Enter the font name";
-
-/* Class = "UITextField"; placeholder = "sans-serif"; ObjectID = "Gbr-xS-cq0"; */
-"Gbr-xS-cq0.placeholder" = "sans-serif";
+"Gbr-xS-cq0.accessibilityLabel" = "Ввести имя шрифта";
 
 /* Class = "UILabel"; text = "This setting is not recommended."; ObjectID = "K5s-Mr-hFF"; */
-"K5s-Mr-hFF.text" = "This setting is not recommended.";
+"K5s-Mr-hFF.text" = "Эта настройка не рекомендуется.";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "QUa-pD-1Ab"; */
-"QUa-pD-1Ab.title" = "Settings";
-
-/* Class = "UILabel"; accessibilityLabel = "sans-serif"; ObjectID = "Upl-Kz-rUn"; */
-"Upl-Kz-rUn.accessibilityLabel" = "sans-serif";
-
-/* Class = "UILabel"; text = "sans-serif : ABC 123 inm"; ObjectID = "Upl-Kz-rUn"; */
-"Upl-Kz-rUn.text" = "sans-serif : ABC 123 inm";
+"QUa-pD-1Ab.title" = "Настройки";
 
 /* Class = "UILabel"; text = "Boldens all text.\nSome fonts may not be bolded.\nAlready bold text will not be bolded further."; ObjectID = "bt8-Y1-25Z"; */
-"bt8-Y1-25Z.text" = "Boldens all text.\nSome fonts may not be bolded.\nAlready bold text will not be bolded further.";
-
-/* Class = "UISwitch"; accessibilityLabel = "Button Shapes"; ObjectID = "jGR-U6-1Y8"; */
-"jGR-U6-1Y8.accessibilityLabel" = "Button Shapes";
-
-/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "jGR-U6-1Y8"; */
-"jGR-U6-1Y8.ibShadowedToolTip" = "Bold Text";
-
-/* Class = "UILabel"; accessibilityLabel = "serif"; ObjectID = "kM2-hX-5aQ"; */
-"kM2-hX-5aQ.accessibilityLabel" = "serif";
-
-/* Class = "UILabel"; text = "serif\t : ABC 123 inm"; ObjectID = "kM2-hX-5aQ"; */
-"kM2-hX-5aQ.text" = "serif\t : ABC 123 inm";
+"bt8-Y1-25Z.text" = "Выделяет полужирным шрифтом весь текст.\nНекоторые шрифты могут быть не выделены жирным шрифтом.\nУже выделенный жирным шрифтом текст не будет выделяться жирным далее.";
 
 /* Class = "UILabel"; text = "Enter the name of the font.\nYou can use the system font by entering the one listed below."; ObjectID = "m3p-zv-Vrc"; */
-"m3p-zv-Vrc.text" = "Enter the name of the font.\nYou can use the system font by entering the one listed below.";
+"m3p-zv-Vrc.text" = "Введите название шрифта.\nВы можете использовать системный шрифт, введя указанный ниже.";
 
 /* Class = "UILabel"; text = "Change the font.\nIcons will not display correctly on some websites."; ObjectID = "naw-bD-Bph"; */
-"naw-bD-Bph.text" = "Change the font.\nIcons will not display correctly on some websites.";
+"naw-bD-Bph.text" = "Измените шрифт.\nНа некоторых веб-сайтах значки отображаются неправильно.";
 
 /* Class = "UILabel"; text = "Blocking aria-hidden may cause VoiceOver to read something irrelevant to the content of the Web site."; ObjectID = "p9F-6F-xeh"; */
-"p9F-6F-xeh.text" = "Blocking aria-hidden may cause VoiceOver to read something irrelevant to the content of the Web site.";
-
-/* Class = "UILabel"; accessibilityLabel = "monospace"; ObjectID = "piO-Sy-gsC"; */
-"piO-Sy-gsC.accessibilityLabel" = "monospace";
-
-/* Class = "UILabel"; text = "monospace : ABC 123 inm"; ObjectID = "piO-Sy-gsC"; */
-"piO-Sy-gsC.text" = "monospace : ABC 123 inm";
-
-/* Class = "UISwitch"; accessibilityLabel = "Font Change"; ObjectID = "q6F-Ob-mry"; */
-"q6F-Ob-mry.accessibilityLabel" = "Font Change";
-
-/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "q6F-Ob-mry"; */
-"q6F-Ob-mry.ibShadowedToolTip" = "Bold Text";
-
-/* Class = "UISwitch"; accessibilityLabel = "Block aria-hidden"; ObjectID = "txi-t6-vDH"; */
-"txi-t6-vDH.accessibilityLabel" = "Block aria-hidden";
-
-/* Class = "UISwitch"; ibShadowedToolTip = "Bold Text"; ObjectID = "txi-t6-vDH"; */
-"txi-t6-vDH.ibShadowedToolTip" = "Bold Text";
-
-/* Class = "UILabel"; text = "© 2023 tsg0o0"; ObjectID = "wN7-dS-NHw"; */
-"wN7-dS-NHw.text" = "© 2023 tsg0o0";
+"p9F-6F-xeh.text" = "Блокировка aria-hidden может привести к тому, что VoiceOver будет читать что-то, не относящееся к содержанию веб-сайта.";
