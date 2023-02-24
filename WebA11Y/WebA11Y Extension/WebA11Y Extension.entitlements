@@ -6,7 +6,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.tsg0o0.weba11y</string>
+		<string>group.com.tsg0o0.safariweba11y</string>
 	</array>
 	<key>com.apple.security.network.client</key>
 	<true/>

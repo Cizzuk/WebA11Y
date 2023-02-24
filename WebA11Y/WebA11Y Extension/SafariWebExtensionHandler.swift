@@ -10,7 +10,7 @@ import os.log
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     
-    let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.weba11y")
+    let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")
     var fontFamilyString:String = "sans-serif"
     
     func beginRequest(with context: NSExtensionContext) {

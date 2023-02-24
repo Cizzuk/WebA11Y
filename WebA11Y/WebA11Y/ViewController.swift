@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var versionLabel: UILabel!
     let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     
-    let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.weba11y")
+    let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")
     var boldText:String = "false"
     var buttonShape:String = "false"
     var fontChange:String = "false"

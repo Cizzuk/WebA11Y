@@ -423,8 +423,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "WebA11Y Extension/WebA11Y Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = PN7VT53C27;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = Z8R89S24YT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WebA11Y Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y Extension";
@@ -435,12 +435,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.weba11y.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.safariweba11y.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -455,8 +455,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "WebA11Y Extension/WebA11Y Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = PN7VT53C27;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = Z8R89S24YT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WebA11Y Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y Extension";
@@ -467,12 +467,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.weba11y.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.safariweba11y.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -490,8 +490,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WebA11Y/WebA11Y.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = PN7VT53C27;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = Z8R89S24YT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebA11Y/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WebA11Y;
@@ -505,14 +505,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.weba11y;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.safariweba11y;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -531,8 +531,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WebA11Y/WebA11Y.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = PN7VT53C27;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = Z8R89S24YT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebA11Y/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WebA11Y;
@@ -546,14 +546,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.weba11y;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.safariweba11y;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
