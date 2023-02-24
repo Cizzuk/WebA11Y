@@ -34,20 +34,6 @@ It is recommended to enable it temporarily when accessing sites that cannot be r
 
 [Download on the App Store](https://apps.apple.com/app/weba11y/id6445839110)
 
-### Download
-
-#### iOS/iPadOS
-
-- [tsg0o0.com](https://tsg0o0.com/resource/app/weba11y/ios/WebA11Y.ipa)
-- [tsg4o4zjaknpkbefs2k47a7emkl54moz2t2k4py4gbyhz6v7vubsjbad.onion](http://tsg4o4zjaknpkbefs2k47a7emkl54moz2t2k4py4gbyhz6v7vubsjbad.onion/resource/app/weba11y/ios/WebA11Y.ipa)
-- [GitHub](https://github.com/tsg0o0/WebA11Y/releases)
-
-#### macOS
-
-- [tsg0o0.com](https://tsg0o0.com/resource/app/weba11y/macos/WebA11Y.zip)
-- [tsg4o4zjaknpkbefs2k47a7emkl54moz2t2k4py4gbyhz6v7vubsjbad.onion](http://tsg4o4zjaknpkbefs2k47a7emkl54moz2t2k4py4gbyhz6v7vubsjbad.onion/resource/app/weba11y/macos/WebA11Y.zip)
-- [GitHub](https://github.com/tsg0o0/WebA11Y/releases)
-
 ## Licence
 
 This software is licensed under the terms of the [GNU GPL v2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt).
