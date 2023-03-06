@@ -62,17 +62,17 @@ function tsg0o0_weba11y_start() {
 
 function tsg0o0_weba11y_doA11Y() {
     if (tsg0o0_weba11y_boldText == "true") {
-        $('*').css('font-weight', 'bold');
+        $('body').find('*').css('font-weight', 'bold');
     }
     if (tsg0o0_weba11y_buttonShape == "true") {
         $('a').css('text-decoration', 'underline');
         $('button').css('text-decoration', 'underline');
     }
     if (tsg0o0_weba11y_fontChange == "true") {
-        $('*').css('font-family', tsg0o0_weba11y_fontFamily);
+        $('body').find('*').css('font-family', tsg0o0_weba11y_fontFamily);
     }
     if (tsg0o0_weba11y_blockARIAHidden == "true") {
-        $('*').attr('aria-hidden', 'false');
+        $('body').find('*').attr('aria-hidden', 'false');
     }
 }
 
