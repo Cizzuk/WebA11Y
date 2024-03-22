@@ -4,6 +4,7 @@
 
 body {
     width: 90%;
+    line-height: 1.5;
     padding: 10px;
     margin: 15px auto;
     font-family: system-ui;
@@ -12,21 +13,18 @@ body {
 
 div {
     width: 90%;
-    border-radius: 20px;
-    border: solid;
-    border-color: #00b0ff;
-    border-width: 2px;
+    border: 2px solid;
+    border-color: #0af;
     text-align: center;
-    margin: 15px auto 0;
+    padding: 5px 12px;
+    margin: 8px;
 }
 div a {
-    display: block;
-    padding: 5px 8px 5px;
-    line-height: 26px;
     text-decoration: none;
+    color: #0070ff;
 }
 
 @media (prefers-color-scheme: dark) {
     div {border-color:#0050a0}
-    div a {color:#00b0ff}
+    div a {color:#00b2ff}
 }

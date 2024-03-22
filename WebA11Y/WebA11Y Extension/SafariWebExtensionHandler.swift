@@ -26,8 +26,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             "boldText": userDefaults!.string(forKey: "boldText") ?? "false",
             "buttonShape": userDefaults!.string(forKey: "buttonShape") ?? "false",
             "fontChange": userDefaults!.string(forKey: "fontChange") ?? "false",
-            "fontFamily": fontFamilyString,
-            "blockARIAHidden": userDefaults!.string(forKey: "blockARIAHidden") ?? "false"
+            "fontFamily": fontFamilyString
         ]
         do {
             let data = try JSONEncoder().encode(body)
