@@ -22,6 +22,8 @@
 		909691B929668D2D009AE45F /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 909691B829668D2D009AE45F /* popup.html */; };
 		909691BB29668D2D009AE45F /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 909691BA29668D2D009AE45F /* popup.css */; };
 		909691BF29668D2D009AE45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909691A029668D2D009AE45F /* Assets.xcassets */; };
+		90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
+		90A07ED72BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,7 @@
 		909691BE29668D2D009AE45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909691C929669E3A009AE45F /* WebA11Y.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebA11Y.entitlements; sourceTree = "<group>"; };
 		909691CA29669E69009AE45F /* WebA11Y Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebA11Y Extension.entitlements"; sourceTree = "<group>"; };
+		90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		90CEA26B29A8A0EA0010109D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		90CEA26C29A8A0F80010109D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		90CEA26D29A8A1020010109D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		9096918029668D2B009AE45F = {
 			isa = PBXGroup;
 			children = (
+				90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */,
 				9096918B29668D2B009AE45F /* WebA11Y */,
 				909691AA29668D2D009AE45F /* WebA11Y Extension */,
 				9096918A29668D2B009AE45F /* Products */,
@@ -244,6 +248,7 @@
 			files = (
 				9096919F29668D2B009AE45F /* Main.storyboard in Resources */,
 				9096919C29668D2B009AE45F /* LaunchScreen.storyboard in Resources */,
+				90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */,
 				909691BF29668D2D009AE45F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +263,7 @@
 				909691B129668D2D009AE45F /* images in Resources */,
 				909691B329668D2D009AE45F /* manifest.json in Resources */,
 				909691AF29668D2D009AE45F /* _locales in Resources */,
+				90A07ED72BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */,
 				909691B729668D2D009AE45F /* content.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
