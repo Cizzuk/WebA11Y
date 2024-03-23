@@ -20,8 +20,6 @@ Underlines links and buttons.
 
 Change the font.
 
-Icons will not display correctly on some websites.
-
 ## Install
 
 ### App Store
