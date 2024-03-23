@@ -22,12 +22,6 @@ Change the font.
 
 Icons will not display correctly on some websites.
 
-### Block aria-hidden
-
-It is recommended to enable it temporarily when accessing sites that cannot be read correctly due to aria-hidden.
-
-(Always enabled is not recommended)
-
 ## Install
 
 ### App Store
