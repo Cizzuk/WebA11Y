@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "WebA11Y Extension",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Webアクセシビリティを向上させるためのSafari拡張機能です。",
+        "description": "Description of what the extension does."
+    }
+}

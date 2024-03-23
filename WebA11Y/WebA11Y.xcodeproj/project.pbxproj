@@ -10,7 +10,6 @@
 		904594302BAE985700CC9DBB /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9045942F2BAE985700CC9DBB /* SwiftUIView.swift */; };
 		904594322BAEACBC00CC9DBB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 904594312BAEACBC00CC9DBB /* Localizable.xcstrings */; };
 		9096918D29668D2B009AE45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096918C29668D2B009AE45F /* AppDelegate.swift */; };
-		9096919929668D2B009AE45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096919829668D2B009AE45F /* ViewController.swift */; };
 		909691A729668D2D009AE45F /* WebA11Y Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 909691A629668D2D009AE45F /* WebA11Y Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		909691AC29668D2D009AE45F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909691AB29668D2D009AE45F /* SafariWebExtensionHandler.swift */; };
 		909691AF29668D2D009AE45F /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 909691AE29668D2D009AE45F /* _locales */; };
@@ -54,7 +53,6 @@
 		904594312BAEACBC00CC9DBB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9096918929668D2B009AE45F /* WebA11Y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebA11Y.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9096918C29668D2B009AE45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9096919829668D2B009AE45F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		909691A029668D2D009AE45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		909691A129668D2D009AE45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909691A629668D2D009AE45F /* WebA11Y Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebA11Y Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +113,6 @@
 			children = (
 				909691C929669E3A009AE45F /* WebA11Y.entitlements */,
 				9096918C29668D2B009AE45F /* AppDelegate.swift */,
-				9096919829668D2B009AE45F /* ViewController.swift */,
 				9045942F2BAE985700CC9DBB /* SwiftUIView.swift */,
 				909691A029668D2D009AE45F /* Assets.xcassets */,
 				909691A129668D2D009AE45F /* Info.plist */,
@@ -195,7 +192,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					9096918829668D2B009AE45F = {
 						CreatedOnToolsVersion = 14.2;
@@ -258,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9096919929668D2B009AE45F /* ViewController.swift in Sources */,
 				9096918D29668D2B009AE45F /* AppDelegate.swift in Sources */,
 				904594302BAE985700CC9DBB /* SwiftUIView.swift in Sources */,
 			);
@@ -320,6 +316,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -341,6 +338,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.1;
 			};
 			name = Debug;
 		};
@@ -381,6 +379,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -396,6 +395,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.1;
 			};
 			name = Release;
 		};
@@ -410,7 +410,7 @@
 				INFOPLIST_FILE = "WebA11Y Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,6 +431,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -445,7 +446,7 @@
 				INFOPLIST_FILE = "WebA11Y Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +467,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
@@ -485,7 +487,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,6 +508,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -525,7 +528,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +549,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
