@@ -12,7 +12,7 @@ Make the following changes to the website
 
 Boldens all text.
 
-### Button Shapes
+### Button Shape
 
 Underlines links and buttons.
 
