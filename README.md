@@ -2,7 +2,7 @@
 
 This is a Safari extension that improves web accessibility.
 
-Safari Extensions
+Safari Extension
 
 ## What can this do?
 
