@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 90%;
+    min-width:300px;
     line-height: 1.5;
     padding: 10px;
     margin: 15px auto;
@@ -12,7 +12,6 @@ body {
 }
 
 div {
-    width: 90%;
     border: 2px solid;
     border-color: #0af;
     text-align: center;
@@ -20,6 +19,7 @@ div {
     margin: 8px;
 }
 div a {
+    display: block;
     text-decoration: none;
     color: #0070ff;
 }
