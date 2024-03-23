@@ -448,9 +448,6 @@
         }
       }
     },
-    "WebA11Y" : {
-
-    },
     "WebA11YSetting" : {
       "extractionState" : "manual",
       "localizations" : {

@@ -164,7 +164,7 @@ struct ContentView: View {
                 }
             }
             .listStyle(.insetGrouped)
-            .navigationTitle("WebA11Y")
+            .navigationTitle("WebA11YSetting")
         }
         .navigationViewStyle(.stack)
     }
