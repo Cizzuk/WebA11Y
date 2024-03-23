@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		904594302BAE985700CC9DBB /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9045942F2BAE985700CC9DBB /* SwiftUIView.swift */; };
+		904594322BAEACBC00CC9DBB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 904594312BAEACBC00CC9DBB /* Localizable.xcstrings */; };
 		9096918D29668D2B009AE45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096918C29668D2B009AE45F /* AppDelegate.swift */; };
 		9096919929668D2B009AE45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096919829668D2B009AE45F /* ViewController.swift */; };
 		909691A729668D2D009AE45F /* WebA11Y Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 909691A629668D2D009AE45F /* WebA11Y Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		9045942F2BAE985700CC9DBB /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		904594312BAEACBC00CC9DBB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9096918929668D2B009AE45F /* WebA11Y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebA11Y.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9096918C29668D2B009AE45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9096919829668D2B009AE45F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */,
+				904594312BAEACBC00CC9DBB /* Localizable.xcstrings */,
 				9096918B29668D2B009AE45F /* WebA11Y */,
 				909691AA29668D2D009AE45F /* WebA11Y Extension */,
 				9096918A29668D2B009AE45F /* Products */,
@@ -208,14 +211,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				ja,
-				fr,
-				de,
-				ru,
-				"zh-Hans",
 				es,
-				"zh-Hant",
 			);
 			mainGroup = 9096918029668D2B009AE45F;
 			productRefGroup = 9096918A29668D2B009AE45F /* Products */;
@@ -235,6 +232,7 @@
 			files = (
 				90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */,
 				909691BF29668D2D009AE45F /* Assets.xcassets in Resources */,
+				904594322BAEACBC00CC9DBB /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
