@@ -2,12 +2,11 @@
 //  AppDelegate.swift
 //  WebA11Y
 //
-//  Created by tsg0o0 on 2023/01/05.
+//  Created by Cizzuk on 2023/01/05.
 //
 
 import UIKit
 
-@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
