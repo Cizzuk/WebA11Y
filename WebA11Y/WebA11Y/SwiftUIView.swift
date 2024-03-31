@@ -143,7 +143,7 @@ struct ContentView: View {
                         }
                     })
                     // GitHub Source Link
-                    Link(destination:URL(string: "https://github.com/tsg0o0/WebA11Y")!, label: {
+                    Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
                         HStack {
                             Image(systemName: "ladybug")
                                 .frame(width: 20.0)
