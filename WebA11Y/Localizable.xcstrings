@@ -1,7 +1,32 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    "%@ Bold Text %@ on the Web" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ Bold Text %2$@ on the Web"
+          }
+        }
+      }
+    },
+    "%@ Bold Text on the Web" : {
+
+    },
     "© Cizzuk" : {
+
+    },
+    "${toggle} Bold Text ${setting} on the Web" : {
+
+    },
+    "${toggle} Bold Text on the Web" : {
+
+    },
+    "Bold Text on the Web" : {
 
     },
     "boldText" : {
@@ -142,6 +167,9 @@
         }
       }
     },
+    "Change Bold Text setting" : {
+
+    },
     "ContactLink" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -273,6 +301,9 @@
         }
       }
     },
+    "Just to confirm, you wanted ‘%@’?" : {
+
+    },
     "LicenseLink" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -379,6 +410,9 @@
         }
       }
     },
+    "Setting" : {
+
+    },
     "SourceLink" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -425,6 +459,25 @@
         }
       }
     },
+    "There are %lld options matching ‘%@’." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "There are %1$lld options matching ‘%2$@’."
+          }
+        }
+      }
+    },
+    "Toggle" : {
+
+    },
+    "Turn" : {
+
+    },
+    "Turn Bold Text " : {
+
+    },
     "Version: %@" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -470,6 +523,9 @@
           }
         }
       }
+    },
+    "Would you like to turn the setting on or off?" : {
+
     }
   },
   "version" : "1.0"

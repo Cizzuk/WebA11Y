@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -70,6 +70,29 @@
 		90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BEBCFE0E2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BoldText.swift,
+				EnumAppEnum.swift,
+			);
+			target = 9096918829668D2B009AE45F /* WebA11Y */;
+		};
+		BEBCFE0F2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BoldText.swift,
+				EnumAppEnum.swift,
+			);
+			target = 909691A529668D2D009AE45F /* WebA11Y Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BEBCFE0D2C83607B00A5EBCB /* Intents */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEBCFE0E2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */, BEBCFE0F2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Intents; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		9096918629668D2B009AE45F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -91,6 +114,7 @@
 		9096918029668D2B009AE45F = {
 			isa = PBXGroup;
 			children = (
+				BEBCFE0D2C83607B00A5EBCB /* Intents */,
 				90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */,
 				904594312BAEACBC00CC9DBB /* Localizable.xcstrings */,
 				9096918B29668D2B009AE45F /* WebA11Y */,

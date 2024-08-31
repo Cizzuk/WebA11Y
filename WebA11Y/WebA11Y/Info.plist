@@ -15,6 +15,14 @@
 			</array>
 		</dict>
 	</array>
+	<key>INIntentsSupported</key>
+	<array>
+		<string>BoldTextIntent</string>
+	</array>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>BoldTextIntent</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

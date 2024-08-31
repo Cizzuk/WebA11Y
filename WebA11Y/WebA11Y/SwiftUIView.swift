@@ -20,7 +20,7 @@ struct MainView: App {
 struct ContentView: View {
     
     let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")
-    @State private var boldText = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "boldText")
+    @AppStorage("boldText", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var boldText: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "boldText")
     
     @State private var buttonShape = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "buttonShape")
     

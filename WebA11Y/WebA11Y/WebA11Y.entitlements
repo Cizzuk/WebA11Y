@@ -6,6 +6,10 @@
 	<array>
 		<string>applinks:tsg0o0.com</string>
 	</array>
+	<key>com.apple.developer.networking.slicing.appcategory</key>
+	<array/>
+	<key>com.apple.developer.networking.slicing.trafficcategory</key>
+	<array/>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
 	<key>com.apple.security.application-groups</key>
