@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-
-    },
     "%@ Bold Text %@ on the Web" : {
       "localizations" : {
         "en" : {
@@ -11,23 +8,71 @@
             "state" : "new",
             "value" : "%1$@ Bold Text %2$@ on the Web"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@ Texto en negrita en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「文字を太くする」を%2$@に%1$@する"
+          }
         }
       }
     },
     "%@ Bold Text on the Web" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Texto en negrita en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで文字を太くするを%@"
+          }
+        }
+      }
     },
     "© Cizzuk" : {
-
+      "shouldTranslate" : false
     },
     "${toggle} Bold Text ${setting} on the Web" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${toggle} ${setting} Texto en negrita en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「文字を太くする」を${setting}に${toggle}する"
+          }
+        }
+      }
     },
     "${toggle} Bold Text on the Web" : {
-
-    },
-    "Bold Text on the Web" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${toggle} Texto en negrita en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで文字を太くするを${toggle}"
+          }
+        }
+      }
     },
     "boldText" : {
       "extractionState" : "manual",
@@ -167,9 +212,6 @@
         }
       }
     },
-    "Change Bold Text setting" : {
-
-    },
     "ContactLink" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -301,9 +343,6 @@
         }
       }
     },
-    "Just to confirm, you wanted ‘%@’?" : {
-
-    },
     "LicenseLink" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -328,7 +367,7 @@
       }
     },
     "monospace" : {
-
+      "shouldTranslate" : false
     },
     "monospace: ABC 123 inm" : {
       "localizations" : {
@@ -347,7 +386,7 @@
       }
     },
     "MPL 2.0" : {
-
+      "shouldTranslate" : false
     },
     "PrivacyPolicyLink" : {
       "extractionState" : "manual",
@@ -373,7 +412,7 @@
       }
     },
     "sans-serif" : {
-
+      "shouldTranslate" : false
     },
     "sans-serif: ABC 123 inm" : {
       "localizations" : {
@@ -392,7 +431,7 @@
       }
     },
     "serif" : {
-
+      "shouldTranslate" : false
     },
     "serif: ABC 123 inm" : {
       "localizations" : {
@@ -410,8 +449,53 @@
         }
       }
     },
+    "Set Bold Text on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir Texto en negrita en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「文字を太くする」を設定"
+          }
+        }
+      }
+    },
+    "Sets the Bold Text to on or off on the Web." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir Texto en negrita como activado o desactivado en la Web."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「文字を太くする」をオンまたはオフに設定します。"
+          }
+        }
+      }
+    },
     "Setting" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        }
+      }
     },
     "SourceLink" : {
       "extractionState" : "manual",
@@ -459,24 +543,37 @@
         }
       }
     },
-    "There are %lld options matching ‘%@’." : {
+    "Toggle" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "There are %1$lld options matching ‘%2$@’."
+            "state" : "translated",
+            "value" : "Activar/desactivar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切り替える"
           }
         }
       }
     },
-    "Toggle" : {
-
-    },
     "Turn" : {
-
-    },
-    "Turn Bold Text " : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変更"
+          }
+        }
+      }
     },
     "Version: %@" : {
       "extractionState" : "manual",
@@ -523,9 +620,6 @@
           }
         }
       }
-    },
-    "Would you like to turn the setting on or off?" : {
-
     }
   },
   "version" : "1.0"
