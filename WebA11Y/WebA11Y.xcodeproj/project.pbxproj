@@ -75,7 +75,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				BoldText.swift,
-				EnumAppEnum.swift,
 			);
 			target = 9096918829668D2B009AE45F /* WebA11Y */;
 		};
@@ -83,7 +82,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				BoldText.swift,
-				EnumAppEnum.swift,
 			);
 			target = 909691A529668D2D009AE45F /* WebA11Y Extension */;
 		};
