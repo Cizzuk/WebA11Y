@@ -77,6 +77,44 @@
         }
       }
     },
+    "%@ Font Change %@ on the Web" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ Font Change %2$@ on the Web"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@ Cambio de fuente en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「フォントを変更」を%2$@に%1$@する"
+          }
+        }
+      }
+    },
+    "%@ Font Change on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Cambio de fuente en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「フォントを変更」を%@"
+          }
+        }
+      }
+    },
     "© Cizzuk" : {
       "shouldTranslate" : false
     },
@@ -140,6 +178,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Webで「ボタンの形」を${toggle}"
+          }
+        }
+      }
+    },
+    "${toggle} Font Change ${state} on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${state} Cambio de fuente en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「フォントを変更」を${state}に${toggle}する"
+          }
+        }
+      }
+    },
+    "${toggle} Font Change on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${toggle} Cambio de fuente en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「フォントを変更」を${toggle}"
           }
         }
       }
@@ -639,6 +709,22 @@
         }
       }
     },
+    "Set Font Change on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir Cambio de fuente en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「フォントを変更」を設定"
+          }
+        }
+      }
+    },
     "Sets the Bold Text to on or off on the Web." : {
       "localizations" : {
         "es" : {
@@ -667,6 +753,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Webで「ボタンの形」をオンまたはオフに設定します。"
+          }
+        }
+      }
+    },
+    "Sets the Font Change to on or off on the Web." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir Cambio de fuente como activado o desactivado en la Web."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「フォントを変更」をオンまたはオフに設定します。"
           }
         }
       }

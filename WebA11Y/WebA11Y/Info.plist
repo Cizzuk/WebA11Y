@@ -17,11 +17,13 @@
 	</array>
 	<key>INIntentsSupported</key>
 	<array>
+		<string>FontChangeIntent</string>
 		<string>BoldTextIntent</string>
 		<string>ButtonShapeIntent</string>
 	</array>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>FontChangeIntent</string>
 		<string>ButtonShapeIntent</string>
 		<string>BoldTextIntent</string>
 	</array>

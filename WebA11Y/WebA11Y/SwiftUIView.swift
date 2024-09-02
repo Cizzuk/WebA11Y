@@ -24,7 +24,7 @@ struct ContentView: View {
     
     @AppStorage("buttonShape", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var buttonShape: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "buttonShape")
     
-    @State private var fontChange = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "fontChange")
+    @AppStorage("fontChange", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var fontChange: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "fontChange")
     
     @State private var fontFamily = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.string(forKey: "fontFamily") ?? "sans-serif"
     
