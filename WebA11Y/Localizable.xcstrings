@@ -12,7 +12,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ %2$@ Texto en negrita en la Web"
+            "value" : "%2$@ Texto en negrita en la Web"
           }
         },
         "ja" : {
@@ -47,7 +47,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "${toggle} ${setting} Texto en negrita en la Web"
+            "value" : "${setting} Texto en negrita en la Web"
           }
         },
         "ja" : {
