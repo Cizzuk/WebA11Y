@@ -34,7 +34,45 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Webで文字を太くするを%@"
+            "value" : "Webで「文字を太くする」を%@"
+          }
+        }
+      }
+    },
+    "%@ Button Shape %@ on the Web" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ Button Shape %2$@ on the Web"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@ Contornos de botones en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「ボタンの形」を%2$@に%1$@する"
+          }
+        }
+      }
+    },
+    "%@ Button Shape on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Contornos de botones en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「ボタンの形」を%@"
           }
         }
       }
@@ -42,18 +80,18 @@
     "© Cizzuk" : {
       "shouldTranslate" : false
     },
-    "${toggle} Bold Text ${setting} on the Web" : {
+    "${toggle} Bold Text ${state} on the Web" : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "${setting} Texto en negrita en la Web"
+            "value" : "${state} Texto en negrita en la Web"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Webで「文字を太くする」を${setting}に${toggle}する"
+            "value" : "Webで「文字を太くする」を${state}に${toggle}する"
           }
         }
       }
@@ -69,7 +107,39 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Webで文字を太くするを${toggle}"
+            "value" : "Webで「文字を太くする」を${toggle}"
+          }
+        }
+      }
+    },
+    "${toggle} Button Shape ${state} on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${state} Contornos de botones en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「ボタンの形」を${state}に${toggle}する"
+          }
+        }
+      }
+    },
+    "${toggle} Button Shape on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${toggle} Contornos de botones en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「ボタンの形」を${toggle}"
           }
         }
       }
@@ -343,6 +413,94 @@
         }
       }
     },
+    "Int-State" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "State"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "状態"
+          }
+        }
+      }
+    },
+    "Int-Toggle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar/desactivar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切り替える"
+          }
+        }
+      }
+    },
+    "Int-ToggleTitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Operation"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Operación"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "操作"
+          }
+        }
+      }
+    },
+    "Int-Turn" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変更"
+          }
+        }
+      }
+    },
     "LicenseLink" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -465,6 +623,22 @@
         }
       }
     },
+    "Set Button Shape on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir Contornos de botones en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「ボタンの形」を設定"
+          }
+        }
+      }
+    },
     "Sets the Bold Text to on or off on the Web." : {
       "localizations" : {
         "es" : {
@@ -481,18 +655,18 @@
         }
       }
     },
-    "Setting" : {
+    "Sets the Button Shape to on or off on the Web." : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Configuración"
+            "value" : "Definir Contornos de botones como activado o desactivado en la Web."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "設定"
+            "value" : "Webで「ボタンの形」をオンまたはオフに設定します。"
           }
         }
       }
@@ -539,38 +713,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "サポート"
-          }
-        }
-      }
-    },
-    "Toggle" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activar/desactivar"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "切り替える"
-          }
-        }
-      }
-    },
-    "Turn" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajustar"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "変更"
           }
         }
       }

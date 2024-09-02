@@ -22,7 +22,7 @@ struct ContentView: View {
     let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")
     @AppStorage("boldText", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var boldText: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "boldText")
     
-    @State private var buttonShape = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "buttonShape")
+    @AppStorage("buttonShape", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var buttonShape: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "buttonShape")
     
     @State private var fontChange = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "fontChange")
     

@@ -75,6 +75,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				BoldText.swift,
+				ButtonShape.swift,
 			);
 			target = 9096918829668D2B009AE45F /* WebA11Y */;
 		};
