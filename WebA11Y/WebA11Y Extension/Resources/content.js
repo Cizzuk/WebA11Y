@@ -23,14 +23,14 @@ browser.runtime.sendMessage({ type: "content" },
     }
 );
 
-window.onload = function() {
-    complete("onload");
-}
+document.addEventListener('DOMContentLoaded', function() {
+    complete("interactive");
+});
 
 function complete(flag) {
     completedFlags[flag] = true;
     console.log(completedFlags);
-    if (completedFlags["response"] && completedFlags["onload"]) {
+    if (completedFlags["response"] && completedFlags["interactive"]) {
         // After receiving settings and loading the page
         doA11Y();
     }
