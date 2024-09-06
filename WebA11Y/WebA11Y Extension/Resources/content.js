@@ -1,60 +1,55 @@
-var tsg0o0_weba11y_loadedFlag = false;
-var tsg0o0_weba11y_styleE = document.createElement('style');
-var tsg0o0_weba11y_cssCode = '';
+"use strict";
 
-var tsg0o0_weba11y_boldText = "false";
-var tsg0o0_weba11y_buttonShape = "false";
-var tsg0o0_weba11y_fontChange = "false";
-var tsg0o0_weba11y_fontFamily = "sans-serif";
+let completedFlags = {};
+let boldText = "false";
+let buttonShape = "false";
+let fontChange = "false";
+let fontFamily = "sans-serif";
 
-browser.runtime.onMessage.addListener(handleMessage);
-function handleMessage(request, sender, sendResponse) {
-    console.log(request["data"]);
-    
-}
-
-browser.runtime.sendMessage({
-    type: "content"
-},
+browser.runtime.sendMessage({ type: "content" },
     function(response) {
-    tsg0o0_weba11y_boldText = response.boldText;
-    tsg0o0_weba11y_buttonShape = response.buttonShape;
-    tsg0o0_weba11y_fontChange = response.fontChange;
-    if (response.fontFamily != "sans-serif") {
-        tsg0o0_weba11y_fontFamily = response.fontFamily + ", sans-serif";
-    }else{
-        tsg0o0_weba11y_fontFamily = response.fontFamily;
+        boldText = response.boldText;
+        buttonShape = response.buttonShape;
+        fontChange = response.fontChange;
+    
+        if (response.fontFamily != "sans-serif") {
+            fontFamily = response.fontFamily + ", sans-serif";
+        } else {
+            fontFamily = response.fontFamily;
+        }
+        
+        console.log("WebA11Y: Loaded");
+        complete("response");
     }
-    
-    console.log("WebA11Y: Loaded");
-    
-    tsg0o0_weba11y_start();
-});
+);
 
 window.onload = function() {
-    tsg0o0_weba11y_start();
+    complete("onload");
 }
 
-function tsg0o0_weba11y_start() {
-    if (tsg0o0_weba11y_loadedFlag == true) {
-        tsg0o0_weba11y_doA11Y();
-    }else{
-        tsg0o0_weba11y_loadedFlag = true;
+function complete(flag) {
+    completedFlags[flag] = true;
+    console.log(completedFlags);
+    if (completedFlags["response"] && completedFlags["onload"]) {
+        // After receiving settings and loading the page
+        doA11Y();
     }
 }
 
-function tsg0o0_weba11y_doA11Y() {
+function doA11Y() {
+    let customStyle = "";
+    let styleElement = document.createElement("style");
     
-    if (tsg0o0_weba11y_boldText == "true") {
-        tsg0o0_weba11y_cssCode += '* { font-weight: bold !important; }';
+    if (boldText == "true") {
+        customStyle += "* { font-weight: bold !important; }";
     }
-    if (tsg0o0_weba11y_buttonShape == "true") {
-        tsg0o0_weba11y_cssCode += 'a, button { text-decoration: underline !important; }';
+    if (buttonShape == "true") {
+        customStyle += "a, button { text-decoration: underline !important; }";
     }
-    if (tsg0o0_weba11y_fontChange == "true") {
-        tsg0o0_weba11y_cssCode += '* { font-family: ' + tsg0o0_weba11y_fontFamily + ' !important; }';
+    if (fontChange == "true") {
+        customStyle += "* { font-family: " + fontFamily + " !important; }";
     }
     
-    tsg0o0_weba11y_styleE.appendChild(document.createTextNode(tsg0o0_weba11y_cssCode));
-    document.body.appendChild(tsg0o0_weba11y_styleE);
+    styleElement.appendChild(document.createTextNode(customStyle));
+    document.body.appendChild(styleElement);
 }
