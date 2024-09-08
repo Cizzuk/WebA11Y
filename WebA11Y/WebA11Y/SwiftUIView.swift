@@ -26,7 +26,7 @@ struct ContentView: View {
     
     @AppStorage("fontChange", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var fontChange: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "fontChange")
     
-    @State private var fontFamily = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.string(forKey: "fontFamily") ?? "sans-serif"
+    @AppStorage("fontFamily", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var fontFamily: String = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.string(forKey: "fontFamily") ?? "sans-serif"
     
     var body: some View {
         NavigationView {

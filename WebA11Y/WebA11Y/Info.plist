@@ -20,12 +20,14 @@
 		<string>FontChangeIntent</string>
 		<string>BoldTextIntent</string>
 		<string>ButtonShapeIntent</string>
+		<string>EditFontIntent</string>
 	</array>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>FontChangeIntent</string>
-		<string>ButtonShapeIntent</string>
 		<string>BoldTextIntent</string>
+		<string>ButtonShapeIntent</string>
+		<string>FontChangeIntent</string>
+		<string>EditFontIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

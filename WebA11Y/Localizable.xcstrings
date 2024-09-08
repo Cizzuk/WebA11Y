@@ -375,6 +375,22 @@
         }
       }
     },
+    "Edit Font to be used on the Web" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar fuente para su uso en la Web"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web上で使用するフォントを編集"
+          }
+        }
+      }
+    },
     "fontChange" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -479,6 +495,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "GitHub"
+          }
+        }
+      }
+    },
+    "Int-fontFamily" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Font name"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre de fuente"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォント名"
           }
         }
       }
@@ -725,6 +763,38 @@
         }
       }
     },
+    "Set font on the web to %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establecer la fuente en la web a %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web上のフォントを %@に設定する"
+          }
+        }
+      }
+    },
+    "Set font on the web to ${fontFamily}" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establecer la fuente en la web a ${fontFamily}"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web上のフォントを ${fontFamily}に設定する"
+          }
+        }
+      }
+    },
     "Sets the Bold Text to on or off on the Web." : {
       "localizations" : {
         "es" : {
@@ -769,6 +839,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Webで「フォントを変更」をオンまたはオフに設定します。"
+          }
+        }
+      }
+    },
+    "Sets the font name to be used on the Web." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establece el nombre de la fuente que se utilizará en la Web."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで使用するフォントの名前を設定します。"
           }
         }
       }
