@@ -12,10 +12,10 @@ browser.runtime.sendMessage({ type: "content" },
         buttonShape = response.buttonShape;
         fontChange = response.fontChange;
     
-        if (response.fontFamily != "sans-serif") {
-            fontFamily = response.fontFamily + ", sans-serif";
-        } else {
+        if (response.fontFamily.includes("sans-serif")) {
             fontFamily = response.fontFamily;
+        } else {
+            fontFamily = response.fontFamily + ", sans-serif";
         }
         
         console.log("WebA11Y: Loaded");
@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function complete(flag) {
     completedFlags[flag] = true;
-    console.log(completedFlags);
     if (completedFlags["response"] && completedFlags["interactive"]) {
         // After receiving settings and loading the page
         doA11Y();
@@ -50,6 +49,8 @@ function doA11Y() {
         customStyle += "* { font-family: " + fontFamily + " !important; }";
     }
     
-    styleElement.appendChild(document.createTextNode(customStyle));
-    document.body.appendChild(styleElement);
+    if (customStyle != "") {
+        styleElement.appendChild(document.createTextNode(customStyle));
+        document.body.appendChild(styleElement);
+    }
 }
