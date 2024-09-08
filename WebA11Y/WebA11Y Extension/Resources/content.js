@@ -37,7 +37,6 @@ function complete(flag) {
 
 function doA11Y() {
     let customStyle = "";
-    let styleElement = document.createElement("style");
     
     if (boldText == true) {
         customStyle += "* { font-weight: bold !important; }";
@@ -50,7 +49,7 @@ function doA11Y() {
     }
     
     if (customStyle != "") {
-        styleElement.appendChild(document.createTextNode(customStyle));
-        document.body.appendChild(styleElement);
+        let styleSheet = document.styleSheets.item(0);
+        styleSheet.insertRule(customStyle, styleSheet.cssRules.length);
     }
 }
