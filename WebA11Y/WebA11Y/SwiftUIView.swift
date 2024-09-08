@@ -37,11 +37,7 @@ struct ContentView: View {
                             .bold()
                     })
                     .onChange(of: boldText) { newValue in
-                        if boldText == true {
-                            userDefaults!.set("true", forKey: "boldText")
-                        }else{
-                            userDefaults!.set("false", forKey: "boldText")
-                        }
+                        userDefaults!.set(newValue, forKey: "boldText")
                     }
                 } footer: {
                     VStack (alignment : .leading) {
@@ -55,11 +51,7 @@ struct ContentView: View {
                             .underline()
                     })
                     .onChange(of: buttonShape) { newValue in
-                        if buttonShape == true {
-                            userDefaults!.set("true", forKey: "buttonShape")
-                        }else{
-                            userDefaults!.set("false", forKey: "buttonShape")
-                        }
+                        userDefaults!.set(newValue, forKey: "buttonShape")
                     }
                 } footer: {
                     VStack (alignment : .leading) {
@@ -73,11 +65,7 @@ struct ContentView: View {
                             .font(.system(.body, design: .serif))
                     })
                     .onChange(of: fontChange) { newValue in
-                        if fontChange == true {
-                            userDefaults!.set("true", forKey: "fontChange")
-                        }else{
-                            userDefaults!.set("false", forKey: "fontChange")
-                        }
+                        userDefaults!.set(newValue, forKey: "fontChange")
                     }
                     TextField("sans-serif", text: $fontFamily)
                         .textInputAutocapitalization(.never)

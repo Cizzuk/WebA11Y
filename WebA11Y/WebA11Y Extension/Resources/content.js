@@ -1,9 +1,9 @@
 "use strict";
 
 let completedFlags = {};
-let boldText = "false";
-let buttonShape = "false";
-let fontChange = "false";
+let boldText = false;
+let buttonShape = false;
+let fontChange = false;
 let fontFamily = "sans-serif";
 
 browser.runtime.sendMessage({ type: "content" },
@@ -40,13 +40,13 @@ function doA11Y() {
     let customStyle = "";
     let styleElement = document.createElement("style");
     
-    if (boldText == "true") {
+    if (boldText == true) {
         customStyle += "* { font-weight: bold !important; }";
     }
-    if (buttonShape == "true") {
+    if (buttonShape == true) {
         customStyle += "a, button { text-decoration: underline !important; }";
     }
-    if (fontChange == "true") {
+    if (fontChange == true) {
         customStyle += "* { font-family: " + fontFamily + " !important; }";
     }
     
