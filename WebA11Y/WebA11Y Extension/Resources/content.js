@@ -47,9 +47,15 @@ function doA11Y() {
     if (fontChange == true) {
         customStyle += "* { font-family: " + fontFamily + " !important; }";
     }
-    
+
     if (customStyle != "") {
         let styleSheet = document.styleSheets.item(0);
-        styleSheet.insertRule(customStyle, styleSheet.cssRules.length);
+        try {
+            styleSheet.insertRule(customStyle, styleSheet.cssRules.length);
+        } catch {
+            let styleElement = document.createElement("style")
+            styleElement.appendChild(document.createTextNode(customStyle));
+            document.body.appendChild(styleElement);
+        }
     }
 }
