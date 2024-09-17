@@ -3,28 +3,28 @@
 }
 
 body {
-    min-width:300px;
-    line-height: 1.5;
-    padding: 10px;
-    margin: 15px auto;
     font-family: system-ui;
+    line-height: 1.5;
+    margin: 15px auto;
+    min-width: 240px;
+    padding: 10px;
     text-align: center;
 }
 
-div {
-    border: 2px solid;
-    border-color: #0af;
-    text-align: center;
-    padding: 5px 12px;
-    margin: 8px;
-}
-div a {
+a {
+    background: #007bfe;
+    border-radius: 32px;
+    color: #fff;
     display: block;
+    font-weight: 600;
+    margin: 16px;
+    padding: 8px 12px;
+    text-align: center;
     text-decoration: none;
-    color: #0070ff;
 }
 
 @media (prefers-color-scheme: dark) {
-    div {border-color:#0050a0}
-    div a {color:#00b2ff}
+    a {
+        background:#0a84fe;
+    }
 }
