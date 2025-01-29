@@ -1,10 +1,10 @@
 {
     "extension_name": {
-        "message": "WebA11Y Extensión",
+        "message": "WebA11Y Extension",
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "Extensión de Safari para mejorar la accesibilidad web.",
+        "message": "Safari extension to improve web accessibility.",
         "description": "Description of what the extension does."
     }
 }
