@@ -31,6 +31,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                Section {} footer: {
+                    if ProcessInfo.processInfo.isMacCatalystApp {
+                        Text("Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y.")
+                    } else {
+                        Text("Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension.")
+                    }
+                }
+                
                 Section {
                     Toggle(isOn: $boldText, label: {
                         Text("boldText")

@@ -499,6 +499,22 @@
         }
       }
     },
+    "Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaya a Configuración → Apps → Safari → Extensiones → WebA11Y y permita la extensión."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定 → アプリ → Safari →　拡張機能 → WebA11Y から拡張機能を許可してください。"
+          }
+        }
+      }
+    },
     "Int-fontFamily" : {
       "localizations" : {
         "en" : {
@@ -565,6 +581,22 @@
     },
     "MPL 2.0" : {
       "shouldTranslate" : false
+    },
+    "Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abra Safari, vaya a Safari → Ajustes..., seleccione la pestaña «Extensiones» y active WebA11Y."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safariを開いて、Safari → 設定… と選択して「拡張機能」タブからWebA11Yを有効にします。"
+          }
+        }
+      }
     },
     "Operation" : {
       "localizations" : {
