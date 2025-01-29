@@ -36,9 +36,6 @@ struct ContentView: View {
                         Text("boldText")
                             .bold()
                     })
-                    .onChange(of: boldText) { newValue in
-                        userDefaults!.set(newValue, forKey: "boldText")
-                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("boldText-Desc-1")
@@ -50,9 +47,6 @@ struct ContentView: View {
                         Text("buttonShape")
                             .underline()
                     })
-                    .onChange(of: buttonShape) { newValue in
-                        userDefaults!.set(newValue, forKey: "buttonShape")
-                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("buttonShape-Desc-1")
@@ -64,16 +58,10 @@ struct ContentView: View {
                         Text("fontChange")
                             .font(.system(.body, design: .serif))
                     })
-                    .onChange(of: fontChange) { newValue in
-                        userDefaults!.set(newValue, forKey: "fontChange")
-                    }
                     TextField("sans-serif", text: $fontFamily)
                         .textInputAutocapitalization(.never)
                         .submitLabel(.done)
                         .accessibilityTextContentType(.sourceCode)
-                        .onChange(of: fontFamily) { entered in
-                            userDefaults!.set(fontFamily, forKey: "fontFamily")
-                        }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("fontChange-Desc-1")
@@ -97,6 +85,7 @@ struct ContentView: View {
                             .accessibilityTextContentType(.sourceCode)
                     }
                 }
+                
                 // Support Section
                 Section {
                     // Contact Link
