@@ -9,34 +9,47 @@ import SafariServices
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     
-    let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")
-    var fontFamilyFixed: String = "sans-serif"
+    let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
     
     func beginRequest(with context: NSExtensionContext) {
+        // Load settings
+        let boldText: Bool = userDefaults.bool(forKey: "boldText")
+        let buttonShape: Bool = userDefaults.bool(forKey: "buttonShape")
+        let fontChange: Bool = userDefaults.bool(forKey: "fontChange")
         
-        fontFamilyFixed = userDefaults!.string(forKey: "fontFamily") ?? "sans-serif"
-        if fontFamilyFixed == "" {
-            fontFamilyFixed = "sans-serif"
+        // Handle no settings
+        if !boldText && !buttonShape && !fontChange {
+            sendData(context: context, data: ["type" : "none"])
+            return
         }
         
-        struct Settings: Encodable {
+        // Set fontFamily
+        let fontFamily: String = userDefaults.string(forKey: "fontFamily") ?? "sans-serif"
+        let fontFamilyFixed: String = fontFamily == "" ? "sans-serif" : fontFamily
+        
+        // Create style sheet
+        var styleSheet: String = ""
+        if boldText    { styleSheet += "* { font-weight: bold !important; }" }
+        if buttonShape { styleSheet += "a, button { text-decoration: underline !important; }" }
+        if fontChange  { styleSheet += "* { font-family: \(fontFamilyFixed) !important; }" }
+        
+        struct dataSet: Encodable {
             let type: String
-            let boldText: Bool
-            let buttonShape: Bool
-            let fontChange: Bool
-            let fontFamily: String
+            let style: String
         }
         
-        let settings = Settings(
-            type: "native",
-            boldText: userDefaults!.bool(forKey: "boldText"),
-            buttonShape: userDefaults!.bool(forKey: "buttonShape"),
-            fontChange: userDefaults!.bool(forKey: "fontChange"),
-            fontFamily: fontFamilyFixed
+        let Data = dataSet(
+            type: "run",
+            style: styleSheet
         )
         
+        // Send to background.js!
+        sendData(context: context, data: Data)
+    }
+    
+    func sendData(context: NSExtensionContext, data: Encodable) {
         do {
-            let data = try JSONEncoder().encode(settings)
+            let data = try JSONEncoder().encode(data)
             let json = String(data: data, encoding: .utf8)!
             let extensionItem = NSExtensionItem()
             extensionItem.userInfo = [ SFExtensionMessageKey: json ]
