@@ -1,8 +1,6 @@
 # WebA11Y for Safari
 
-This is a Safari extension that improves web accessibility.
-
-Safari Extension
+Safari extension to improve web accessibility.
 
 ## What can this do?
 
