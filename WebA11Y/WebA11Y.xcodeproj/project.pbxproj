@@ -77,21 +77,15 @@
 				BoldText.swift,
 				ButtonShape.swift,
 				EditFont.swift,
+				Enums.swift,
 				FontChange.swift,
 			);
 			target = 9096918829668D2B009AE45F /* WebA11Y */;
 		};
-		BEBCFE0F2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				BoldText.swift,
-			);
-			target = 909691A529668D2D009AE45F /* WebA11Y Extension */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BEBCFE0D2C83607B00A5EBCB /* Intents */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEBCFE0E2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */, BEBCFE0F2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Intents; sourceTree = "<group>"; };
+		BEBCFE0D2C83607B00A5EBCB /* Intents */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEBCFE0E2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Intents; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */

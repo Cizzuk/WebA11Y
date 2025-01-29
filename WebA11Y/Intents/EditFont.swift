@@ -2,13 +2,13 @@
 //  EditFont.swift
 //  WebA11Y
 //
-//  Created by Cizzuk on 9/8/24.
+//  Created by Cizzuk on 2024/09/08.
 //
 
 import Foundation
 import AppIntents
 
-@available(iOS 16.0, macOS 13.0, watchOS 9.0, tvOS 16.0, *)
+@available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
 struct EditFont: AppIntent, CustomIntentMigratedAppIntent, PredictableIntent {
     static let intentClassName = "EditFontIntent"
 
