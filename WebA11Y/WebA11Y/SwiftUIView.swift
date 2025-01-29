@@ -134,9 +134,9 @@ struct ContentView: View {
                     Text("SupportLink")
                 } footer: {
                     HStack {
-                        Text("© Cizzuk")
-                        Spacer()
                         Text("Version: \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String)")
+                        Spacer()
+                        Text("© Cizzuk")
                     }
                 }
             }
