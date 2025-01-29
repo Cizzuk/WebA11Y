@@ -13,6 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+        
+        // Get userDefaults
+        let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
+        
+        // Save last opened version
+        userDefaults.set(currentVersion, forKey: "LastAppVer")
+        
         return true
     }
 

@@ -499,6 +499,22 @@
         }
       }
     },
+    "Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaya a Configuración → Apps → Safari → Extensiones → WebA11Y y permita la extensión."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定 → アプリ → Safari →　拡張機能 → WebA11Y から拡張機能を許可してください。"
+          }
+        }
+      }
+    },
     "Int-fontFamily" : {
       "localizations" : {
         "en" : {
@@ -517,94 +533,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "フォント名"
-          }
-        }
-      }
-    },
-    "Int-State" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "State"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Estado"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "状態"
-          }
-        }
-      }
-    },
-    "Int-Toggle" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Toggle"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activar/desactivar"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "切り替える"
-          }
-        }
-      }
-    },
-    "Int-ToggleTitle" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Operation"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Operación"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "操作"
-          }
-        }
-      }
-    },
-    "Int-Turn" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Turn"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajustar"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "変更"
           }
         }
       }
@@ -653,6 +581,38 @@
     },
     "MPL 2.0" : {
       "shouldTranslate" : false
+    },
+    "Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abra Safari, vaya a Safari → Ajustes..., seleccione la pestaña «Extensiones» y active WebA11Y."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safariを開いて、Safari → 設定… と選択して「拡張機能」タブからWebA11Yを有効にします。"
+          }
+        }
+      }
+    },
+    "Operation" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Operación"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "操作"
+          }
+        }
+      }
     },
     "PrivacyPolicyLink" : {
       "extractionState" : "manual",
@@ -882,6 +842,22 @@
         }
       }
     },
+    "State" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "状態"
+          }
+        }
+      }
+    },
     "SupportLink" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -901,6 +877,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "サポート"
+          }
+        }
+      }
+    },
+    "Toggle" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar/desactivar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切り替える"
+          }
+        }
+      }
+    },
+    "Turn" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変更"
           }
         }
       }
