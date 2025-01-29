@@ -9,8 +9,8 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>net.cizzuk.safariweba11y</string>
 				<string>com.tsg0o0.safariweba11y</string>
-				<string>tsg0o0.weba11y</string>
 				<string>weba11y</string>
 			</array>
 		</dict>
