@@ -22,6 +22,7 @@
 		909691BF29668D2D009AE45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909691A029668D2D009AE45F /* Assets.xcassets */; };
 		90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
 		90A07ED72BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
+		BE741C142D87D9C200504863 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE741C132D87D9C200504863 /* License.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		909691C929669E3A009AE45F /* WebA11Y.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebA11Y.entitlements; sourceTree = "<group>"; };
 		909691CA29669E69009AE45F /* WebA11Y Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebA11Y Extension.entitlements"; sourceTree = "<group>"; };
 		90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BE741C132D87D9C200504863 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -133,6 +135,7 @@
 				909691C929669E3A009AE45F /* WebA11Y.entitlements */,
 				9096918C29668D2B009AE45F /* AppDelegate.swift */,
 				9045942F2BAE985700CC9DBB /* SwiftUIView.swift */,
+				BE741C132D87D9C200504863 /* License.swift */,
 				909691A029668D2D009AE45F /* Assets.xcassets */,
 				909691A129668D2D009AE45F /* Info.plist */,
 			);
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE741C142D87D9C200504863 /* License.swift in Sources */,
 				9096918D29668D2B009AE45F /* AppDelegate.swift in Sources */,
 				904594302BAE985700CC9DBB /* SwiftUIView.swift in Sources */,
 			);
@@ -423,7 +427,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "WebA11Y Extension/WebA11Y Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = Z8R89S24YT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WebA11Y Extension/Info.plist";
@@ -435,7 +439,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -459,7 +463,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "WebA11Y Extension/WebA11Y Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = Z8R89S24YT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WebA11Y Extension/Info.plist";
@@ -471,7 +475,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -498,7 +502,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WebA11Y/WebA11Y.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = Z8R89S24YT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebA11Y/Info.plist;
@@ -511,7 +515,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -539,7 +543,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WebA11Y/WebA11Y.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = Z8R89S24YT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebA11Y/Info.plist;
@@ -552,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
