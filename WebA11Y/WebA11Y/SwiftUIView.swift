@@ -102,8 +102,6 @@ struct ContentView: View {
                             Image(systemName: "message")
                                 .frame(width: 20.0)
                             Text("ContactLink")
-                            Spacer()
-                            Image(systemName: "chevron.right")
                         }
                     })
                     // Privacy Policy
@@ -112,30 +110,25 @@ struct ContentView: View {
                             Image(systemName: "hand.raised")
                                 .frame(width: 20.0)
                             Text("PrivacyPolicyLink")
-                            Spacer()
-                            Image(systemName: "chevron.right")
                         }
                     })
                     // License Link
-                    Link(destination:URL(string: "https://www.mozilla.org/en-US/MPL/2.0/")!, label: {
+                    NavigationLink {
+                        LicenseView()
+                    } label: {
                         HStack {
                             Image(systemName: "book.closed")
                                 .frame(width: 20.0)
-                            Text("LicenseLink")
-                            Spacer()
-                            Text("MPL 2.0")
-                            Image(systemName: "chevron.right")
+                            Text("License")
                         }
-                    })
+                        .foregroundColor(.accentColor)
+                    }
                     // GitHub Source Link
                     Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
                         HStack {
                             Image(systemName: "ladybug")
                                 .frame(width: 20.0)
                             Text("SourceLink")
-                            Spacer()
-                            Text("GitHub")
-                            Image(systemName: "chevron.right")
                         }
                     })
                 } header: {
