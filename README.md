@@ -26,7 +26,7 @@ Change the font.
 
 ## License
 
-This software is licensed under the terms of the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
+This application is licensed under the [MIT License](https://github.com/Cizzuk/WebA11Y/blob/main/LICENSE).
 
 ## Tip
 
