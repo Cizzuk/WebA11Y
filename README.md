@@ -20,9 +20,9 @@ Change the font.
 
 ## Install
 
-### App Store
-
 [Download on the App Store](https://apps.apple.com/app/weba11y/id6445839110)
+
+[AltStore PAL Source](https://i.cizzuk.net/altstore/source.pal.json)
 
 ## License
 
