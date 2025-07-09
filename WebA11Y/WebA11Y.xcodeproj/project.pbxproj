@@ -22,6 +22,7 @@
 		909691BF29668D2D009AE45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909691A029668D2D009AE45F /* Assets.xcassets */; };
 		90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
 		90A07ED72BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
+		BE502AEB2E1E90E100CF6350 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = BE502AEA2E1E90E100CF6350 /* AppIcon.icon */; };
 		BE741C142D87D9C200504863 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE741C132D87D9C200504863 /* License.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		909691C929669E3A009AE45F /* WebA11Y.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebA11Y.entitlements; sourceTree = "<group>"; };
 		909691CA29669E69009AE45F /* WebA11Y Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebA11Y Extension.entitlements"; sourceTree = "<group>"; };
 		90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BE502AEA2E1E90E100CF6350 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		BE741C132D87D9C200504863 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				9045942F2BAE985700CC9DBB /* SwiftUIView.swift */,
 				BE741C132D87D9C200504863 /* License.swift */,
 				909691A029668D2D009AE45F /* Assets.xcassets */,
+				BE502AEA2E1E90E100CF6350 /* AppIcon.icon */,
 				909691A129668D2D009AE45F /* Info.plist */,
 			);
 			path = WebA11Y;
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */,
+				BE502AEB2E1E90E100CF6350 /* AppIcon.icon in Resources */,
 				909691BF29668D2D009AE45F /* Assets.xcassets in Resources */,
 				904594322BAEACBC00CC9DBB /* Localizable.xcstrings in Resources */,
 			);
