@@ -129,7 +129,7 @@ struct ContentView: View {
                     Text("SupportLink")
                 } footer: {
                     HStack {
-                        Text("Version: \(String(describing: currentVersion))")
+                        Text("Version: \(currentVersion!)")
                         Spacer()
                         Text("© Cizzuk")
                     }
