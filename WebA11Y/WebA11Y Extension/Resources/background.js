@@ -2,6 +2,11 @@
 
 browser.runtime.onMessage.addListener((request, sender) => { insertCSS(sender.tab.id); });
 browser.tabs.onActivated.addListener((tabData) => { insertCSS(tabData.tabId); });
+browser.tabs.onUpdated.addListener((tabId, changeInfo) => {
+    if (changeInfo.status === 'complete' || changeInfo.url) {
+        insertCSS(tabId);
+    }
+});
 
 function insertCSS(tabId) {
     browser.runtime.sendNativeMessage("com.tsg0o0.safariweba11y.Extension", function(response) {
