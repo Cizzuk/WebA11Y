@@ -100,6 +100,14 @@ struct ContentView: View {
                             Text("ContactLink")
                         }
                     })
+                    // GitHub Source Link
+                    Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
+                        HStack {
+                            Image(systemName: "ladybug")
+                                .frame(width: 20.0)
+                            Text("SourceLink")
+                        }
+                    })
                     // Privacy Policy
                     Link(destination:URL(string: "https://i.cizzuk.net/privacy/")!, label: {
                         HStack {
@@ -117,14 +125,6 @@ struct ContentView: View {
                         }
                         .foregroundColor(.accentColor)
                     }
-                    // GitHub Source Link
-                    Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
-                        HStack {
-                            Image(systemName: "ladybug")
-                                .frame(width: 20.0)
-                            Text("SourceLink")
-                        }
-                    })
                 } header: {
                     Text("SupportLink")
                 } footer: {
