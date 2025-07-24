@@ -483,23 +483,6 @@
         }
       }
     },
-    "GitHub" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "GitHub"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "GitHub"
-          }
-        }
-      }
-    },
     "Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension." : {
       "localizations" : {
         "es" : {
