@@ -123,7 +123,9 @@ struct ContentView: View {
                                 .frame(width: 20.0)
                             Text("License")
                         }
+                        #if !os(visionOS)
                         .foregroundColor(.accentColor)
+                        #endif
                     }
                 } header: {
                     Text("SupportLink")
