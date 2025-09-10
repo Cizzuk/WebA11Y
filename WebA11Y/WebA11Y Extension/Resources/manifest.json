@@ -2,23 +2,19 @@
     "manifest_version": 3,
     "default_locale": "en",
 
-    "name": "WebA11Y",
-    "description": "Improves web accessibility",
-    "version": "2.3",
+    "name": "__MSG_extension_name__",
+    "description": "__MSG_extension_description__",
+    "version": "3.0",
 
     "icons": {
-        "48": "images/icon-48.png",
-        "96": "images/icon-96.png",
-        "128": "images/icon-128.png",
-        "256": "images/icon-256.png",
         "512": "images/icon-512.png"
     },
 
     "background": {
-        "service_worker": "background.js",
+        "scripts": ["background.js"],
         "persistent": false
     },
-
+    
     "content_scripts": [{
         "js": [ "content.js" ],
         "run_at": "document_start",
@@ -37,5 +33,7 @@
         }
     },
 
-    "permissions": [ "nativeMessaging" ]
+    "permissions": [ "nativeMessaging", "scripting" ],
+    
+    "host_permissions": [ "<all_urls>" ]
 }

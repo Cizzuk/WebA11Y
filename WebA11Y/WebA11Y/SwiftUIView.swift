@@ -18,15 +18,11 @@ struct MainView: App {
 }
 
 struct ContentView: View {
-    
-    let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")
-    @AppStorage("boldText", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var boldText: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "boldText")
-    
-    @AppStorage("buttonShape", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var buttonShape: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "buttonShape")
-    
-    @AppStorage("fontChange", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var fontChange: Bool = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.bool(forKey: "fontChange")
-    
-    @AppStorage("fontFamily", store: UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")) var fontFamily: String = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.string(forKey: "fontFamily") ?? "sans-serif"
+    // Load app settings
+    @AppStorage("boldText", store: userDefaults) var boldText: Bool = false
+    @AppStorage("buttonShape", store: userDefaults) var buttonShape: Bool = false
+    @AppStorage("fontChange", store: userDefaults) var fontChange: Bool = false
+    @AppStorage("fontFamily", store: userDefaults) var fontFamily: String = "sans-serif"
     
     var body: some View {
         NavigationView {
@@ -40,10 +36,10 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    Toggle(isOn: $boldText, label: {
+                    Toggle(isOn: $boldText) {
                         Text("boldText")
                             .bold()
-                    })
+                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("boldText-Desc-1")
@@ -51,10 +47,10 @@ struct ContentView: View {
                     }
                 }
                 Section {
-                    Toggle(isOn: $buttonShape, label: {
+                    Toggle(isOn: $buttonShape) {
                         Text("buttonShape")
                             .underline()
-                    })
+                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("buttonShape-Desc-1")
@@ -62,10 +58,10 @@ struct ContentView: View {
                     }
                 }
                 Section {
-                    Toggle(isOn: $fontChange, label: {
+                    Toggle(isOn: $fontChange) {
                         Text("fontChange")
                             .font(.system(.body, design: .serif))
-                    })
+                    }
                     TextField("sans-serif", text: $fontFamily)
                         .textInputAutocapitalization(.never)
                         .submitLabel(.done)
@@ -104,6 +100,14 @@ struct ContentView: View {
                             Text("ContactLink")
                         }
                     })
+                    // GitHub Source Link
+                    Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
+                        HStack {
+                            Image(systemName: "ladybug")
+                                .frame(width: 20.0)
+                            Text("SourceLink")
+                        }
+                    })
                     // Privacy Policy
                     Link(destination:URL(string: "https://i.cizzuk.net/privacy/")!, label: {
                         HStack {
@@ -113,29 +117,21 @@ struct ContentView: View {
                         }
                     })
                     // License Link
-                    NavigationLink {
-                        LicenseView()
-                    } label: {
+                    NavigationLink(destination: LicenseView()) {
                         HStack {
                             Image(systemName: "book.closed")
                                 .frame(width: 20.0)
                             Text("License")
                         }
+                        #if !os(visionOS)
                         .foregroundColor(.accentColor)
+                        #endif
                     }
-                    // GitHub Source Link
-                    Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
-                        HStack {
-                            Image(systemName: "ladybug")
-                                .frame(width: 20.0)
-                            Text("SourceLink")
-                        }
-                    })
                 } header: {
                     Text("SupportLink")
                 } footer: {
                     HStack {
-                        Text("Version: \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String)")
+                        Text("Version: \(currentVersion ?? "Unknown")")
                         Spacer()
                         Text("© Cizzuk")
                     }
