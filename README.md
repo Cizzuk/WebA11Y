@@ -2,7 +2,7 @@
 
 Safari extension to improve web accessibility.
 
-[Download on the App Store](https://apps.apple.com/app/weba11y/id6445839110)
+**[Download on the App Store](https://apps.apple.com/app/weba11y/id6445839110)**
 
 [AltStore PAL Source](https://api.altstore.io/source/i.cizzuk.net/altstore/source.pal.json?app=com.tsg0o0.safariweba11y)
 
