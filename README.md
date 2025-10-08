@@ -2,7 +2,11 @@
 
 Safari extension to improve web accessibility.
 
-## What can this do?
+**[Download on the App Store](https://apps.apple.com/app/weba11y/id6445839110)**
+
+[AltStore PAL Source](https://api.altstore.io/source/i.cizzuk.net/altstore/source.pal.json?app=com.tsg0o0.safariweba11y)
+
+## Features
 
 Make the following changes to the website
 
@@ -17,12 +21,6 @@ Underlines links and buttons.
 ### Font Change
 
 Change the font.
-
-## Install
-
-[Download on the App Store](https://apps.apple.com/app/weba11y/id6445839110)
-
-[AltStore PAL Source](https://i.cizzuk.net/altstore/source.pal.json)
 
 ## License
 
