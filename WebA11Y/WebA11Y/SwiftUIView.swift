@@ -94,35 +94,19 @@ struct ContentView: View {
                 Section {
                     // Contact Link
                     Link(destination:URL(string: "https://cizzuk.net/contact/")!, label: {
-                        HStack {
-                            Image(systemName: "message")
-                                .frame(width: 20.0)
-                            Text("ContactLink")
-                        }
+                        IconLabel(icon: "message", text: "ContactLink")
                     })
                     // GitHub Source Link
                     Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
-                        HStack {
-                            Image(systemName: "ladybug")
-                                .frame(width: 20.0)
-                            Text("SourceLink")
-                        }
+                        IconLabel(icon: "ladybug", text: "SourceLink")
                     })
                     // Privacy Policy
                     Link(destination:URL(string: "https://i.cizzuk.net/privacy/")!, label: {
-                        HStack {
-                            Image(systemName: "hand.raised")
-                                .frame(width: 20.0)
-                            Text("PrivacyPolicyLink")
-                        }
+                        IconLabel(icon: "hand.raised", text: "PrivacyPolicyLink")
                     })
                     // License Link
                     NavigationLink(destination: LicenseView()) {
-                        HStack {
-                            Image(systemName: "book.closed")
-                                .frame(width: 20.0)
-                            Text("License")
-                        }
+                        IconLabel(icon: "book.closed", text: "License")
                         #if !os(visionOS)
                         .foregroundColor(.accentColor)
                         #endif
@@ -141,5 +125,23 @@ struct ContentView: View {
             .navigationTitle("WebA11YSetting")
         }
         .navigationViewStyle(.stack)
+    }
+}
+
+struct IconLabel: View {
+    @Environment(\.dynamicTypeSize) var dynamicTypeSize
+    
+    let icon: String
+    let text: String.LocalizationValue
+    
+    var body: some View {
+        HStack {
+            if dynamicTypeSize <= .xxxLarge {
+                Image(systemName: icon)
+                    .frame(width: 20.0, alignment: .center)
+                Spacer().frame(width: 10.0)
+            }
+            Text(String(localized: text))
+        }
     }
 }
