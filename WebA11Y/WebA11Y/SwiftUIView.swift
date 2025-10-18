@@ -28,11 +28,11 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section {} footer: {
-                    if ProcessInfo.processInfo.isMacCatalystApp {
+                    #if targetEnvironment(macCatalyst)
                         Text("Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y.")
-                    } else {
+                    #else
                         Text("Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension.")
-                    }
+                    #endif
                 }
                 
                 Section {
