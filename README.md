@@ -25,7 +25,3 @@ Change the font.
 ## License
 
 This application is licensed under the [MIT License](https://github.com/Cizzuk/WebA11Y/blob/main/LICENSE).
-
-## Tip
-
-Do you like it? please [send me a tip](https://cizzuk.net/tip/)!

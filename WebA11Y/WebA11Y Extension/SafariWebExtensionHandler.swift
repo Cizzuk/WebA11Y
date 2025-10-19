@@ -30,7 +30,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         // Create style sheet
         var styleSheet: String = ""
         if boldText    { styleSheet += "* { font-weight: bold !important; }" }
-        if buttonShape { styleSheet += "a, button { text-decoration: underline !important; }" }
+        if buttonShape { styleSheet += "a, button, input[type=\"button\"], input[type=\"submit\"], input[type=\"reset\"] { text-decoration: underline !important; }" }
         if fontChange  { styleSheet += "* { font-family: \(fontFamilyFixed) !important; }" }
         
         struct dataSet: Encodable {
