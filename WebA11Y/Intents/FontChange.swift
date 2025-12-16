@@ -7,6 +7,9 @@
 
 import Foundation
 import AppIntents
+#if !os(visionOS)
+import WidgetKit
+#endif
 
 @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
 struct FontChange: AppIntent, CustomIntentMigratedAppIntent {
@@ -43,6 +46,12 @@ struct FontChange: AppIntent, CustomIntentMigratedAppIntent {
         }
         
         userDefaults.set(fontChange, forKey: "fontChange")
+        
+        #if !os(visionOS)
+        if #available(iOS 18.0, macOS 26, *) {
+            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
+        }
+        #endif
         
         return .result()
     }

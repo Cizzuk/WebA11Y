@@ -1,6 +1,17 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ (%2$@)"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
     "%@ Bold Text %@ on the Web" : {
       "localizations" : {
         "en" : {
@@ -115,9 +126,6 @@
         }
       }
     },
-    "© Cizzuk" : {
-      "shouldTranslate" : false
-    },
     "${toggle} Bold Text ${state} on the Web" : {
       "localizations" : {
         "es" : {
@@ -210,6 +218,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Webで「フォントを変更」を${toggle}"
+          }
+        }
+      }
+    },
+    "About" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "情報"
           }
         }
       }
@@ -352,6 +376,9 @@
         }
       }
     },
+    "Cizzuk" : {
+      "shouldTranslate" : false
+    },
     "ContactLink" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -371,6 +398,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "問い合わせ"
+          }
+        }
+      }
+    },
+    "Developer" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desarrollador"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開発者"
           }
         }
       }
@@ -582,6 +625,38 @@
         }
       }
     },
+    "Off" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オフ"
+          }
+        }
+      }
+    },
+    "On" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オン"
+          }
+        }
+      }
+    },
     "Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y." : {
       "localizations" : {
         "es" : {
@@ -614,15 +689,8 @@
         }
       }
     },
-    "PrivacyPolicyLink" : {
-      "extractionState" : "manual",
+    "Privacy Policy" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Privacy Policy"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -819,15 +887,8 @@
         }
       }
     },
-    "SourceLink" : {
-      "extractionState" : "manual",
+    "Source" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Source"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -913,51 +974,24 @@
         }
       }
     },
-    "Version: %@" : {
-      "extractionState" : "manual",
+    "Version" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Version: %@"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Versión: %@"
+            "value" : "Versión"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "バージョン: %@"
+            "value" : "バージョン"
           }
         }
       }
     },
-    "WebA11YSetting" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "WebA11Y"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "WebA11Y"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "WebA11Y"
-          }
-        }
-      }
+    "WebA11Y" : {
+      "shouldTranslate" : false
     }
   },
   "version" : "1.0"

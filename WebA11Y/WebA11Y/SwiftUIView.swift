@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+#if !os(visionOS)
+import WidgetKit
+#endif
 
 @main
 struct MainView: App {
@@ -40,6 +43,13 @@ struct ContentView: View {
                         Text("boldText")
                             .bold()
                     }
+                    .onChange(of: boldText) { _ in
+                        #if !os(visionOS)
+                        if #available(iOS 18.0, macOS 26, *) {
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.boldText")
+                        }
+                        #endif
+                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("boldText-Desc-1")
@@ -51,6 +61,13 @@ struct ContentView: View {
                         Text("buttonShape")
                             .underline()
                     }
+                    .onChange(of: buttonShape) { _ in
+                        #if !os(visionOS)
+                        if #available(iOS 18.0, macOS 26, *) {
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.buttonShape")
+                        }
+                        #endif
+                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("buttonShape-Desc-1")
@@ -61,6 +78,13 @@ struct ContentView: View {
                     Toggle(isOn: $fontChange) {
                         Text("fontChange")
                             .font(.system(.body, design: .serif))
+                    }
+                    .onChange(of: fontChange) { _ in
+                        #if !os(visionOS)
+                        if #available(iOS 18.0, macOS 26, *) {
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
+                        }
+                        #endif
                     }
                     TextField("sans-serif", text: $fontFamily)
                         .textInputAutocapitalization(.never)
@@ -92,37 +116,13 @@ struct ContentView: View {
                 
                 // Support Section
                 Section {
-                    // Contact Link
-                    Link(destination:URL(string: "https://cizzuk.net/contact/")!, label: {
-                        IconLabel(icon: "message", text: "ContactLink")
-                    })
-                    // GitHub Source Link
-                    Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
-                        IconLabel(icon: "ladybug", text: "SourceLink")
-                    })
-                    // Privacy Policy
-                    Link(destination:URL(string: "https://i.cizzuk.net/privacy/")!, label: {
-                        IconLabel(icon: "hand.raised", text: "PrivacyPolicyLink")
-                    })
-                    // License Link
-                    NavigationLink(destination: LicenseView()) {
-                        IconLabel(icon: "book.closed", text: "License")
-                        #if !os(visionOS)
-                        .foregroundColor(.accentColor)
-                        #endif
-                    }
-                } header: {
-                    Text("SupportLink")
-                } footer: {
-                    HStack {
-                        Text("Version: \(currentVersion ?? "Unknown")")
-                        Spacer()
-                        Text("© Cizzuk")
+                    NavigationLink(destination: AboutView()) {
+                        Text("About")
                     }
                 }
             }
             .listStyle(.insetGrouped)
-            .navigationTitle("WebA11YSetting")
+            .navigationTitle("WebA11Y")
         }
         .navigationViewStyle(.stack)
     }
