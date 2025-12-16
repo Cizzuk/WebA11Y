@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+#if !os(visionOS)
+import WidgetKit
+#endif
 
 @main
 struct MainView: App {
@@ -40,6 +43,13 @@ struct ContentView: View {
                         Text("boldText")
                             .bold()
                     }
+                    .onChange(of: boldText) { _ in
+                        #if !os(visionOS)
+                        if #available(iOS 18.0, macOS 26, *) {
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.boldText")
+                        }
+                        #endif
+                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("boldText-Desc-1")
@@ -51,6 +61,13 @@ struct ContentView: View {
                         Text("buttonShape")
                             .underline()
                     }
+                    .onChange(of: buttonShape) { _ in
+                        #if !os(visionOS)
+                        if #available(iOS 18.0, macOS 26, *) {
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.buttonShape")
+                        }
+                        #endif
+                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("buttonShape-Desc-1")
@@ -61,6 +78,13 @@ struct ContentView: View {
                     Toggle(isOn: $fontChange) {
                         Text("fontChange")
                             .font(.system(.body, design: .serif))
+                    }
+                    .onChange(of: fontChange) { _ in
+                        #if !os(visionOS)
+                        if #available(iOS 18.0, macOS 26, *) {
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
+                        }
+                        #endif
                     }
                     TextField("sans-serif", text: $fontFamily)
                         .textInputAutocapitalization(.never)

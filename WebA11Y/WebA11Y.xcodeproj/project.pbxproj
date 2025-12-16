@@ -7,22 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		904594302BAE985700CC9DBB /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9045942F2BAE985700CC9DBB /* SwiftUIView.swift */; };
 		904594322BAEACBC00CC9DBB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 904594312BAEACBC00CC9DBB /* Localizable.xcstrings */; };
-		9096918D29668D2B009AE45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096918C29668D2B009AE45F /* AppDelegate.swift */; };
 		909691A729668D2D009AE45F /* WebA11Y Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 909691A629668D2D009AE45F /* WebA11Y Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		909691AC29668D2D009AE45F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909691AB29668D2D009AE45F /* SafariWebExtensionHandler.swift */; };
-		909691AF29668D2D009AE45F /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 909691AE29668D2D009AE45F /* _locales */; };
-		909691B129668D2D009AE45F /* images in Resources */ = {isa = PBXBuildFile; fileRef = 909691B029668D2D009AE45F /* images */; };
-		909691B329668D2D009AE45F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 909691B229668D2D009AE45F /* manifest.json */; };
-		909691B529668D2D009AE45F /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 909691B429668D2D009AE45F /* background.js */; };
-		909691B929668D2D009AE45F /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 909691B829668D2D009AE45F /* popup.html */; };
-		909691BF29668D2D009AE45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909691A029668D2D009AE45F /* Assets.xcassets */; };
 		90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
 		90A07ED72BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
-		BE502AEB2E1E90E100CF6350 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = BE502AEA2E1E90E100CF6350 /* AppIcon.icon */; };
-		BE502AEF2E1EA97A00CF6350 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = BE502AEE2E1EA97A00CF6350 /* content.js */; };
-		BE741C142D87D9C200504863 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE741C132D87D9C200504863 /* License.swift */; };
+		BEACDDC42EF0EC0700C4C273 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEACDDC32EF0EC0700C4C273 /* WidgetKit.framework */; };
+		BEACDDC62EF0EC0700C4C273 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEACDDC52EF0EC0700C4C273 /* SwiftUI.framework */; };
+		BEACDDD12EF0EC0800C4C273 /* WebA11Y CCWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */; platformFilters = (ios, maccatalyst, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEACDE002EF0EFEB00C4C273 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 904594312BAEACBC00CC9DBB /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +25,13 @@
 			remoteGlobalIDString = 909691A529668D2D009AE45F;
 			remoteInfo = "WebA11Y Extension";
 		};
+		BEACDDCF2EF0EC0800C4C273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9096918129668D2B009AE45F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEACDDC02EF0EC0700C4C273;
+			remoteInfo = "WebA11Y CCWidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				BEACDDD12EF0EC0800C4C273 /* WebA11Y CCWidgetExtension.appex in Embed Foundation Extensions */,
 				909691A729668D2D009AE45F /* WebA11Y Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -50,29 +50,38 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9045942F2BAE985700CC9DBB /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		904594312BAEACBC00CC9DBB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9096918929668D2B009AE45F /* WebA11Y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebA11Y.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9096918C29668D2B009AE45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		909691A029668D2D009AE45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		909691A129668D2D009AE45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909691A629668D2D009AE45F /* WebA11Y Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebA11Y Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		909691AB29668D2D009AE45F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		909691AE29668D2D009AE45F /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
-		909691B029668D2D009AE45F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
-		909691B229668D2D009AE45F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		909691B429668D2D009AE45F /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		909691B829668D2D009AE45F /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		909691BE29668D2D009AE45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		909691C929669E3A009AE45F /* WebA11Y.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebA11Y.entitlements; sourceTree = "<group>"; };
-		909691CA29669E69009AE45F /* WebA11Y Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebA11Y Extension.entitlements"; sourceTree = "<group>"; };
 		90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		BE502AEA2E1E90E100CF6350 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
-		BE502AEE2E1EA97A00CF6350 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		BE741C132D87D9C200504863 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebA11Y CCWidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEACDDC32EF0EC0700C4C273 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BEACDDC52EF0EC0700C4C273 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BEACDDFB2EF0EDD900C4C273 /* WebA11Y CCWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebA11Y CCWidgetExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BEACDDD52EF0EC0800C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BEACDDC02EF0EC0700C4C273 /* WebA11Y CCWidgetExtension */;
+		};
+		BEACDDE42EF0EC5D00C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9096918829668D2B009AE45F /* WebA11Y */;
+		};
+		BEACDDF82EF0EC6000C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 909691A529668D2D009AE45F /* WebA11Y Extension */;
+		};
 		BEBCFE0E2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -87,6 +96,9 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		BEACDDC72EF0EC0700C4C273 /* WebA11Y CCWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEACDDD52EF0EC0800C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "WebA11Y CCWidget"; sourceTree = "<group>"; };
+		BEACDDDD2EF0EC5D00C4C273 /* WebA11Y */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEACDDE42EF0EC5D00C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = WebA11Y; sourceTree = "<group>"; };
+		BEACDDEF2EF0EC6000C4C273 /* WebA11Y Extension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEACDDF82EF0EC6000C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (Resources/_locales, Resources/images, ); path = "WebA11Y Extension"; sourceTree = "<group>"; };
 		BEBCFE0D2C83607B00A5EBCB /* Intents */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEBCFE0E2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Intents; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -105,17 +117,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEACDDBE2EF0EC0700C4C273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEACDDC62EF0EC0700C4C273 /* SwiftUI.framework in Frameworks */,
+				BEACDDC42EF0EC0700C4C273 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9096918029668D2B009AE45F = {
 			isa = PBXGroup;
 			children = (
+				BEACDDFB2EF0EDD900C4C273 /* WebA11Y CCWidgetExtension.entitlements */,
 				BEBCFE0D2C83607B00A5EBCB /* Intents */,
 				90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */,
 				904594312BAEACBC00CC9DBB /* Localizable.xcstrings */,
-				9096918B29668D2B009AE45F /* WebA11Y */,
-				909691AA29668D2D009AE45F /* WebA11Y Extension */,
+				BEACDDDD2EF0EC5D00C4C273 /* WebA11Y */,
+				BEACDDEF2EF0EC6000C4C273 /* WebA11Y Extension */,
+				BEACDDC72EF0EC0700C4C273 /* WebA11Y CCWidget */,
+				BEACDDC22EF0EC0700C4C273 /* Frameworks */,
 				9096918A29668D2B009AE45F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,46 +149,18 @@
 			children = (
 				9096918929668D2B009AE45F /* WebA11Y.app */,
 				909691A629668D2D009AE45F /* WebA11Y Extension.appex */,
+				BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9096918B29668D2B009AE45F /* WebA11Y */ = {
+		BEACDDC22EF0EC0700C4C273 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				909691C929669E3A009AE45F /* WebA11Y.entitlements */,
-				9096918C29668D2B009AE45F /* AppDelegate.swift */,
-				9045942F2BAE985700CC9DBB /* SwiftUIView.swift */,
-				BE741C132D87D9C200504863 /* License.swift */,
-				909691A029668D2D009AE45F /* Assets.xcassets */,
-				BE502AEA2E1E90E100CF6350 /* AppIcon.icon */,
-				909691A129668D2D009AE45F /* Info.plist */,
+				BEACDDC32EF0EC0700C4C273 /* WidgetKit.framework */,
+				BEACDDC52EF0EC0700C4C273 /* SwiftUI.framework */,
 			);
-			path = WebA11Y;
-			sourceTree = "<group>";
-		};
-		909691AA29668D2D009AE45F /* WebA11Y Extension */ = {
-			isa = PBXGroup;
-			children = (
-				909691CA29669E69009AE45F /* WebA11Y Extension.entitlements */,
-				909691AB29668D2D009AE45F /* SafariWebExtensionHandler.swift */,
-				909691BE29668D2D009AE45F /* Info.plist */,
-				909691AD29668D2D009AE45F /* Resources */,
-			);
-			path = "WebA11Y Extension";
-			sourceTree = "<group>";
-		};
-		909691AD29668D2D009AE45F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				909691AE29668D2D009AE45F /* _locales */,
-				909691B029668D2D009AE45F /* images */,
-				909691B229668D2D009AE45F /* manifest.json */,
-				909691B429668D2D009AE45F /* background.js */,
-				BE502AEE2E1EA97A00CF6350 /* content.js */,
-				909691B829668D2D009AE45F /* popup.html */,
-			);
-			path = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +179,10 @@
 			);
 			dependencies = (
 				909691A929668D2D009AE45F /* PBXTargetDependency */,
+				BEACDDD02EF0EC0800C4C273 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BEACDDDD2EF0EC5D00C4C273 /* WebA11Y */,
 			);
 			name = WebA11Y;
 			productName = WebA11Y;
@@ -201,9 +201,34 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				BEACDDEF2EF0EC6000C4C273 /* WebA11Y Extension */,
+			);
 			name = "WebA11Y Extension";
 			productName = "WebA11Y Extension";
 			productReference = 909691A629668D2D009AE45F /* WebA11Y Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BEACDDC02EF0EC0700C4C273 /* WebA11Y CCWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEACDDD22EF0EC0800C4C273 /* Build configuration list for PBXNativeTarget "WebA11Y CCWidgetExtension" */;
+			buildPhases = (
+				BEACDDBD2EF0EC0700C4C273 /* Sources */,
+				BEACDDBE2EF0EC0700C4C273 /* Frameworks */,
+				BEACDDBF2EF0EC0700C4C273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BEACDDC72EF0EC0700C4C273 /* WebA11Y CCWidget */,
+			);
+			name = "WebA11Y CCWidgetExtension";
+			packageProductDependencies = (
+			);
+			productName = "WebA11Y CCWidgetExtension";
+			productReference = BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +238,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					9096918829668D2B009AE45F = {
@@ -221,6 +246,9 @@
 					};
 					909691A529668D2D009AE45F = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					BEACDDC02EF0EC0700C4C273 = {
+						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
@@ -241,6 +269,7 @@
 			targets = (
 				9096918829668D2B009AE45F /* WebA11Y */,
 				909691A529668D2D009AE45F /* WebA11Y Extension */,
+				BEACDDC02EF0EC0700C4C273 /* WebA11Y CCWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -251,8 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */,
-				BE502AEB2E1E90E100CF6350 /* AppIcon.icon in Resources */,
-				909691BF29668D2D009AE45F /* Assets.xcassets in Resources */,
 				904594322BAEACBC00CC9DBB /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,13 +288,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909691B529668D2D009AE45F /* background.js in Resources */,
-				909691B929668D2D009AE45F /* popup.html in Resources */,
-				909691B129668D2D009AE45F /* images in Resources */,
-				909691B329668D2D009AE45F /* manifest.json in Resources */,
-				909691AF29668D2D009AE45F /* _locales in Resources */,
-				BE502AEF2E1EA97A00CF6350 /* content.js in Resources */,
 				90A07ED72BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEACDDBF2EF0EC0700C4C273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEACDE002EF0EFEB00C4C273 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE741C142D87D9C200504863 /* License.swift in Sources */,
-				9096918D29668D2B009AE45F /* AppDelegate.swift in Sources */,
-				904594302BAE985700CC9DBB /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909691AC29668D2D009AE45F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEACDDBD2EF0EC0700C4C273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +331,15 @@
 			isa = PBXTargetDependency;
 			target = 909691A529668D2D009AE45F /* WebA11Y Extension */;
 			targetProxy = 909691A829668D2D009AE45F /* PBXContainerItemProxy */;
+		};
+		BEACDDD02EF0EC0800C4C273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilters = (
+				ios,
+				maccatalyst,
+			);
+			target = BEACDDC02EF0EC0700C4C273 /* WebA11Y CCWidgetExtension */;
+			targetProxy = BEACDDCF2EF0EC0800C4C273 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -432,7 +473,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "WebA11Y Extension/WebA11Y Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 15;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +486,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -469,7 +510,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "WebA11Y Extension/WebA11Y Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 15;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -482,7 +523,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -508,7 +549,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WebA11Y/WebA11Y.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 15;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -522,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -549,7 +590,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WebA11Y/WebA11Y.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 15;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -563,7 +604,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -580,6 +621,107 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		BEACDDD32EF0EC0800C4C273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "WebA11Y CCWidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 15;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WebA11Y CCWidget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y CCWidget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 3.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.safariweba11y.CCWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = xros;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		BEACDDD42EF0EC0800C4C273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "WebA11Y CCWidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 15;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WebA11Y CCWidget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y CCWidget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 3.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.safariweba11y.CCWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = xros;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
 		};
@@ -609,6 +751,15 @@
 			buildConfigurations = (
 				909691C729668D2D009AE45F /* Debug */,
 				909691C829668D2D009AE45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEACDDD22EF0EC0800C4C273 /* Build configuration list for PBXNativeTarget "WebA11Y CCWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEACDDD32EF0EC0800C4C273 /* Debug */,
+				BEACDDD42EF0EC0800C4C273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
