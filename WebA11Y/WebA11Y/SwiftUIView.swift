@@ -92,37 +92,13 @@ struct ContentView: View {
                 
                 // Support Section
                 Section {
-                    // Contact Link
-                    Link(destination:URL(string: "https://cizzuk.net/contact/")!, label: {
-                        IconLabel(icon: "message", text: "ContactLink")
-                    })
-                    // GitHub Source Link
-                    Link(destination:URL(string: "https://github.com/Cizzuk/WebA11Y")!, label: {
-                        IconLabel(icon: "ladybug", text: "SourceLink")
-                    })
-                    // Privacy Policy
-                    Link(destination:URL(string: "https://i.cizzuk.net/privacy/")!, label: {
-                        IconLabel(icon: "hand.raised", text: "PrivacyPolicyLink")
-                    })
-                    // License Link
-                    NavigationLink(destination: LicenseView()) {
-                        IconLabel(icon: "book.closed", text: "License")
-                        #if !os(visionOS)
-                        .foregroundColor(.accentColor)
-                        #endif
-                    }
-                } header: {
-                    Text("SupportLink")
-                } footer: {
-                    HStack {
-                        Text("Version: \(currentVersion ?? "Unknown")")
-                        Spacer()
-                        Text("© Cizzuk")
+                    NavigationLink(destination: AboutView()) {
+                        Text("About")
                     }
                 }
             }
             .listStyle(.insetGrouped)
-            .navigationTitle("WebA11YSetting")
+            .navigationTitle("WebA11Y")
         }
         .navigationViewStyle(.stack)
     }
