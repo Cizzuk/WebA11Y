@@ -1,5 +1,5 @@
 //
-//  CCBoldText.swift
+//  CCFontChange.swift
 //  WebA11Y
 //
 //  Created by Cizzuk on 2025/12/16.
@@ -16,14 +16,14 @@ struct CCFontChange: ControlWidget {
             provider: Provider()
         ) { value in
             ControlWidgetToggle(
-                "fontChange",
+                "Font Change",
                 isOn: value,
                 action: CCFontChangeIntent()
             ) { isRunning in
-                Label(isRunning ? "On" : "Off", systemImage: "textformat.characters")
+                Label(isRunning ? "On" : "Off", systemImage: "textformat")
             }
         }
-        .displayName("fontChange")
+        .displayName("Font Change")
     }
 }
 
@@ -38,10 +38,10 @@ extension CCFontChange {
 }
 
 struct CCFontChangeIntent: SetValueIntent {
-    static let title: LocalizedStringResource = "fontChange"
+    static let title: LocalizedStringResource = "Font Change"
     static var isDiscoverable: Bool = false
 
-    @Parameter(title: "fontChange", default: false)
+    @Parameter(title: "Font Change", default: false)
     var value: Bool
 
     func perform() async throws -> some IntentResult {

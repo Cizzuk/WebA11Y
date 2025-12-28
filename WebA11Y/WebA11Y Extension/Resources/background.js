@@ -21,7 +21,7 @@ const insertCSS = (tabId) => {
             target: {
                 tabId: tabId,
             },
-            origin: "author",
+            origin: "USER",
             css: resData.style,
         })
         .then(() => {

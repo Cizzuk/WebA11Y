@@ -14,5 +14,6 @@ struct CCWidgetBundle: WidgetBundle {
         CCBoldText()
         CCButtonShape()
         CCFontChange()
+        CCInsertCSS()
     }
 }

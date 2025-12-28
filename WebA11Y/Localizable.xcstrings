@@ -20,12 +20,6 @@
             "value" : "%1$@ Bold Text %2$@ on the Web"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%2$@ Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36,12 +30,6 @@
     },
     "%@ Bold Text on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -58,12 +46,6 @@
             "value" : "%1$@ Button Shape %2$@ on the Web"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%2$@ Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -74,12 +56,6 @@
     },
     "%@ Button Shape on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -96,12 +72,6 @@
             "value" : "%1$@ Font Change %2$@ on the Web"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%2$@ Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -112,12 +82,6 @@
     },
     "%@ Font Change on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -128,12 +92,6 @@
     },
     "${toggle} Bold Text ${state} on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${state} Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -144,12 +102,6 @@
     },
     "${toggle} Bold Text on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${toggle} Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -160,12 +112,6 @@
     },
     "${toggle} Button Shape ${state} on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${state} Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -176,12 +122,6 @@
     },
     "${toggle} Button Shape on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${toggle} Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -192,12 +132,6 @@
     },
     "${toggle} Font Change ${state} on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${state} Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -208,12 +142,6 @@
     },
     "${toggle} Font Change on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${toggle} Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -222,14 +150,28 @@
         }
       }
     },
-    "About" : {
+    "${toggle} Insert Custom CSS ${state} on the Web" : {
       "localizations" : {
-        "es" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Acerca de"
+            "value" : "Webで「カスタムCSS」を${state}に${toggle}する"
           }
-        },
+        }
+      }
+    },
+    "${toggle} Insert Custom CSS on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「カスタムCSS」を${toggle}"
+          }
+        }
+      }
+    },
+    "About" : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -238,21 +180,8 @@
         }
       }
     },
-    "boldText" : {
-      "extractionState" : "manual",
+    "Bold Text" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bold Text"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Texto en negrita"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -261,21 +190,8 @@
         }
       }
     },
-    "boldText-Desc-1" : {
-      "extractionState" : "manual",
+    "Boldens all text." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Boldens all text."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pone en negrita todo el texto."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -284,44 +200,8 @@
         }
       }
     },
-    "boldText-Desc-2" : {
-      "extractionState" : "manual",
+    "Button Shape" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "It does not apply to some texts, such as those that are already bold."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se aplica a algunos textos, como los que ya están en negrita."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "既に太い文字など、一部の文字には適応されません。"
-          }
-        }
-      }
-    },
-    "buttonShape" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Button Shape"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contornos de botones"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -330,148 +210,8 @@
         }
       }
     },
-    "buttonShape-Desc-1" : {
-      "extractionState" : "manual",
+    "Change the font." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Underlines links and buttons."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Subraya enlaces y botones."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "リンクやボタンに下線を引きます。"
-          }
-        }
-      }
-    },
-    "buttonShape-Desc-2" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "It does not apply to non-text buttons."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se aplica a los botones que no son de texto."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "文字でないボタンには適応されません。"
-          }
-        }
-      }
-    },
-    "Cizzuk" : {
-      "shouldTranslate" : false
-    },
-    "ContactLink" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contact"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contacto"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "問い合わせ"
-          }
-        }
-      }
-    },
-    "Developer" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desarrollador"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "開発者"
-          }
-        }
-      }
-    },
-    "Edit Font to be used on the Web" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Editar fuente para su uso en la Web"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Web上で使用するフォントを編集"
-          }
-        }
-      }
-    },
-    "fontChange" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Font Change"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cambio de fuente"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "フォントを変更"
-          }
-        }
-      }
-    },
-    "fontChange-Desc-1" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Change the font."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cambia el tipo de letra."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -480,44 +220,71 @@
         }
       }
     },
-    "fontChange-Desc-2" : {
-      "extractionState" : "manual",
+    "Cizzuk" : {
+      "shouldTranslate" : false
+    },
+    "Custom CSS" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Icons will not display correctly on some websites."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Los iconos no se muestran correctamente en algunos sitios web."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "一部のサイトでアイコン等が正しく表示されないことがあります。"
+            "value" : "カスタムCSS"
           }
         }
       }
     },
-    "fontChange-Desc-3" : {
-      "extractionState" : "manual",
+    "Developer" : {
       "localizations" : {
-        "en" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Font example:"
+            "value" : "開発者"
           }
-        },
-        "es" : {
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ejemplo de fuente:"
+            "value" : "完了"
           }
-        },
+        }
+      }
+    },
+    "Edit Custom CSS to be used on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web上で使用するカスタムCSSを編集"
+          }
+        }
+      }
+    },
+    "Edit Font to be used on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web上で使用するフォントを編集"
+          }
+        }
+      }
+    },
+    "Font Change" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォントを変更"
+          }
+        }
+      }
+    },
+    "Font example:" : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -526,36 +293,8 @@
         }
       }
     },
-    "Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension." : {
+    "Font name" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vaya a Configuración → Apps → Safari → Extensiones → WebA11Y y permita la extensión."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "設定 → アプリ → Safari →　拡張機能 → WebA11Y から拡張機能を許可してください。"
-          }
-        }
-      }
-    },
-    "Int-fontFamily" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Font name"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nombre de fuente"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -564,37 +303,81 @@
         }
       }
     },
-    "License" : {
+    "For CSS, please refer to the following page:" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Licencia"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ライセンス"
+            "value" : "CSSについては以下のページをご確認ください:"
           }
         }
       }
     },
-    "LicenseLink" : {
-      "extractionState" : "manual",
+    "Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension." : {
       "localizations" : {
-        "en" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "License"
+            "value" : "設定 → アプリ → Safari →　拡張機能 → WebA11Y から拡張機能を許可してください。"
           }
-        },
-        "es" : {
+        }
+      }
+    },
+    "https://developer.mozilla.org/en-US/docs/Web/CSS" : {
+      "shouldTranslate" : false
+    },
+    "Icons will not display correctly on some websites." : {
+      "localizations" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Licencia"
+            "value" : "一部のサイトでアイコン等が正しく表示されないことがあります。"
           }
-        },
+        }
+      }
+    },
+    "Insert CSS" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CSSを挿入"
+          }
+        }
+      }
+    },
+    "Insert custom styles into pages." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムスタイルをページに挿入します。"
+          }
+        }
+      }
+    },
+    "It does not apply to non-text buttons." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文字でないボタンには適応されません。"
+          }
+        }
+      }
+    },
+    "It does not apply to some texts, such as those that are already bold." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "既に太い文字など、一部の文字には適応されません。"
+          }
+        }
+      }
+    },
+    "License" : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -611,12 +394,6 @@
     },
     "monospace: ABC 123 inm" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "monospace: ABC 123 iñm"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -627,12 +404,6 @@
     },
     "Off" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desactivado"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -643,12 +414,6 @@
     },
     "On" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activado"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -659,12 +424,6 @@
     },
     "Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abra Safari, vaya a Safari → Ajustes..., seleccione la pestaña «Extensiones» y active WebA11Y."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -675,12 +434,6 @@
     },
     "Operation" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Operación"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -689,14 +442,18 @@
         }
       }
     },
-    "Privacy Policy" : {
+    "Please make sure that the entered style is correct." : {
       "localizations" : {
-        "es" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Política de privacidad"
+            "value" : "入力したスタイルが正しいか確認してください。"
           }
-        },
+        }
+      }
+    },
+    "Privacy Policy" : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -710,12 +467,6 @@
     },
     "sans-serif: ABC 123 inm" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "sans-serif: ABC 123 iñm"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -729,12 +480,6 @@
     },
     "serif: ABC 123 inm" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "serif: ABC 123 iñm"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -745,12 +490,6 @@
     },
     "Set Bold Text on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -761,12 +500,6 @@
     },
     "Set Button Shape on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -775,14 +508,18 @@
         }
       }
     },
-    "Set Font Change on the Web" : {
+    "Set custom CSS on the web to ${editCSS}" : {
       "localizations" : {
-        "es" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Definir Cambio de fuente en la Web"
+            "value" : "Web上のカスタムCSSを${editCSS}に設定する"
           }
-        },
+        }
+      }
+    },
+    "Set Font Change on the Web" : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -793,12 +530,6 @@
     },
     "Set font on the web to %@" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Establecer la fuente en la web a %@"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -809,12 +540,6 @@
     },
     "Set font on the web to ${fontFamily}" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Establecer la fuente en la web a ${fontFamily}"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -823,14 +548,18 @@
         }
       }
     },
-    "Sets the Bold Text to on or off on the Web." : {
+    "Set Insert Custom CSS on the Web" : {
       "localizations" : {
-        "es" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Definir Texto en negrita como activado o desactivado en la Web."
+            "value" : "Webで「カスタムCSS」を設定"
           }
-        },
+        }
+      }
+    },
+    "Sets the Bold Text to on or off on the Web." : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -841,12 +570,6 @@
     },
     "Sets the Button Shape to on or off on the Web." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Contornos de botones como activado o desactivado en la Web."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -855,14 +578,18 @@
         }
       }
     },
-    "Sets the Font Change to on or off on the Web." : {
+    "Sets the custom CSS to be used on the Web." : {
       "localizations" : {
-        "es" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Definir Cambio de fuente como activado o desactivado en la Web."
+            "value" : "Webで使用するカスタムCSSを設定します。"
           }
-        },
+        }
+      }
+    },
+    "Sets the Font Change to on or off on the Web." : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -873,12 +600,6 @@
     },
     "Sets the font name to be used on the Web." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Establece el nombre de la fuente que se utilizará en la Web."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -887,14 +608,18 @@
         }
       }
     },
-    "Source" : {
+    "Sets the Insert Custom CSS to on or off on the Web." : {
       "localizations" : {
-        "es" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Código fuente"
+            "value" : "Webで「カスタムCSS」をオンまたはオフに設定します。"
           }
-        },
+        }
+      }
+    },
+    "Source" : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -905,12 +630,6 @@
     },
     "State" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Estado"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -919,37 +638,8 @@
         }
       }
     },
-    "SupportLink" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Support"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ayuda"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サポート"
-          }
-        }
-      }
-    },
     "Toggle" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activar/desactivar"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -960,12 +650,6 @@
     },
     "Turn" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajustar"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -974,14 +658,18 @@
         }
       }
     },
-    "Version" : {
+    "Underlines links and buttons." : {
       "localizations" : {
-        "es" : {
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Versión"
+            "value" : "リンクやボタンに下線を引きます。"
           }
-        },
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",

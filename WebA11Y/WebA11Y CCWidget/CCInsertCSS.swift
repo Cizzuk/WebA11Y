@@ -1,5 +1,5 @@
 //
-//  CCBoldText.swift
+//  CCInsertCSS.swift
 //  WebA11Y
 //
 //  Created by Cizzuk on 2025/12/16.
@@ -9,44 +9,44 @@ import AppIntents
 import SwiftUI
 import WidgetKit
 
-struct CCBoldText: ControlWidget {
+struct CCInsertCSS: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(
-            kind: "com.tsg0o0.weba11y.CCWidget.boldText",
+            kind: "com.tsg0o0.weba11y.CCWidget.insertCSS",
             provider: Provider()
         ) { value in
             ControlWidgetToggle(
-                "Bold Text",
+                "Custom CSS",
                 isOn: value,
-                action: CCBoldTextIntent()
+                action: CCInsertCSSIntent()
             ) { isRunning in
-                Label(isRunning ? "On" : "Off", systemImage: "bold")
+                Label(isRunning ? "On" : "Off", systemImage: "curlybraces")
             }
         }
-        .displayName("Bold Text")
+        .displayName("Custom CSS")
     }
 }
 
-extension CCBoldText {
+extension CCInsertCSS {
     struct Provider: ControlValueProvider {
         var previewValue: Bool { false }
         func currentValue() async throws -> Bool {
             let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
-            return userDefaults.bool(forKey: "boldText")
+            return userDefaults.bool(forKey: "insertCSS")
         }
     }
 }
 
-struct CCBoldTextIntent: SetValueIntent {
-    static let title: LocalizedStringResource = "Bold Text"
+struct CCInsertCSSIntent: SetValueIntent {
+    static let title: LocalizedStringResource = "Insert CSS"
     static var isDiscoverable: Bool = false
 
-    @Parameter(title: "Bold Text", default: false)
+    @Parameter(title: "Custom CSS", default: false)
     var value: Bool
 
     func perform() async throws -> some IntentResult {
         let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
-        userDefaults.set(value, forKey: "boldText")
+        userDefaults.set(value, forKey: "insertCSS")
         return .result()
     }
 }

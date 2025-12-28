@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -16,13 +14,6 @@
 				<string>weba11y</string>
 			</array>
 		</dict>
-	</array>
-	<key>INIntentsSupported</key>
-	<array>
-		<string>FontChangeIntent</string>
-		<string>BoldTextIntent</string>
-		<string>ButtonShapeIntent</string>
-		<string>EditFontIntent</string>
 	</array>
 	<key>NSUserActivityTypes</key>
 	<array>

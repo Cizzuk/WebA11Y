@@ -15,7 +15,7 @@ struct EditFont: AppIntent, CustomIntentMigratedAppIntent {
     static var title: LocalizedStringResource = "Edit Font to be used on the Web"
     static var description = IntentDescription("Sets the font name to be used on the Web.")
 
-    @Parameter(title: "Int-fontFamily", default: "sans-serif")
+    @Parameter(title: "Font name", default: "sans-serif")
     var fontFamily: String?
 
     static var parameterSummary: some ParameterSummary {
