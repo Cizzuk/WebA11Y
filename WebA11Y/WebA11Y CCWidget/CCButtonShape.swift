@@ -16,14 +16,14 @@ struct CCButtonShape: ControlWidget {
             provider: Provider()
         ) { value in
             ControlWidgetToggle(
-                "buttonShape",
+                "Button Shape",
                 isOn: value,
                 action: CCButtonShapeIntent()
             ) { isRunning in
                 Label(isRunning ? "On" : "Off", systemImage: "underline")
             }
         }
-        .displayName("buttonShape")
+        .displayName("Button Shape")
     }
 }
 
@@ -38,10 +38,10 @@ extension CCButtonShape {
 }
 
 struct CCButtonShapeIntent: SetValueIntent {
-    static let title: LocalizedStringResource = "buttonShape"
+    static let title: LocalizedStringResource = "Button Shape"
     static var isDiscoverable: Bool = false
 
-    @Parameter(title: "buttonShape", default: false)
+    @Parameter(title: "Button Shape", default: false)
     var value: Bool
 
     func perform() async throws -> some IntentResult {

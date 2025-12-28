@@ -40,7 +40,7 @@ struct ContentView: View {
                 
                 Section {
                     Toggle(isOn: $boldText) {
-                        Text("boldText")
+                        Text("Bold Text")
                             .bold()
                     }
                     .onChange(of: boldText) { _ in
@@ -52,13 +52,13 @@ struct ContentView: View {
                     }
                 } footer: {
                     VStack (alignment : .leading) {
-                        Text("boldText-Desc-1")
-                        Text("boldText-Desc-2")
+                        Text("Boldens all text.")
+                        Text("It does not apply to some texts, such as those that are already bold.")
                     }
                 }
                 Section {
                     Toggle(isOn: $buttonShape) {
-                        Text("buttonShape")
+                        Text("Button Shape")
                             .underline()
                     }
                     .onChange(of: buttonShape) { _ in
@@ -70,13 +70,13 @@ struct ContentView: View {
                     }
                 } footer: {
                     VStack (alignment : .leading) {
-                        Text("buttonShape-Desc-1")
-                        Text("buttonShape-Desc-2")
+                        Text("Underlines links and buttons.")
+                        Text("It does not apply to non-text buttons.")
                     }
                 }
                 Section {
                     Toggle(isOn: $fontChange) {
-                        Text("fontChange")
+                        Text("Font Change")
                             .font(.system(.body, design: .serif))
                     }
                     .onChange(of: fontChange) { _ in
@@ -92,10 +92,10 @@ struct ContentView: View {
                         .accessibilityTextContentType(.sourceCode)
                 } footer: {
                     VStack (alignment : .leading) {
-                        Text("fontChange-Desc-1")
-                        Text("fontChange-Desc-2")
+                        Text("Change the font.")
+                        Text("Icons will not display correctly on some websites.")
                         Spacer()
-                        Text("fontChange-Desc-3")
+                        Text("Font example:")
                         Text("sans-serif: ABC 123 inm")
                             .font(.system(.caption, design: .default))
                             .bold()

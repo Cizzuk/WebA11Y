@@ -16,14 +16,14 @@ struct CCBoldText: ControlWidget {
             provider: Provider()
         ) { value in
             ControlWidgetToggle(
-                "boldText",
+                "Bold Text",
                 isOn: value,
                 action: CCBoldTextIntent()
             ) { isRunning in
                 Label(isRunning ? "On" : "Off", systemImage: "bold")
             }
         }
-        .displayName("boldText")
+        .displayName("Bold Text")
     }
 }
 
@@ -38,10 +38,10 @@ extension CCBoldText {
 }
 
 struct CCBoldTextIntent: SetValueIntent {
-    static let title: LocalizedStringResource = "boldText"
+    static let title: LocalizedStringResource = "Bold Text"
     static var isDiscoverable: Bool = false
 
-    @Parameter(title: "boldText", default: false)
+    @Parameter(title: "Bold Text", default: false)
     var value: Bool
 
     func perform() async throws -> some IntentResult {
