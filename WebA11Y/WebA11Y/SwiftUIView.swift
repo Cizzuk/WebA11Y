@@ -26,6 +26,7 @@ struct ContentView: View {
     @AppStorage("buttonShape", store: userDefaults) var buttonShape: Bool = false
     @AppStorage("fontChange", store: userDefaults) var fontChange: Bool = false
     @AppStorage("fontFamily", store: userDefaults) var fontFamily: String = "sans-serif"
+    @AppStorage("insertCSS", store: userDefaults) var insertCSS: Bool = false
     
     var body: some View {
         NavigationView {
@@ -38,10 +39,10 @@ struct ContentView: View {
                     #endif
                 }
                 
+                // Bold Text
                 Section {
                     Toggle(isOn: $boldText) {
-                        Text("Bold Text")
-                            .bold()
+                        IconLabel(icon: "bold", text: "Bold Text")
                     }
                     .onChange(of: boldText) { _ in
                         #if !os(visionOS)
@@ -56,10 +57,11 @@ struct ContentView: View {
                         Text("It does not apply to some texts, such as those that are already bold.")
                     }
                 }
+                
+                // Button Shape
                 Section {
                     Toggle(isOn: $buttonShape) {
-                        Text("Button Shape")
-                            .underline()
+                        IconLabel(icon: "underline", text: "Button Shape")
                     }
                     .onChange(of: buttonShape) { _ in
                         #if !os(visionOS)
@@ -74,10 +76,11 @@ struct ContentView: View {
                         Text("It does not apply to non-text buttons.")
                     }
                 }
+                
+                // Font Change
                 Section {
                     Toggle(isOn: $fontChange) {
-                        Text("Font Change")
-                            .font(.system(.body, design: .serif))
+                        IconLabel(icon: "textformat", text: "Font Change")
                     }
                     .onChange(of: fontChange) { _ in
                         #if !os(visionOS)
@@ -86,32 +89,51 @@ struct ContentView: View {
                         }
                         #endif
                     }
-                    TextField("sans-serif", text: $fontFamily)
-                        .textInputAutocapitalization(.never)
-                        .submitLabel(.done)
-                        .accessibilityTextContentType(.sourceCode)
+                    if fontChange {
+                        TextField("sans-serif", text: $fontFamily)
+                            .textInputAutocapitalization(.never)
+                            .submitLabel(.done)
+                            .accessibilityTextContentType(.sourceCode)
+                    }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("Change the font.")
                         Text("Icons will not display correctly on some websites.")
-                        Spacer()
-                        Text("Font example:")
-                        Text("sans-serif: ABC 123 inm")
-                            .font(.system(.caption, design: .default))
-                            .bold()
-                            .accessibilityLabel("sans-serif")
-                            .accessibilityTextContentType(.sourceCode)
-                        Text("serif: ABC 123 inm")
-                            .font(.system(.caption, design: .serif))
-                            .bold()
-                            .accessibilityLabel("serif")
-                            .accessibilityTextContentType(.sourceCode)
-                        Text("monospace: ABC 123 inm")
-                            .font(.system(.caption, design: .monospaced))
-                            .bold()
-                            .accessibilityLabel("monospace")
-                            .accessibilityTextContentType(.sourceCode)
+                        if fontChange {
+                            Spacer()
+                            Text("Font example:")
+                            Text("sans-serif: ABC 123 inm")
+                                .font(.system(.caption, design: .default))
+                                .bold()
+                                .accessibilityLabel("sans-serif")
+                                .accessibilityTextContentType(.sourceCode)
+                            Text("serif: ABC 123 inm")
+                                .font(.system(.caption, design: .serif))
+                                .bold()
+                                .accessibilityLabel("serif")
+                                .accessibilityTextContentType(.sourceCode)
+                            Text("monospace: ABC 123 inm")
+                                .font(.system(.caption, design: .monospaced))
+                                .bold()
+                                .accessibilityLabel("monospace")
+                                .accessibilityTextContentType(.sourceCode)
+                        }
                     }
+                }
+                
+                // Custom CSS
+                Section {
+                    NavigationLink(destination: CustomCSSView()) {
+                        HStack {
+                            IconLabel(icon: "curlybraces", text: "Custom CSS")
+                            Spacer()
+                            Text(insertCSS ? "On" : "Off")
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.trailing)
+                        }
+                    }
+                } footer: {
+                    Text("Insert custom styles into pages.")
                 }
                 
                 // Support Section
@@ -121,6 +143,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .animation(.default, value: fontChange)
             .listStyle(.insetGrouped)
             .navigationTitle("WebA11Y")
         }

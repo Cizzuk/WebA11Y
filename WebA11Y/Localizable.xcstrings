@@ -305,6 +305,16 @@
     "Cizzuk" : {
       "shouldTranslate" : false
     },
+    "Custom CSS" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムCSS"
+          }
+        }
+      }
+    },
     "Developer" : {
       "localizations" : {
         "es" : {
@@ -317,6 +327,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開発者"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
           }
         }
       }
@@ -385,6 +405,16 @@
         }
       }
     },
+    "For CSS, please refer to the following page:" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CSSについては以下のページをご確認ください:"
+          }
+        }
+      }
+    },
     "Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension." : {
       "localizations" : {
         "es" : {
@@ -401,6 +431,9 @@
         }
       }
     },
+    "https://developer.mozilla.org/en-US/docs/Web/CSS" : {
+      "shouldTranslate" : false
+    },
     "Icons will not display correctly on some websites." : {
       "localizations" : {
         "es" : {
@@ -413,6 +446,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "一部のサイトでアイコン等が正しく表示されないことがあります。"
+          }
+        }
+      }
+    },
+    "Insert custom styles into pages." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムスタイルをページに挿入します。"
           }
         }
       }
@@ -547,6 +590,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "操作"
+          }
+        }
+      }
+    },
+    "Please make sure that the entered style is correct." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "入力したスタイルが正しいか確認してください。"
           }
         }
       }

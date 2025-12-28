@@ -20,7 +20,7 @@ struct CCFontChange: ControlWidget {
                 isOn: value,
                 action: CCFontChangeIntent()
             ) { isRunning in
-                Label(isRunning ? "On" : "Off", systemImage: "textformat.characters")
+                Label(isRunning ? "On" : "Off", systemImage: "textformat")
             }
         }
         .displayName("Font Change")
