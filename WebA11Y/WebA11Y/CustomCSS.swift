@@ -14,7 +14,7 @@ struct CustomCSSView: View {
     @AppStorage("insertCSS", store: userDefaults) var insertCSS: Bool = false
     @AppStorage("customCSS", store: userDefaults) var customCSS: String = """
         * {
-            font: medium/1.5 system-ui, sans-serif !important;
+          font: medium/1.5 system-ui, sans-serif !important;
         }
         """
 
