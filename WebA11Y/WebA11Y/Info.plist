@@ -15,13 +15,6 @@
 			</array>
 		</dict>
 	</array>
-	<key>INIntentsSupported</key>
-	<array>
-		<string>FontChangeIntent</string>
-		<string>BoldTextIntent</string>
-		<string>ButtonShapeIntent</string>
-		<string>EditFontIntent</string>
-	</array>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>BoldTextIntent</string>
