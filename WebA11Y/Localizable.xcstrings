@@ -509,7 +509,6 @@
       }
     },
     "Set custom CSS on the web to ${editCSS}" : {
-      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
