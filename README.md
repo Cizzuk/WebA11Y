@@ -8,19 +8,12 @@ Safari Extension to improve web accessibility.
 
 ## Features
 
-Make the following changes to the website
+You can make the following changes to the Website:
 
-### Bold Text
-
-Boldens all text.
-
-### Button Shape
-
-Underlines links and buttons.
-
-### Font Change
-
-Change the font.
+- Boldens all text
+- Underline links and buttons
+- Change the font
+- Insert custom CSS
 
 ## License
 
