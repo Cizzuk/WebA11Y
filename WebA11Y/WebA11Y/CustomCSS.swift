@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+#if !os(visionOS)
+import WidgetKit
+#endif
 
 struct CustomCSSView: View {
     @AppStorage("insertCSS", store: userDefaults) var insertCSS: Bool = false
@@ -20,6 +23,13 @@ struct CustomCSSView: View {
             Section {
                 Toggle(isOn: $insertCSS) {
                     IconLabel(icon: "curlybraces", text: "Custom CSS")
+                }
+                .onChange(of: insertCSS) { _ in
+                    #if !os(visionOS)
+                    if #available(iOS 18.0, macOS 26, *) {
+                        ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.insertCSS")
+                    }
+                    #endif
                 }
             }
             

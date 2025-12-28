@@ -222,6 +222,26 @@
         }
       }
     },
+    "${toggle} Insert Custom CSS ${state} on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「カスタムCSS」を${state}に${toggle}する"
+          }
+        }
+      }
+    },
+    "${toggle} Insert Custom CSS on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「カスタムCSS」を${toggle}"
+          }
+        }
+      }
+    },
     "About" : {
       "localizations" : {
         "es" : {
@@ -341,6 +361,16 @@
         }
       }
     },
+    "Edit Custom CSS to be used on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web上で使用するカスタムCSSを編集"
+          }
+        }
+      }
+    },
     "Edit Font to be used on the Web" : {
       "localizations" : {
         "es" : {
@@ -446,6 +476,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "一部のサイトでアイコン等が正しく表示されないことがあります。"
+          }
+        }
+      }
+    },
+    "Insert CSS" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CSSを挿入"
           }
         }
       }
@@ -690,6 +730,17 @@
         }
       }
     },
+    "Set custom CSS on the web to ${editCSS}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web上のカスタムCSSを${editCSS}に設定する"
+          }
+        }
+      }
+    },
     "Set Font Change on the Web" : {
       "localizations" : {
         "es" : {
@@ -738,6 +789,16 @@
         }
       }
     },
+    "Set Insert Custom CSS on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「カスタムCSS」を設定"
+          }
+        }
+      }
+    },
     "Sets the Bold Text to on or off on the Web." : {
       "localizations" : {
         "es" : {
@@ -770,6 +831,16 @@
         }
       }
     },
+    "Sets the custom CSS to be used on the Web." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで使用するカスタムCSSを設定します。"
+          }
+        }
+      }
+    },
     "Sets the Font Change to on or off on the Web." : {
       "localizations" : {
         "es" : {
@@ -798,6 +869,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Webで使用するフォントの名前を設定します。"
+          }
+        }
+      }
+    },
+    "Sets the Insert Custom CSS to on or off on the Web." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「カスタムCSS」をオンまたはオフに設定します。"
           }
         }
       }
