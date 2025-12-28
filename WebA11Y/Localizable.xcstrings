@@ -20,12 +20,6 @@
             "value" : "%1$@ Bold Text %2$@ on the Web"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%2$@ Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36,12 +30,6 @@
     },
     "%@ Bold Text on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -58,12 +46,6 @@
             "value" : "%1$@ Button Shape %2$@ on the Web"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%2$@ Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -74,12 +56,6 @@
     },
     "%@ Button Shape on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -96,12 +72,6 @@
             "value" : "%1$@ Font Change %2$@ on the Web"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%2$@ Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -112,12 +82,6 @@
     },
     "%@ Font Change on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -128,12 +92,6 @@
     },
     "${toggle} Bold Text ${state} on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${state} Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -144,12 +102,6 @@
     },
     "${toggle} Bold Text on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${toggle} Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -160,12 +112,6 @@
     },
     "${toggle} Button Shape ${state} on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${state} Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -176,12 +122,6 @@
     },
     "${toggle} Button Shape on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${toggle} Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -192,12 +132,6 @@
     },
     "${toggle} Font Change ${state} on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${state} Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -208,12 +142,6 @@
     },
     "${toggle} Font Change on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${toggle} Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -244,12 +172,6 @@
     },
     "About" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Acerca de"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -260,12 +182,6 @@
     },
     "Bold Text" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Texto en negrita"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -276,12 +192,6 @@
     },
     "Boldens all text." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pone en negrita todo el texto."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -292,12 +202,6 @@
     },
     "Button Shape" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contornos de botones"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -308,12 +212,6 @@
     },
     "Change the font." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cambia el tipo de letra."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -337,12 +235,6 @@
     },
     "Developer" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desarrollador"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -373,12 +265,6 @@
     },
     "Edit Font to be used on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Editar fuente para su uso en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -389,12 +275,6 @@
     },
     "Font Change" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cambio de fuente"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -405,12 +285,6 @@
     },
     "Font example:" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ejemplo de fuente:"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -421,12 +295,6 @@
     },
     "Font name" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nombre de fuente"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -447,12 +315,6 @@
     },
     "Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vaya a Configuración → Apps → Safari → Extensiones → WebA11Y y permita la extensión."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -466,12 +328,6 @@
     },
     "Icons will not display correctly on some websites." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Los iconos no se muestran correctamente en algunos sitios web."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -502,12 +358,6 @@
     },
     "It does not apply to non-text buttons." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se aplica a los botones que no son de texto."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -518,12 +368,6 @@
     },
     "It does not apply to some texts, such as those that are already bold." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se aplica a algunos textos, como los que ya están en negrita."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -534,12 +378,6 @@
     },
     "License" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Licencia"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -556,12 +394,6 @@
     },
     "monospace: ABC 123 inm" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "monospace: ABC 123 iñm"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -572,12 +404,6 @@
     },
     "Off" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desactivado"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -588,12 +414,6 @@
     },
     "On" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activado"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -604,12 +424,6 @@
     },
     "Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abra Safari, vaya a Safari → Ajustes..., seleccione la pestaña «Extensiones» y active WebA11Y."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -620,12 +434,6 @@
     },
     "Operation" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Operación"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -646,12 +454,6 @@
     },
     "Privacy Policy" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Política de privacidad"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -665,12 +467,6 @@
     },
     "sans-serif: ABC 123 inm" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "sans-serif: ABC 123 iñm"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -684,12 +480,6 @@
     },
     "serif: ABC 123 inm" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "serif: ABC 123 iñm"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -700,12 +490,6 @@
     },
     "Set Bold Text on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Texto en negrita en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -716,12 +500,6 @@
     },
     "Set Button Shape on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Contornos de botones en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -743,12 +521,6 @@
     },
     "Set Font Change on the Web" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Cambio de fuente en la Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -759,12 +531,6 @@
     },
     "Set font on the web to %@" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Establecer la fuente en la web a %@"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -775,12 +541,6 @@
     },
     "Set font on the web to ${fontFamily}" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Establecer la fuente en la web a ${fontFamily}"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -801,12 +561,6 @@
     },
     "Sets the Bold Text to on or off on the Web." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Texto en negrita como activado o desactivado en la Web."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -817,12 +571,6 @@
     },
     "Sets the Button Shape to on or off on the Web." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Contornos de botones como activado o desactivado en la Web."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -843,12 +591,6 @@
     },
     "Sets the Font Change to on or off on the Web." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Definir Cambio de fuente como activado o desactivado en la Web."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -859,12 +601,6 @@
     },
     "Sets the font name to be used on the Web." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Establece el nombre de la fuente que se utilizará en la Web."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -885,12 +621,6 @@
     },
     "Source" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Código fuente"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -901,12 +631,6 @@
     },
     "State" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Estado"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -917,12 +641,6 @@
     },
     "Toggle" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activar/desactivar"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -933,12 +651,6 @@
     },
     "Turn" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajustar"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -949,12 +661,6 @@
     },
     "Underlines links and buttons." : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Subraya enlaces y botones."
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -965,12 +671,6 @@
     },
     "Version" : {
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Versión"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",

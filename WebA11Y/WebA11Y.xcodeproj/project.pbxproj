@@ -261,7 +261,6 @@
 			knownRegions = (
 				en,
 				ja,
-				es,
 				Base,
 			);
 			mainGroup = 9096918029668D2B009AE45F;
