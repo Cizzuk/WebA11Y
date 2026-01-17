@@ -104,7 +104,7 @@ struct ContentView: View {
                     }
                 } footer: {
                     VStack (alignment : .leading) {
-                        Text("Blocks animatations and transitions.")
+                        Text("Blocks some animations and transitions.")
                         Text("Some pages may not display correctly. Also recommended to enable \"Reduce Motion\" in device settings.")
                     }
                 }
