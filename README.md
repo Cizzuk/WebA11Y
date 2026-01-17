@@ -12,7 +12,8 @@ You can make the following changes to the Website:
 
 - Boldens all text
 - Underline links and buttons
-- Change the font
+- Reduce animations and transitions
+- Use custom fonts
 - Insert custom CSS
 
 ## License
