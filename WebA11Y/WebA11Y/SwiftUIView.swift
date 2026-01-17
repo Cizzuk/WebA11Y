@@ -24,6 +24,7 @@ struct ContentView: View {
     // Load app settings
     @AppStorage("boldText", store: userDefaults) var boldText: Bool = false
     @AppStorage("buttonShape", store: userDefaults) var buttonShape: Bool = false
+    @AppStorage("blockAnimations", store: userDefaults) var blockAnimations: Bool = false
     @AppStorage("fontChange", store: userDefaults) var fontChange: Bool = false
     @AppStorage("insertCSS", store: userDefaults) var insertCSS: Bool = false
     
@@ -86,6 +87,25 @@ struct ContentView: View {
                     VStack (alignment : .leading) {
                         Text("Underlines links and buttons.")
                         Text("It does not apply to non-text buttons.")
+                    }
+                }
+                
+                // Block Animations
+                Section {
+                    Toggle(isOn: $blockAnimations) {
+                        IconLabel(icon: "circle.dotted.and.circle", text: "Block Animations")
+                    }
+                    .onChange(of: blockAnimations) { _ in
+                        #if !os(visionOS)
+                        if #available(iOS 18.0, macOS 26, *) {
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.blockAnimations")
+                        }
+                        #endif
+                    }
+                } footer: {
+                    VStack (alignment : .leading) {
+                        Text("Blocks animatations and transitions.")
+                        Text("Some pages may not display correctly. Also recommended to enable \"Reduce Motion\" in device settings.")
                     }
                 }
                 

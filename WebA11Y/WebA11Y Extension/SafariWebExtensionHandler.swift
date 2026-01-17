@@ -15,11 +15,12 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         // Load settings
         let boldText: Bool = userDefaults.bool(forKey: "boldText")
         let buttonShape: Bool = userDefaults.bool(forKey: "buttonShape")
+        let blockAnimations: Bool = userDefaults.bool(forKey: "blockAnimations")
         let fontChange: Bool = userDefaults.bool(forKey: "fontChange")
         let insertCSS: Bool = userDefaults.bool(forKey: "insertCSS")
         
         // Handle no settings
-        if !boldText && !buttonShape && !fontChange && !insertCSS {
+        if !boldText && !buttonShape && !blockAnimations && !fontChange && !insertCSS {
             sendData(context: context, data: ["type" : "none"])
             return
         }
@@ -33,10 +34,43 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         
         // Create style sheet
         var styleSheet: String = ""
-        if boldText    { styleSheet += "* { font-weight: bold !important; }" }
-        if buttonShape { styleSheet += "a, button, input[type=\"button\"], input[type=\"submit\"], input[type=\"reset\"] { text-decoration: underline !important; }" }
-        if fontChange  { styleSheet += "* { font-family: \(fontFamilyFixed) !important; }" }
-        if insertCSS   { styleSheet += customCSS }
+        if boldText {
+            styleSheet += """
+            * {
+              font-weight: bold !important;
+            }
+            """
+        }
+        if buttonShape {
+            styleSheet += """
+            a,
+            button,
+            input[type=\"button\"],
+            input[type=\"submit\"],
+            input[type=\"reset\"] {
+              text-decoration: underline !important;
+            }
+            """
+        }
+        if blockAnimations {
+            styleSheet += """
+            * {
+              animation: none !important;
+              transition: note !important;
+            }
+            @view-transition {
+              navigation: none !important;
+            }
+            """
+        }
+        if fontChange {
+            styleSheet += """
+            * {
+              font-family: \(fontFamilyFixed) !important;
+            }
+            """
+        }
+        if insertCSS { styleSheet += customCSS }
         
         struct dataSet: Encodable {
             let type: String
