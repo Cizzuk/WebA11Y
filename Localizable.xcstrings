@@ -320,16 +320,6 @@
         }
       }
     },
-    "Font Change" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "フォントを変更"
-          }
-        }
-      }
-    },
     "Font example:" : {
       "localizations" : {
         "ja" : {
