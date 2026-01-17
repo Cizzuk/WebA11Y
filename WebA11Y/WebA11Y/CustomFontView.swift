@@ -35,6 +35,15 @@ struct CustomFontView: View {
                         .textInputAutocapitalization(.never)
                         .submitLabel(.done)
                         .accessibilityTextContentType(.sourceCode)
+                        .onChange(of: fontFamily) { newValue in
+                            // Remove invalid characters
+                            // Note: Safari automatically handles quotes even if they are not closed
+                            fontFamily = newValue.filter { char in
+                                char.isLetter || char.isNumber || char.isWhitespace ||
+                                char == "-" || char == "_" || char == "." ||
+                                char == "," || char == "'" || char == "\""
+                            }
+                        }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("Enter the names of fonts available in Safari.")
