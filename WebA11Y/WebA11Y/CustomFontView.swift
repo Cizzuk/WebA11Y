@@ -37,7 +37,7 @@ struct CustomFontView: View {
                         .accessibilityTextContentType(.sourceCode)
                 } footer: {
                     VStack (alignment : .leading) {
-                        Text("Please enter the names of fonts available in Safari.")
+                        Text("Enter the names of fonts available in Safari.")
                         Spacer()
                         Text("Font example:")
                         Group {

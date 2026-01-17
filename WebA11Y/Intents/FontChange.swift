@@ -15,8 +15,8 @@ import WidgetKit
 struct FontChange: AppIntent, CustomIntentMigratedAppIntent {
     static let intentClassName = "FontChangeIntent"
 
-    static var title: LocalizedStringResource = "Set Font Change on the Web"
-    static var description = IntentDescription("Sets the Font Change to on or off on the Web.")
+    static var title: LocalizedStringResource = "Set Custom Font on the Web"
+    static var description = IntentDescription("Sets the Custom Font to on or off on the Web.")
 
     @Parameter(title: "Operation", default: .turn)
     var toggle: IntentTurnEnum?
@@ -26,9 +26,9 @@ struct FontChange: AppIntent, CustomIntentMigratedAppIntent {
 
     static var parameterSummary: some ParameterSummary {
         When(\.$toggle, .equalTo, .turn) {
-            Summary("\(\.$toggle) Font Change \(\.$state) on the Web")
+            Summary("\(\.$toggle) Use Custom Font \(\.$state) on the Web")
         } otherwise: {
-            Summary("\(\.$toggle) Font Change on the Web")
+            Summary("\(\.$toggle) Use Custom Font on the Web")
         }
     }
     
