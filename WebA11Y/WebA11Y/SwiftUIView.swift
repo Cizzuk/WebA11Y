@@ -149,7 +149,6 @@ struct ContentView: View {
                     }
                 }
             }
-            .animation(.default, value: fontChange)
             .listStyle(.insetGrouped)
             .navigationTitle("WebA11Y")
         }
