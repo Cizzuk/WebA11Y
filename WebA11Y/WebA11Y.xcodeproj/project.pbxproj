@@ -85,6 +85,7 @@
 		BEBCFE0E2C83608100A5EBCB /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				BlockAnimations.swift,
 				BoldText.swift,
 				ButtonShape.swift,
 				EditCSS.swift,

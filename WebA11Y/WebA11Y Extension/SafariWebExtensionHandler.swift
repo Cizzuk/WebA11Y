@@ -57,6 +57,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             * {
               animation: none !important;
               transition: note !important;
+              view-transition-name: none !important;
             }
             @view-transition {
               navigation: none !important;
