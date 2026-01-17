@@ -16,14 +16,14 @@ struct CCFontChange: ControlWidget {
             provider: Provider()
         ) { value in
             ControlWidgetToggle(
-                "Font Change",
+                "Custom Font",
                 isOn: value,
                 action: CCFontChangeIntent()
             ) { isRunning in
                 Label(isRunning ? "On" : "Off", systemImage: "textformat")
             }
         }
-        .displayName("Font Change")
+        .displayName("Custom Font")
     }
 }
 
@@ -38,10 +38,10 @@ extension CCFontChange {
 }
 
 struct CCFontChangeIntent: SetValueIntent {
-    static let title: LocalizedStringResource = "Font Change"
+    static let title: LocalizedStringResource = "Custom Font"
     static var isDiscoverable: Bool = false
 
-    @Parameter(title: "Font Change", default: false)
+    @Parameter(title: "Custom Font", default: false)
     var value: Bool
 
     func perform() async throws -> some IntentResult {
