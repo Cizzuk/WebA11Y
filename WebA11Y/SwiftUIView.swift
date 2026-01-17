@@ -24,18 +24,31 @@ struct ContentView: View {
     // Load app settings
     @AppStorage("boldText", store: userDefaults) var boldText: Bool = false
     @AppStorage("buttonShape", store: userDefaults) var buttonShape: Bool = false
+    @AppStorage("blockAnimations", store: userDefaults) var blockAnimations: Bool = false
     @AppStorage("fontChange", store: userDefaults) var fontChange: Bool = false
-    @AppStorage("fontFamily", store: userDefaults) var fontFamily: String = "sans-serif"
     @AppStorage("insertCSS", store: userDefaults) var insertCSS: Bool = false
     
     var body: some View {
         NavigationView {
             List {
-                Section {} footer: {
+                Section {
+                    #if !targetEnvironment(macCatalyst)
+                    Button(action: {
+                        if let url = URL(string: "App-Prefs:com.apple.mobilesafari") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        IconLabel(icon: "gear", text: "Open Settings")
+                            #if !os(visionOS)
+                            .foregroundColor(.accentColor)
+                            #endif
+                    }
+                    #endif
+                } footer: {
                     #if targetEnvironment(macCatalyst)
-                        Text("Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y.")
+                    Text("Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y.")
                     #else
-                        Text("Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension.")
+                    Text("Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension.")
                     #endif
                 }
                 
@@ -77,47 +90,40 @@ struct ContentView: View {
                     }
                 }
                 
-                // Font Change
+                // Block Animations
                 Section {
-                    Toggle(isOn: $fontChange) {
-                        IconLabel(icon: "textformat", text: "Font Change")
+                    Toggle(isOn: $blockAnimations) {
+                        IconLabel(icon: "circle.dotted.and.circle", text: "Block Animations")
                     }
-                    .onChange(of: fontChange) { _ in
+                    .onChange(of: blockAnimations) { _ in
                         #if !os(visionOS)
                         if #available(iOS 18.0, macOS 26, *) {
-                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.blockAnimations")
                         }
                         #endif
                     }
-                    if fontChange {
-                        TextField("sans-serif", text: $fontFamily)
-                            .textInputAutocapitalization(.never)
-                            .submitLabel(.done)
-                            .accessibilityTextContentType(.sourceCode)
+                } footer: {
+                    VStack (alignment : .leading) {
+                        Text("Blocks some animations and transitions.")
+                        Text("Some pages may not display correctly. Also recommended to enable \"Reduce Motion\" in device settings.")
+                    }
+                }
+                
+                // Custom Font
+                Section {
+                    NavigationLink(destination: CustomFontView()) {
+                        HStack {
+                            IconLabel(icon: "textformat", text: "Custom Font")
+                            Spacer()
+                            Text(fontChange ? "On" : "Off")
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.trailing)
+                        }
                     }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("Change the font.")
-                        Text("Icons will not display correctly on some websites.")
-                        if fontChange {
-                            Spacer()
-                            Text("Font example:")
-                            Text("sans-serif: ABC 123 inm")
-                                .font(.system(.caption, design: .default))
-                                .bold()
-                                .accessibilityLabel("sans-serif")
-                                .accessibilityTextContentType(.sourceCode)
-                            Text("serif: ABC 123 inm")
-                                .font(.system(.caption, design: .serif))
-                                .bold()
-                                .accessibilityLabel("serif")
-                                .accessibilityTextContentType(.sourceCode)
-                            Text("monospace: ABC 123 inm")
-                                .font(.system(.caption, design: .monospaced))
-                                .bold()
-                                .accessibilityLabel("monospace")
-                                .accessibilityTextContentType(.sourceCode)
-                        }
+                        Text("Icons will not display correctly on some pages.")
                     }
                 }
                 
@@ -143,7 +149,6 @@ struct ContentView: View {
                     }
                 }
             }
-            .animation(.default, value: fontChange)
             .listStyle(.insetGrouped)
             .navigationTitle("WebA11Y")
         }

@@ -64,28 +64,22 @@
         }
       }
     },
-    "%@ Font Change %@ on the Web" : {
+    "${toggle} Block Animations ${state} on the Web" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ Font Change %2$@ on the Web"
-          }
-        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Webで「フォントを変更」を%2$@に%1$@する"
+            "value" : "Webで「アニメーションをブロック」を${state}に${toggle}する"
           }
         }
       }
     },
-    "%@ Font Change on the Web" : {
+    "${toggle} Block Animations on the Web" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Webで「フォントを変更」を%@"
+            "value" : "Webで「アニメーションをブロック」を${toggle}"
           }
         }
       }
@@ -130,26 +124,6 @@
         }
       }
     },
-    "${toggle} Font Change ${state} on the Web" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Webで「フォントを変更」を${state}に${toggle}する"
-          }
-        }
-      }
-    },
-    "${toggle} Font Change on the Web" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Webで「フォントを変更」を${toggle}"
-          }
-        }
-      }
-    },
     "${toggle} Insert Custom CSS ${state} on the Web" : {
       "localizations" : {
         "ja" : {
@@ -170,12 +144,52 @@
         }
       }
     },
+    "${toggle} Use Custom Font ${state} on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「カスタムフォント」を${state}に${toggle}する"
+          }
+        }
+      }
+    },
+    "${toggle} Use Custom Font on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「カスタムフォント」を${toggle}"
+          }
+        }
+      }
+    },
     "About" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "情報"
+          }
+        }
+      }
+    },
+    "Block Animations" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アニメーションをブロック"
+          }
+        }
+      }
+    },
+    "Blocks some animations and transitions." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一部のアニメーションとトランジションをブロックします。"
           }
         }
       }
@@ -221,7 +235,20 @@
       }
     },
     "Cizzuk" : {
-      "shouldTranslate" : false
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cizzuk"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cizzuk"
+          }
+        }
+      }
     },
     "Custom CSS" : {
       "localizations" : {
@@ -229,6 +256,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "カスタムCSS"
+          }
+        }
+      }
+    },
+    "Custom Font" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムフォント"
           }
         }
       }
@@ -269,6 +306,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Web上で使用するフォントを編集"
+          }
+        }
+      }
+    },
+    "Enter the names of fonts available in Safari." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safariで利用可能なフォントの名前を入力します。"
           }
         }
       }
@@ -326,12 +373,12 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS" : {
       "shouldTranslate" : false
     },
-    "Icons will not display correctly on some websites." : {
+    "Icons will not display correctly on some pages." : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "一部のサイトでアイコン等が正しく表示されないことがあります。"
+            "value" : "一部のページでアイコン等が正しく表示されないことがあります。"
           }
         }
       }
@@ -432,6 +479,16 @@
         }
       }
     },
+    "Open Settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を開く"
+          }
+        }
+      }
+    },
     "Operation" : {
       "localizations" : {
         "ja" : {
@@ -488,6 +545,16 @@
         }
       }
     },
+    "Set Block Animations on the Web" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「アニメーションをブロック」を設定"
+          }
+        }
+      }
+    },
     "Set Bold Text on the Web" : {
       "localizations" : {
         "ja" : {
@@ -518,12 +585,12 @@
         }
       }
     },
-    "Set Font Change on the Web" : {
+    "Set Custom Font on the Web" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Webで「フォントを変更」を設定"
+            "value" : "Webで「カスタムフォント」を設定"
           }
         }
       }
@@ -558,6 +625,16 @@
         }
       }
     },
+    "Sets the Block Animations to on or off on the Web." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webで「アニメーションをブロック」をオンまたはオフに設定します。"
+          }
+        }
+      }
+    },
     "Sets the Bold Text to on or off on the Web." : {
       "localizations" : {
         "ja" : {
@@ -588,12 +665,12 @@
         }
       }
     },
-    "Sets the Font Change to on or off on the Web." : {
+    "Sets the Custom Font to on or off on the Web." : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Webで「フォントを変更」をオンまたはオフに設定します。"
+            "value" : "Webで「カスタムフォント」をオンまたはオフに設定します。"
           }
         }
       }
@@ -618,6 +695,16 @@
         }
       }
     },
+    "Some pages may not display correctly. Also recommended to enable \"Reduce Motion\" in device settings." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ページによっては正しく表示されなくなる可能性があります。デバイスの「動きを減らす」もオンにすることをお勧めします。"
+          }
+        }
+      }
+    },
     "Source" : {
       "localizations" : {
         "ja" : {
@@ -637,6 +724,9 @@
           }
         }
       }
+    },
+    "system-ui, sans-serif" : {
+      "shouldTranslate" : false
     },
     "Toggle" : {
       "localizations" : {

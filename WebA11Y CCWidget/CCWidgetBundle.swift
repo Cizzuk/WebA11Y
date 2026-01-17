@@ -13,6 +13,7 @@ struct CCWidgetBundle: WidgetBundle {
     var body: some Widget {
         CCBoldText()
         CCButtonShape()
+        CCBlockAnimations()
         CCFontChange()
         CCInsertCSS()
     }
