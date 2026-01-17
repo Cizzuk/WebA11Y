@@ -25,7 +25,6 @@ struct ContentView: View {
     @AppStorage("boldText", store: userDefaults) var boldText: Bool = false
     @AppStorage("buttonShape", store: userDefaults) var buttonShape: Bool = false
     @AppStorage("fontChange", store: userDefaults) var fontChange: Bool = false
-    @AppStorage("fontFamily", store: userDefaults) var fontFamily: String = "sans-serif"
     @AppStorage("insertCSS", store: userDefaults) var insertCSS: Bool = false
     
     var body: some View {
@@ -90,47 +89,21 @@ struct ContentView: View {
                     }
                 }
                 
-                // Font Change
+                // Custom Font
                 Section {
-                    Toggle(isOn: $fontChange) {
-                        IconLabel(icon: "textformat", text: "Font Change")
-                    }
-                    .onChange(of: fontChange) { _ in
-                        #if !os(visionOS)
-                        if #available(iOS 18.0, macOS 26, *) {
-                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
+                    NavigationLink(destination: CustomFontView()) {
+                        HStack {
+                            IconLabel(icon: "textformat", text: "Custom Font")
+                            Spacer()
+                            Text(fontChange ? "On" : "Off")
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.trailing)
                         }
-                        #endif
-                    }
-                    if fontChange {
-                        TextField("sans-serif", text: $fontFamily)
-                            .textInputAutocapitalization(.never)
-                            .submitLabel(.done)
-                            .accessibilityTextContentType(.sourceCode)
                     }
                 } footer: {
                     VStack (alignment : .leading) {
                         Text("Change the font.")
-                        Text("Icons will not display correctly on some websites.")
-                        if fontChange {
-                            Spacer()
-                            Text("Font example:")
-                            Text("sans-serif: ABC 123 inm")
-                                .font(.system(.caption, design: .default))
-                                .bold()
-                                .accessibilityLabel("sans-serif")
-                                .accessibilityTextContentType(.sourceCode)
-                            Text("serif: ABC 123 inm")
-                                .font(.system(.caption, design: .serif))
-                                .bold()
-                                .accessibilityLabel("serif")
-                                .accessibilityTextContentType(.sourceCode)
-                            Text("monospace: ABC 123 inm")
-                                .font(.system(.caption, design: .monospaced))
-                                .bold()
-                                .accessibilityLabel("monospace")
-                                .accessibilityTextContentType(.sourceCode)
-                        }
+                        Text("Icons will not display correctly on some pages.")
                     }
                 }
                 
