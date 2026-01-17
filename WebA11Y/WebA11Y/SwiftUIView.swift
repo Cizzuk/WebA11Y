@@ -31,11 +31,24 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Section {} footer: {
+                Section {
+                    #if !targetEnvironment(macCatalyst)
+                    Button(action: {
+                        if let url = URL(string: "App-Prefs:com.apple.mobilesafari") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        IconLabel(icon: "gear", text: "Open Settings")
+                            #if !os(visionOS)
+                            .foregroundColor(.accentColor)
+                            #endif
+                    }
+                    #endif
+                } footer: {
                     #if targetEnvironment(macCatalyst)
-                        Text("Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y.")
+                    Text("Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y.")
                     #else
-                        Text("Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension.")
+                    Text("Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension.")
                     #endif
                 }
                 
