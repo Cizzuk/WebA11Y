@@ -145,7 +145,12 @@ struct ContentView: View {
                 // Support Section
                 Section {
                     NavigationLink(destination: AboutView()) {
-                        Text("About")
+                        IconLabel(icon: "info.circle", text: "About")
+                    }
+                    if UIApplication.shared.supportsAlternateIcons {
+                        NavigationLink(destination: ChangeIconView()) {
+                            IconLabel(icon: "app.dashed", text: "Change App Icon")
+                        }
                     }
                 }
             }
