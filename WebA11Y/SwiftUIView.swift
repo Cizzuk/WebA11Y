@@ -167,12 +167,22 @@ struct IconLabel: View {
     let icon: String
     let text: String.LocalizationValue
     
+    let customIconNames: Set<String> = [
+        "circle.dotted.and.circle"
+    ]
+    
     var body: some View {
         HStack {
             if dynamicTypeSize <= .xxxLarge {
-                Image(systemName: icon)
-                    .frame(width: 20.0, alignment: .center)
-                    .accessibilityHidden(true)
+                Group {
+                    if customIconNames.contains(icon) {
+                        Image(icon)
+                    } else {
+                        Image(systemName: icon)
+                    }
+                }
+                .frame(width: 20.0, alignment: .center)
+                .accessibilityHidden(true)
                 Spacer().frame(width: 10.0)
             }
             Text(String(localized: text))
