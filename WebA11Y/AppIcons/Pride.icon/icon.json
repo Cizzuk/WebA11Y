@@ -1,7 +1,5 @@
 {
-  "fill" : {
-    "solid" : "display-p3:0.96471,0.97647,1.00000,1.00000"
-  },
+  "fill" : "automatic",
   "groups" : [
     {
       "blur-material" : null,
