@@ -4,23 +4,19 @@
   },
   "groups" : [
     {
-      "blur-material" : 0.2,
+      "blur-material" : null,
       "layers" : [
         {
           "fill-specializations" : [
             {
-              "value" : "automatic"
+              "value" : {
+                "solid" : "display-p3:0.90771,0.56210,0.67361,1.00000"
+              }
             },
             {
               "appearance" : "dark",
               "value" : {
-                "solid" : "extended-gray:1.00000,1.00000"
-              }
-            },
-            {
-              "appearance" : "tinted",
-              "value" : {
-                "solid" : "srgb:0.50196,0.50196,0.50196,1.00000"
+                "solid" : "srgb:1.00000,0.68627,0.78039,1.00000"
               }
             }
           ],
@@ -47,13 +43,13 @@
         ]
       },
       "shadow" : {
-        "kind" : "neutral",
+        "kind" : "layer-color",
         "opacity" : 0.5
       },
       "specular" : true,
       "translucency" : {
-        "enabled" : true,
-        "value" : 0.5
+        "enabled" : false,
+        "value" : 0.2
       }
     },
     {
@@ -61,8 +57,16 @@
       "layers" : [
         {
           "fill" : "none",
-          "image-name" : "pride.png",
-          "name" : "pride",
+          "image-name-specializations" : [
+            {
+              "value" : "light.png"
+            },
+            {
+              "appearance" : "dark",
+              "value" : "dark.png"
+            }
+          ],
+          "name" : "dark",
           "opacity" : 1
         }
       ],
@@ -85,7 +89,7 @@
       }
     },
     {
-      "blur-material" : 0.2,
+      "blur-material" : null,
       "layers" : [
         {
           "blend-mode-specializations" : [
@@ -96,15 +100,14 @@
           ],
           "fill-specializations" : [
             {
-              "appearance" : "dark",
               "value" : {
-                "solid" : "extended-gray:1.00000,1.00000"
+                "solid" : "display-p3:0.38542,0.79457,0.77983,1.00000"
               }
             },
             {
-              "appearance" : "tinted",
+              "appearance" : "dark",
               "value" : {
-                "solid" : "srgb:0.50196,0.50196,0.50196,1.00000"
+                "solid" : "srgb:0.45098,0.90588,0.86667,1.00000"
               }
             }
           ],
@@ -129,13 +132,13 @@
         ]
       },
       "shadow" : {
-        "kind" : "neutral",
+        "kind" : "layer-color",
         "opacity" : 0.5
       },
       "specular" : true,
       "translucency" : {
-        "enabled" : true,
-        "value" : 0.5
+        "enabled" : false,
+        "value" : 0.2
       }
     }
   ],
