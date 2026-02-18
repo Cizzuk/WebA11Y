@@ -1,29 +1,20 @@
 {
-  "fill" : {
-    "linear-gradient" : [
-      "display-p3:0.96471,0.97647,1.00000,1.00000",
-      "display-p3:0.74118,0.84314,1.00000,1.00000"
-    ]
-  },
+  "fill" : "automatic",
   "groups" : [
     {
-      "blur-material" : 0.2,
+      "blur-material" : null,
       "layers" : [
         {
           "fill-specializations" : [
             {
-              "value" : "automatic"
+              "value" : {
+                "solid" : "display-p3:0.90771,0.56210,0.67361,1.00000"
+              }
             },
             {
               "appearance" : "dark",
               "value" : {
-                "solid" : "srgb:0.78824,0.87059,1.00000,1.00000"
-              }
-            },
-            {
-              "appearance" : "tinted",
-              "value" : {
-                "solid" : "srgb:0.50196,0.50196,0.50196,1.00000"
+                "solid" : "srgb:1.00000,0.68627,0.78039,1.00000"
               }
             }
           ],
@@ -50,49 +41,30 @@
         ]
       },
       "shadow" : {
-        "kind" : "neutral",
+        "kind" : "layer-color",
         "opacity" : 0.5
       },
       "specular" : true,
       "translucency" : {
-        "enabled" : true,
-        "value" : 0.5
+        "enabled" : false,
+        "value" : 0.2
       }
     },
     {
-      "blur-material-specializations" : [
-        {
-          "value" : 0.3
-        },
-        {
-          "appearance" : "tinted",
-          "value" : 0.3
-        }
-      ],
+      "blur-material" : 0.3,
       "layers" : [
         {
-          "fill-specializations" : [
+          "fill" : "none",
+          "image-name-specializations" : [
             {
-              "appearance" : "dark",
-              "value" : {
-                "linear-gradient" : [
-                  "display-p3:0.22353,0.57255,1.00000,1.00000",
-                  "srgb:0.14902,0.40392,1.00000,1.00000"
-                ]
-              }
+              "value" : "light.png"
             },
             {
-              "appearance" : "tinted",
-              "value" : {
-                "linear-gradient" : [
-                  "display-p3:0.87843,0.87843,0.87843,1.00000",
-                  "display-p3:0.81569,0.81569,0.81569,1.00000"
-                ]
-              }
+              "appearance" : "dark",
+              "value" : "dark.png"
             }
           ],
-          "image-name" : "body.png",
-          "name" : "body",
+          "name" : "dark",
           "opacity" : 1
         }
       ],
@@ -109,24 +81,13 @@
         "opacity" : 0.5
       },
       "specular" : true,
-      "translucency-specializations" : [
-        {
-          "value" : {
-            "enabled" : true,
-            "value" : 0.3
-          }
-        },
-        {
-          "appearance" : "tinted",
-          "value" : {
-            "enabled" : true,
-            "value" : 0.5
-          }
-        }
-      ]
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.1
+      }
     },
     {
-      "blur-material" : 0.2,
+      "blur-material" : null,
       "layers" : [
         {
           "blend-mode-specializations" : [
@@ -137,15 +98,14 @@
           ],
           "fill-specializations" : [
             {
-              "appearance" : "dark",
               "value" : {
-                "solid" : "srgb:0.78824,0.87059,1.00000,1.00000"
+                "solid" : "display-p3:0.38542,0.79457,0.77983,1.00000"
               }
             },
             {
-              "appearance" : "tinted",
+              "appearance" : "dark",
               "value" : {
-                "solid" : "srgb:0.50196,0.50196,0.50196,1.00000"
+                "solid" : "srgb:0.45098,0.90588,0.86667,1.00000"
               }
             }
           ],
@@ -170,13 +130,13 @@
         ]
       },
       "shadow" : {
-        "kind" : "neutral",
+        "kind" : "layer-color",
         "opacity" : 0.5
       },
       "specular" : true,
       "translucency" : {
-        "enabled" : true,
-        "value" : 0.5
+        "enabled" : false,
+        "value" : 0.2
       }
     }
   ],
