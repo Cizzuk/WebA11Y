@@ -40,7 +40,7 @@ struct ContentView: View {
                     }) {
                         IconLabel(icon: "gear", text: "Open Settings")
                             #if !os(visionOS)
-                            .foregroundColor(.accentColor)
+                            .foregroundStyle(.accent)
                             #endif
                     }
                     #endif
@@ -116,7 +116,7 @@ struct ContentView: View {
                             IconLabel(icon: "textformat", text: "Custom Font")
                             Spacer()
                             Text(fontChange ? "On" : "Off")
-                                .foregroundColor(.secondary)
+                                .foregroundStyle(.secondary)
                                 .multilineTextAlignment(.trailing)
                         }
                     }
@@ -134,7 +134,7 @@ struct ContentView: View {
                             IconLabel(icon: "curlybraces", text: "Custom CSS")
                             Spacer()
                             Text(insertCSS ? "On" : "Off")
-                                .foregroundColor(.secondary)
+                                .foregroundStyle(.secondary)
                                 .multilineTextAlignment(.trailing)
                         }
                     }
