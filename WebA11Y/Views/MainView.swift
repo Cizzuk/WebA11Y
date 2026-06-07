@@ -10,17 +10,7 @@ import SwiftUI
 import WidgetKit
 #endif
 
-@main
-struct MainView: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
-
-struct ContentView: View {
+struct MainView: View {
     // Load app settings
     @AppStorage("boldText", store: userDefaults) var boldText: Bool = false
     @AppStorage("buttonShape", store: userDefaults) var buttonShape: Bool = false
