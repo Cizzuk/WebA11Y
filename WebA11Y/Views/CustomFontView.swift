@@ -45,7 +45,7 @@ struct CustomFontView: View {
                             }
                         }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Enter the names of fonts available in Safari.")
                         Spacer()
                         Text("Font example:")

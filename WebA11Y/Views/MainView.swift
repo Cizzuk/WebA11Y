@@ -55,7 +55,7 @@ struct MainView: View {
                         #endif
                     }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Boldens all text.")
                         Text("It does not apply to some texts, such as those that are already bold.")
                     }
@@ -74,7 +74,7 @@ struct MainView: View {
                         #endif
                     }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Underlines links and buttons.")
                         Text("It does not apply to non-text buttons.")
                     }
@@ -93,7 +93,7 @@ struct MainView: View {
                         #endif
                     }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Blocks some animations and transitions.")
                         Text("Some pages may not display correctly. Also recommended to enable \"Reduce Motion\" in device settings.")
                     }
@@ -111,7 +111,7 @@ struct MainView: View {
                         }
                     }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Change the font.")
                         Text("Icons will not display correctly on some pages.")
                     }

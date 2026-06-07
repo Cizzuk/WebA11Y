@@ -42,7 +42,7 @@ struct CustomCSSView: View {
                         .submitLabel(.return)
                         .accessibilityTextContentType(.sourceCode)
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Please make sure that the entered style is correct.")
                         Spacer()
                         Text("For CSS, please refer to the following page:")
