@@ -19,7 +19,12 @@ struct WebA11YApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            MainView()
+            if #available(iOS 16.0, *) {
+                MainView()
+                    .scrollDismissesKeyboard(.interactively)
+            } else {
+                MainView()
+            }
         }
     }
 }
