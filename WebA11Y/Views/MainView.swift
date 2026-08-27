@@ -47,6 +47,7 @@ struct MainView: View {
                     Toggle(isOn: $boldText) {
                         IconLabel(icon: "bold", text: "Bold Text")
                     }
+                    .tint(.accent)
                     .onChange(of: boldText) { _ in
                         #if !os(visionOS)
                         if #available(iOS 18.0, macOS 26, *) {
@@ -66,6 +67,7 @@ struct MainView: View {
                     Toggle(isOn: $buttonShape) {
                         IconLabel(icon: "underline", text: "Button Shape")
                     }
+                    .tint(.accent)
                     .onChange(of: buttonShape) { _ in
                         #if !os(visionOS)
                         if #available(iOS 18.0, macOS 26, *) {
@@ -85,6 +87,7 @@ struct MainView: View {
                     Toggle(isOn: $blockAnimations) {
                         IconLabel(icon: "circle.dotted.and.circle", text: "Block Animations")
                     }
+                    .tint(.accent)
                     .onChange(of: blockAnimations) { _ in
                         #if !os(visionOS)
                         if #available(iOS 18.0, macOS 26, *) {

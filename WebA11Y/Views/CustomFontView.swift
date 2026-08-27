@@ -20,6 +20,7 @@ struct CustomFontView: View {
                 Toggle(isOn: $fontChange) {
                     IconLabel(icon: "textformat", text: "Custom Font")
                 }
+                .tint(.accent)
                 .onChange(of: fontChange) { _ in
                     #if !os(visionOS)
                     if #available(iOS 18.0, macOS 26, *) {

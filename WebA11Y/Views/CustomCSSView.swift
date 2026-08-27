@@ -24,6 +24,7 @@ struct CustomCSSView: View {
                 Toggle(isOn: $insertCSS) {
                     IconLabel(icon: "curlybraces", text: "Custom CSS")
                 }
+                .tint(.accent)
                 .onChange(of: insertCSS) { _ in
                     #if !os(visionOS)
                     if #available(iOS 18.0, macOS 26, *) {
