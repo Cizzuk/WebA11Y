@@ -17,7 +17,7 @@ struct AboutView: View {
                     IconLabel(icon: "info.circle", text: "Version")
                     Spacer()
                     Text("\(currentVersion ?? "Unknown") (\(currentBuild ?? "Unknown"))")
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
                         .textSelection(.enabled)
                 }
                 .accessibilityElement(children: .combine)

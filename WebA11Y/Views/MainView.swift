@@ -10,17 +10,7 @@ import SwiftUI
 import WidgetKit
 #endif
 
-@main
-struct MainView: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
-
-struct ContentView: View {
+struct MainView: View {
     // Load app settings
     @AppStorage("boldText", store: userDefaults) var boldText: Bool = false
     @AppStorage("buttonShape", store: userDefaults) var buttonShape: Bool = false
@@ -40,7 +30,7 @@ struct ContentView: View {
                     }) {
                         IconLabel(icon: "gear", text: "Open Settings")
                             #if !os(visionOS)
-                            .foregroundColor(.accentColor)
+                            .foregroundStyle(.accent)
                             #endif
                     }
                     #endif
@@ -57,6 +47,7 @@ struct ContentView: View {
                     Toggle(isOn: $boldText) {
                         IconLabel(icon: "bold", text: "Bold Text")
                     }
+                    .tint(.accent)
                     .onChange(of: boldText) { _ in
                         #if !os(visionOS)
                         if #available(iOS 18.0, macOS 26, *) {
@@ -65,7 +56,7 @@ struct ContentView: View {
                         #endif
                     }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Boldens all text.")
                         Text("It does not apply to some texts, such as those that are already bold.")
                     }
@@ -76,6 +67,7 @@ struct ContentView: View {
                     Toggle(isOn: $buttonShape) {
                         IconLabel(icon: "underline", text: "Button Shape")
                     }
+                    .tint(.accent)
                     .onChange(of: buttonShape) { _ in
                         #if !os(visionOS)
                         if #available(iOS 18.0, macOS 26, *) {
@@ -84,7 +76,7 @@ struct ContentView: View {
                         #endif
                     }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Underlines links and buttons.")
                         Text("It does not apply to non-text buttons.")
                     }
@@ -95,6 +87,7 @@ struct ContentView: View {
                     Toggle(isOn: $blockAnimations) {
                         IconLabel(icon: "circle.dotted.and.circle", text: "Block Animations")
                     }
+                    .tint(.accent)
                     .onChange(of: blockAnimations) { _ in
                         #if !os(visionOS)
                         if #available(iOS 18.0, macOS 26, *) {
@@ -103,7 +96,7 @@ struct ContentView: View {
                         #endif
                     }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Blocks some animations and transitions.")
                         Text("Some pages may not display correctly. Also recommended to enable \"Reduce Motion\" in device settings.")
                     }
@@ -116,12 +109,12 @@ struct ContentView: View {
                             IconLabel(icon: "textformat", text: "Custom Font")
                             Spacer()
                             Text(fontChange ? "On" : "Off")
-                                .foregroundColor(.secondary)
+                                .foregroundStyle(.secondary)
                                 .multilineTextAlignment(.trailing)
                         }
                     }
                 } footer: {
-                    VStack (alignment : .leading) {
+                    VStack(alignment : .leading) {
                         Text("Change the font.")
                         Text("Icons will not display correctly on some pages.")
                     }
@@ -134,7 +127,7 @@ struct ContentView: View {
                             IconLabel(icon: "curlybraces", text: "Custom CSS")
                             Spacer()
                             Text(insertCSS ? "On" : "Off")
-                                .foregroundColor(.secondary)
+                                .foregroundStyle(.secondary)
                                 .multilineTextAlignment(.trailing)
                         }
                     }

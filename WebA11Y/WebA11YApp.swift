@@ -1,18 +1,36 @@
 //
-//  AppDelegate.swift
+//  WebA11YApp.swift
 //  WebA11Y
 //
 //  Created by Cizzuk on 2023/01/05.
 //
 
+import SwiftUI
 import UIKit
 
-// Global constants
+// MARK: - Global Constants
+
 let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
 
-class AppDelegate: UIResponder, UIApplicationDelegate {
+// MARK: - App Entry Point
+@main
+struct WebA11YApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    var body: some Scene {
+        WindowGroup {
+            if #available(iOS 16.0, *) {
+                MainView()
+                    .scrollDismissesKeyboard(.interactively)
+            } else {
+                MainView()
+            }
+        }
+    }
+}
 
+// MARK: - App Delegate
+class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -41,5 +59,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
 }
