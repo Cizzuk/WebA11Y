@@ -383,16 +383,6 @@
         }
       }
     },
-    "Insert CSS" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CSSを挿入"
-          }
-        }
-      }
-    },
     "Insert custom styles into pages." : {
       "localizations" : {
         "ja" : {

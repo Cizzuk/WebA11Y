@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		904594322BAEACBC00CC9DBB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 904594312BAEACBC00CC9DBB /* Localizable.xcstrings */; };
 		909691A729668D2D009AE45F /* WebA11Y Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 909691A629668D2D009AE45F /* WebA11Y Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
 		90A07ED72BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
 		BEACDDC42EF0EC0700C4C273 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEACDDC32EF0EC0700C4C273 /* WidgetKit.framework */; };
 		BEACDDC62EF0EC0700C4C273 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEACDDC52EF0EC0700C4C273 /* SwiftUI.framework */; };
 		BEACDDD12EF0EC0800C4C273 /* WebA11Y CCWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */; platformFilters = (ios, maccatalyst, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BEACDE002EF0EFEB00C4C273 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 904594312BAEACBC00CC9DBB /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +48,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		904594312BAEACBC00CC9DBB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9096918929668D2B009AE45F /* WebA11Y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebA11Y.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909691A629668D2D009AE45F /* WebA11Y Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebA11Y Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -122,7 +119,6 @@
 			children = (
 				BEACDDFB2EF0EDD900C4C273 /* WebA11Y CCWidgetExtension.entitlements */,
 				90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */,
-				904594312BAEACBC00CC9DBB /* Localizable.xcstrings */,
 				BEACDDDD2EF0EC5D00C4C273 /* WebA11Y */,
 				BEACDDEF2EF0EC6000C4C273 /* WebA11Y Extension */,
 				BEACDDC72EF0EC0700C4C273 /* WebA11Y CCWidget */,
@@ -266,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */,
-				904594322BAEACBC00CC9DBB /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEACDE002EF0EFEB00C4C273 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
