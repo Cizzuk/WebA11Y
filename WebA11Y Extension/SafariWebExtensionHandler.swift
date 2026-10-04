@@ -45,9 +45,9 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             styleSheet += """
             a,
             button,
-            input[type=\"button\"],
-            input[type=\"submit\"],
-            input[type=\"reset\"] {
+            input[type="button"],
+            input[type="submit"],
+            input[type="reset"] {
               text-decoration: underline !important;
             }
             """
