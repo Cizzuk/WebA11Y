@@ -3,7 +3,12 @@
     "refractivity",
     "specular-location"
   ],
-  "fill" : "automatic",
+  "fill" : {
+    "linear-gradient" : [
+      "display-p3:0.96471,0.97647,1.00000,1.00000",
+      "display-p3:0.74118,0.84314,1.00000,1.00000"
+    ]
+  },
   "groups" : [
     {
       "blur-material" : null,
@@ -16,7 +21,7 @@
             {
               "appearance" : "dark",
               "value" : {
-                "solid" : "extended-gray:1.00000,1.00000"
+                "solid" : "srgb:0.78824,0.87059,1.00000,1.00000"
               }
             },
             {
@@ -69,15 +74,17 @@
         {
           "fill-specializations" : [
             {
+              "appearance" : "dark",
               "value" : {
-                "solid" : "srgb:0.20000,0.40000,1.00000,1.00000"
+                "linear-gradient" : [
+                  "display-p3:0.22353,0.57255,1.00000,1.00000",
+                  "srgb:0.14902,0.40392,1.00000,1.00000"
+                ]
               }
             },
             {
               "appearance" : "tinted",
-              "value" : {
-                "solid" : "extended-gray:1.00000,1.00000"
-              }
+              "value" : "none"
             }
           ],
           "glass" : true,
@@ -134,7 +141,7 @@
             {
               "appearance" : "dark",
               "value" : {
-                "solid" : "extended-gray:1.00000,1.00000"
+                "solid" : "srgb:0.78824,0.87059,1.00000,1.00000"
               }
             },
             {
