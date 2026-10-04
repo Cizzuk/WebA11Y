@@ -1,52 +1,52 @@
 //
-//  BlockAnimations.swift
-//  WebA11Y
+//  CCBoldText.swift
+//  WebA11Y Widget Extension
 //
-//  Created by Cizzuk on 2026/01/17.
+//  Created by Cizzuk on 2025/12/16.
 //
 
 import AppIntents
 import SwiftUI
 import WidgetKit
 
-struct CCBlockAnimations: ControlWidget {
+struct CCButtonShape: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(
-            kind: "com.tsg0o0.weba11y.CCWidget.blockAnimations",
+            kind: "com.tsg0o0.weba11y.CCWidget.buttonShape",
             provider: Provider()
         ) { value in
             ControlWidgetToggle(
-                "Block Animations",
+                "Button Shape",
                 isOn: value,
-                action: CCBlockAnimationsIntent()
+                action: CCButtonShapeIntent()
             ) { isRunning in
-                Label(isRunning ? "On" : "Off", systemImage: "circle.dotted.and.circle")
+                Label(isRunning ? "On" : "Off", systemImage: "underline")
             }
         }
-        .displayName("Block Animations")
+        .displayName("Button Shape")
     }
 }
 
-extension CCBlockAnimations {
+extension CCButtonShape {
     struct Provider: ControlValueProvider {
         var previewValue: Bool { false }
         func currentValue() async throws -> Bool {
             let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
-            return userDefaults.bool(forKey: "blockAnimations")
+            return userDefaults.bool(forKey: "buttonShape")
         }
     }
 }
 
-struct CCBlockAnimationsIntent: SetValueIntent {
-    static let title: LocalizedStringResource = "Block Animations"
+struct CCButtonShapeIntent: SetValueIntent {
+    static let title: LocalizedStringResource = "Button Shape"
     static var isDiscoverable: Bool = false
 
-    @Parameter(title: "Block Animations", default: false)
+    @Parameter(title: "Button Shape", default: false)
     var value: Bool
 
     func perform() async throws -> some IntentResult {
         let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
-        userDefaults.set(value, forKey: "blockAnimations")
+        userDefaults.set(value, forKey: "buttonShape")
         return .result()
     }
 }

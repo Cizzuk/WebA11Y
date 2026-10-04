@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		909691A729668D2D009AE45F /* WebA11Y Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 909691A629668D2D009AE45F /* WebA11Y Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		909691A729668D2D009AE45F /* WebA11Y Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 909691A629668D2D009AE45F /* WebA11Y Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		90A07ED62BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
 		90A07ED72BADCCD90080FD85 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */; };
 		BEACDDC42EF0EC0700C4C273 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEACDDC32EF0EC0700C4C273 /* WidgetKit.framework */; };
 		BEACDDC62EF0EC0700C4C273 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEACDDC52EF0EC0700C4C273 /* SwiftUI.framework */; };
-		BEACDDD12EF0EC0800C4C273 /* WebA11Y CCWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */; platformFilters = (ios, maccatalyst, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEACDDD12EF0EC0800C4C273 /* WebA11Y Widget Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BEACDDC12EF0EC0700C4C273 /* WebA11Y Widget Extension.appex */; platformFilters = (ios, maccatalyst, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				BEACDDD12EF0EC0800C4C273 /* WebA11Y CCWidgetExtension.appex in Embed Foundation Extensions */,
-				909691A729668D2D009AE45F /* WebA11Y Extension.appex in Embed Foundation Extensions */,
+				BEACDDD12EF0EC0800C4C273 /* WebA11Y Widget Extension.appex in Embed Foundation Extensions */,
+				909691A729668D2D009AE45F /* WebA11Y Safari Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,12 +49,11 @@
 
 /* Begin PBXFileReference section */
 		9096918929668D2B009AE45F /* WebA11Y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebA11Y.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		909691A629668D2D009AE45F /* WebA11Y Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebA11Y Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		909691A629668D2D009AE45F /* WebA11Y Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebA11Y Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebA11Y CCWidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEACDDC12EF0EC0700C4C273 /* WebA11Y Widget Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebA11Y Widget Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEACDDC32EF0EC0700C4C273 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		BEACDDC52EF0EC0700C4C273 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		BEACDDFB2EF0EDD900C4C273 /* WebA11Y CCWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebA11Y CCWidgetExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -63,7 +62,7 @@
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = BEACDDC02EF0EC0700C4C273 /* WebA11Y CCWidgetExtension */;
+			target = BEACDDC02EF0EC0700C4C273 /* WebA11Y Widget Extension */;
 		};
 		BEACDDE42EF0EC5D00C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -77,14 +76,14 @@
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 909691A529668D2D009AE45F /* WebA11Y Extension */;
+			target = 909691A529668D2D009AE45F /* WebA11Y Safari Extension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BEACDDC72EF0EC0700C4C273 /* WebA11Y CCWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEACDDD52EF0EC0800C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "WebA11Y CCWidget"; sourceTree = "<group>"; };
+		BEACDDC72EF0EC0700C4C273 /* WidgetExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEACDDD52EF0EC0800C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = WidgetExtension; sourceTree = "<group>"; };
 		BEACDDDD2EF0EC5D00C4C273 /* WebA11Y */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEACDDE42EF0EC5D00C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = WebA11Y; sourceTree = "<group>"; };
-		BEACDDEF2EF0EC6000C4C273 /* WebA11Y Extension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEACDDF82EF0EC6000C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (Resources/_locales, Resources/images, ); path = "WebA11Y Extension"; sourceTree = "<group>"; };
+		BEACDDEF2EF0EC6000C4C273 /* SafariExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BEACDDF82EF0EC6000C4C273 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (Resources/_locales, Resources/images, ); path = SafariExtension; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +116,10 @@
 		9096918029668D2B009AE45F = {
 			isa = PBXGroup;
 			children = (
-				BEACDDFB2EF0EDD900C4C273 /* WebA11Y CCWidgetExtension.entitlements */,
 				90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */,
 				BEACDDDD2EF0EC5D00C4C273 /* WebA11Y */,
-				BEACDDEF2EF0EC6000C4C273 /* WebA11Y Extension */,
-				BEACDDC72EF0EC0700C4C273 /* WebA11Y CCWidget */,
+				BEACDDEF2EF0EC6000C4C273 /* SafariExtension */,
+				BEACDDC72EF0EC0700C4C273 /* WidgetExtension */,
 				BEACDDC22EF0EC0700C4C273 /* Frameworks */,
 				9096918A29668D2B009AE45F /* Products */,
 			);
@@ -131,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				9096918929668D2B009AE45F /* WebA11Y.app */,
-				909691A629668D2D009AE45F /* WebA11Y Extension.appex */,
-				BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */,
+				909691A629668D2D009AE45F /* WebA11Y Safari Extension.appex */,
+				BEACDDC12EF0EC0700C4C273 /* WebA11Y Widget Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,9 +170,9 @@
 			productReference = 9096918929668D2B009AE45F /* WebA11Y.app */;
 			productType = "com.apple.product-type.application";
 		};
-		909691A529668D2D009AE45F /* WebA11Y Extension */ = {
+		909691A529668D2D009AE45F /* WebA11Y Safari Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 909691C229668D2D009AE45F /* Build configuration list for PBXNativeTarget "WebA11Y Extension" */;
+			buildConfigurationList = 909691C229668D2D009AE45F /* Build configuration list for PBXNativeTarget "WebA11Y Safari Extension" */;
 			buildPhases = (
 				909691A229668D2D009AE45F /* Sources */,
 				909691A329668D2D009AE45F /* Frameworks */,
@@ -185,16 +183,16 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BEACDDEF2EF0EC6000C4C273 /* WebA11Y Extension */,
+				BEACDDEF2EF0EC6000C4C273 /* SafariExtension */,
 			);
-			name = "WebA11Y Extension";
+			name = "WebA11Y Safari Extension";
 			productName = "WebA11Y Extension";
-			productReference = 909691A629668D2D009AE45F /* WebA11Y Extension.appex */;
+			productReference = 909691A629668D2D009AE45F /* WebA11Y Safari Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		BEACDDC02EF0EC0700C4C273 /* WebA11Y CCWidgetExtension */ = {
+		BEACDDC02EF0EC0700C4C273 /* WebA11Y Widget Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEACDDD22EF0EC0800C4C273 /* Build configuration list for PBXNativeTarget "WebA11Y CCWidgetExtension" */;
+			buildConfigurationList = BEACDDD22EF0EC0800C4C273 /* Build configuration list for PBXNativeTarget "WebA11Y Widget Extension" */;
 			buildPhases = (
 				BEACDDBD2EF0EC0700C4C273 /* Sources */,
 				BEACDDBE2EF0EC0700C4C273 /* Frameworks */,
@@ -205,13 +203,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BEACDDC72EF0EC0700C4C273 /* WebA11Y CCWidget */,
+				BEACDDC72EF0EC0700C4C273 /* WidgetExtension */,
 			);
-			name = "WebA11Y CCWidgetExtension";
+			name = "WebA11Y Widget Extension";
 			packageProductDependencies = (
 			);
 			productName = "WebA11Y CCWidgetExtension";
-			productReference = BEACDDC12EF0EC0700C4C273 /* WebA11Y CCWidgetExtension.appex */;
+			productReference = BEACDDC12EF0EC0700C4C273 /* WebA11Y Widget Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -250,8 +248,8 @@
 			projectRoot = "";
 			targets = (
 				9096918829668D2B009AE45F /* WebA11Y */,
-				909691A529668D2D009AE45F /* WebA11Y Extension */,
-				BEACDDC02EF0EC0700C4C273 /* WebA11Y CCWidgetExtension */,
+				909691A529668D2D009AE45F /* WebA11Y Safari Extension */,
+				BEACDDC02EF0EC0700C4C273 /* WebA11Y Widget Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -309,7 +307,7 @@
 /* Begin PBXTargetDependency section */
 		909691A929668D2D009AE45F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 909691A529668D2D009AE45F /* WebA11Y Extension */;
+			target = 909691A529668D2D009AE45F /* WebA11Y Safari Extension */;
 			targetProxy = 909691A829668D2D009AE45F /* PBXContainerItemProxy */;
 		};
 		BEACDDD02EF0EC0800C4C273 /* PBXTargetDependency */ = {
@@ -318,7 +316,7 @@
 				ios,
 				maccatalyst,
 			);
-			target = BEACDDC02EF0EC0700C4C273 /* WebA11Y CCWidgetExtension */;
+			target = BEACDDC02EF0EC0700C4C273 /* WebA11Y Widget Extension */;
 			targetProxy = BEACDDCF2EF0EC0800C4C273 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -453,14 +451,13 @@
 		909691C329668D2D009AE45F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "WebA11Y Extension/WebA11Y Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "SafariExtension/WebA11Y Safari Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WebA11Y Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y Extension";
+				INFOPLIST_FILE = SafariExtension/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +465,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.7;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -490,14 +487,13 @@
 		909691C429668D2D009AE45F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "WebA11Y Extension/WebA11Y Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "SafariExtension/WebA11Y Safari Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WebA11Y Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y Extension";
+				INFOPLIST_FILE = SafariExtension/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,7 +501,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.7;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -532,7 +528,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = WebA11Y/WebA11Y.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
@@ -556,7 +552,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.7;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -584,7 +580,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = WebA11Y/WebA11Y.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
@@ -608,7 +604,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.7;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -634,9 +630,9 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "WebA11Y CCWidgetExtension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WidgetExtension/WebA11Y Widget Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
@@ -650,8 +646,7 @@
 				ENABLE_RESOURCE_ACCESS_USB = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WebA11Y CCWidget/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y CCWidget";
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -660,7 +655,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.safariweba11y.CCWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -685,9 +680,9 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "WebA11Y CCWidgetExtension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WidgetExtension/WebA11Y Widget Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
@@ -701,8 +696,7 @@
 				ENABLE_RESOURCE_ACCESS_USB = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WebA11Y CCWidget/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WebA11Y CCWidget";
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -711,7 +705,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsg0o0.safariweba11y.CCWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -741,7 +735,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		909691C229668D2D009AE45F /* Build configuration list for PBXNativeTarget "WebA11Y Extension" */ = {
+		909691C229668D2D009AE45F /* Build configuration list for PBXNativeTarget "WebA11Y Safari Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				909691C329668D2D009AE45F /* Debug */,
@@ -759,7 +753,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEACDDD22EF0EC0800C4C273 /* Build configuration list for PBXNativeTarget "WebA11Y CCWidgetExtension" */ = {
+		BEACDDD22EF0EC0800C4C273 /* Build configuration list for PBXNativeTarget "WebA11Y Widget Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEACDDD32EF0EC0800C4C273 /* Debug */,

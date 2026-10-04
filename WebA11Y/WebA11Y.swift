@@ -1,5 +1,5 @@
 //
-//  WebA11YApp.swift
+//  WebA11Y.swift
 //  WebA11Y
 //
 //  Created by Cizzuk on 2023/01/05.
@@ -15,7 +15,7 @@ let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
 
 // MARK: - App Entry Point
 @main
-struct WebA11YApp: App {
+struct WebA11Y: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {

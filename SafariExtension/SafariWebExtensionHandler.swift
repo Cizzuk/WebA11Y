@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  WebA11Y Extension
+//  WebA11Y Safari Extension
 //
 //  Created by Cizzuk on 2023/01/05.
 //
