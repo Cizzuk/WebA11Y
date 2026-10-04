@@ -49,7 +49,7 @@ struct CustomCSSView: View {
                         Text("For CSS, please refer to the following page:")
                         Link("https://developer.mozilla.org/en-US/docs/Web/CSS", destination: URL(string: "https://developer.mozilla.org/en-US/docs/Web/CSS")!)
                     }
-                    .font(.caption)
+                    .font(.footnote)
                 }
             }
         }
