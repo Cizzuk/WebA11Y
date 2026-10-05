@@ -21,7 +21,9 @@ struct WebA11Y: App {
         WindowGroup {
             if #available(iOS 16.0, *) {
                 MainView()
+                    #if !os(visionOS)
                     .scrollDismissesKeyboard(.interactively)
+                    #endif
             } else {
                 MainView()
             }
