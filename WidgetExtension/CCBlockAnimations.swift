@@ -1,52 +1,52 @@
 //
-//  CCBoldText.swift
-//  WebA11Y
+//  BlockAnimations.swift
+//  WebA11Y Widget Extension
 //
-//  Created by Cizzuk on 2025/12/16.
+//  Created by Cizzuk on 2026/01/17.
 //
 
 import AppIntents
 import SwiftUI
 import WidgetKit
 
-struct CCBoldText: ControlWidget {
+struct CCBlockAnimations: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(
-            kind: "com.tsg0o0.weba11y.CCWidget.boldText",
+            kind: "com.tsg0o0.weba11y.CCWidget.blockAnimations",
             provider: Provider()
         ) { value in
             ControlWidgetToggle(
-                "Bold Text",
+                "Block Animations",
                 isOn: value,
-                action: CCBoldTextIntent()
+                action: CCBlockAnimationsIntent()
             ) { isRunning in
-                Label(isRunning ? "On" : "Off", systemImage: "bold")
+                Label(isRunning ? "On" : "Off", systemImage: "circle.dotted.and.circle")
             }
         }
-        .displayName("Bold Text")
+        .displayName("Block Animations")
     }
 }
 
-extension CCBoldText {
+extension CCBlockAnimations {
     struct Provider: ControlValueProvider {
         var previewValue: Bool { false }
         func currentValue() async throws -> Bool {
             let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
-            return userDefaults.bool(forKey: "boldText")
+            return userDefaults.bool(forKey: "blockAnimations")
         }
     }
 }
 
-struct CCBoldTextIntent: SetValueIntent {
-    static let title: LocalizedStringResource = "Bold Text"
+struct CCBlockAnimationsIntent: SetValueIntent {
+    static let title: LocalizedStringResource = "Block Animations"
     static var isDiscoverable: Bool = false
 
-    @Parameter(title: "Bold Text", default: false)
+    @Parameter(title: "Block Animations", default: false)
     var value: Bool
 
     func perform() async throws -> some IntentResult {
         let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
-        userDefaults.set(value, forKey: "boldText")
+        userDefaults.set(value, forKey: "blockAnimations")
         return .result()
     }
 }

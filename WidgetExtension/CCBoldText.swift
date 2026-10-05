@@ -1,6 +1,6 @@
 //
 //  CCBoldText.swift
-//  WebA11Y
+//  WebA11Y Widget Extension
 //
 //  Created by Cizzuk on 2025/12/16.
 //
@@ -9,44 +9,44 @@ import AppIntents
 import SwiftUI
 import WidgetKit
 
-struct CCButtonShape: ControlWidget {
+struct CCBoldText: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(
-            kind: "com.tsg0o0.weba11y.CCWidget.buttonShape",
+            kind: "com.tsg0o0.weba11y.CCWidget.boldText",
             provider: Provider()
         ) { value in
             ControlWidgetToggle(
-                "Button Shape",
+                "Bold Text",
                 isOn: value,
-                action: CCButtonShapeIntent()
+                action: CCBoldTextIntent()
             ) { isRunning in
-                Label(isRunning ? "On" : "Off", systemImage: "underline")
+                Label(isRunning ? "On" : "Off", systemImage: "bold")
             }
         }
-        .displayName("Button Shape")
+        .displayName("Bold Text")
     }
 }
 
-extension CCButtonShape {
+extension CCBoldText {
     struct Provider: ControlValueProvider {
         var previewValue: Bool { false }
         func currentValue() async throws -> Bool {
             let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
-            return userDefaults.bool(forKey: "buttonShape")
+            return userDefaults.bool(forKey: "boldText")
         }
     }
 }
 
-struct CCButtonShapeIntent: SetValueIntent {
-    static let title: LocalizedStringResource = "Button Shape"
+struct CCBoldTextIntent: SetValueIntent {
+    static let title: LocalizedStringResource = "Bold Text"
     static var isDiscoverable: Bool = false
 
-    @Parameter(title: "Button Shape", default: false)
+    @Parameter(title: "Bold Text", default: false)
     var value: Bool
 
     func perform() async throws -> some IntentResult {
         let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
-        userDefaults.set(value, forKey: "buttonShape")
+        userDefaults.set(value, forKey: "boldText")
         return .result()
     }
 }

@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  WebA11Y Extension
+//  WebA11Y Safari Extension
 //
 //  Created by Cizzuk on 2023/01/05.
 //
@@ -45,9 +45,9 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             styleSheet += """
             a,
             button,
-            input[type=\"button\"],
-            input[type=\"submit\"],
-            input[type=\"reset\"] {
+            input[type="button"],
+            input[type="submit"],
+            input[type="reset"] {
               text-decoration: underline !important;
             }
             """

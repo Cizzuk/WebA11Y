@@ -14,6 +14,7 @@ struct ChangeIconView: View {
                 iconItem(iconName: "WebA11Y", iconID: "AppIcon")
                 iconItem(iconName: "Pride", iconID: "Pride")
                 iconItem(iconName: "Unity", iconID: "Unity")
+                iconItem(iconName: "OG", iconID: "OG")
             }
         }
         .navigationTitle("Change App Icon")
