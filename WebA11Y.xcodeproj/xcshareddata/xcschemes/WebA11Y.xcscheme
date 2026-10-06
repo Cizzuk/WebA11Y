@@ -17,6 +17,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9096918829668D2B009AE45F"
                BuildableName = "WebA11Y.app"
+               BlueprintName = "WebA11Y"
                ReferencedContainer = "container:WebA11Y.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,6 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9096918829668D2B009AE45F"
             BuildableName = "WebA11Y.app"
+            BlueprintName = "WebA11Y"
             ReferencedContainer = "container:WebA11Y.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,6 +64,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9096918829668D2B009AE45F"
             BuildableName = "WebA11Y.app"
+            BlueprintName = "WebA11Y"
             ReferencedContainer = "container:WebA11Y.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
