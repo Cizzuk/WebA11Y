@@ -5,8 +5,8 @@
 //  Created by Cizzuk on 2025/01/29.
 //
 
-import Foundation
 import AppIntents
+import Foundation
 
 @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
 enum IntentTurnEnum: String, AppEnum {
@@ -16,6 +16,6 @@ enum IntentTurnEnum: String, AppEnum {
     static var typeDisplayRepresentation = TypeDisplayRepresentation(name: "Operation")
     static var caseDisplayRepresentations: [Self: DisplayRepresentation] = [
         .turn: "Turn",
-        .toggle: "Toggle"
+        .toggle: "Toggle",
     ]
 }

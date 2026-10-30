@@ -5,10 +5,11 @@
 //  Created by Cizzuk on 2024/08/31.
 //
 
-import Foundation
 import AppIntents
+import Foundation
+
 #if !os(visionOS)
-import WidgetKit
+    import WidgetKit
 #endif
 
 @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
@@ -31,11 +32,11 @@ struct BoldText: AppIntent, CustomIntentMigratedAppIntent {
             Summary("\(\.$toggle) Bold Text on the Web")
         }
     }
-    
+
     func perform() async throws -> some IntentResult {
         let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
         var boldText: Bool = userDefaults.bool(forKey: "boldText")
-        
+
         switch toggle {
         case .toggle:
             boldText.toggle()
@@ -44,16 +45,15 @@ struct BoldText: AppIntent, CustomIntentMigratedAppIntent {
         default:
             break
         }
-        
+
         userDefaults.set(boldText, forKey: "boldText")
-        
+
         #if !os(visionOS)
-        if #available(iOS 18.0, macOS 26, *) {
-            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.boldText")
-        }
+            if #available(iOS 18.0, macOS 26, *) {
+                ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.boldText")
+            }
         #endif
-        
+
         return .result()
     }
 }
-

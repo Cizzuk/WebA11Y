@@ -5,10 +5,11 @@
 //  Created by Cizzuk on 2026/01/17.
 //
 
-import Foundation
 import AppIntents
+import Foundation
+
 #if !os(visionOS)
-import WidgetKit
+    import WidgetKit
 #endif
 
 @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
@@ -31,11 +32,11 @@ struct BlockAnimations: AppIntent, CustomIntentMigratedAppIntent {
             Summary("\(\.$toggle) Block Animations on the Web")
         }
     }
-    
+
     func perform() async throws -> some IntentResult {
         let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
         var blockAnimations: Bool = userDefaults.bool(forKey: "blockAnimations")
-        
+
         switch toggle {
         case .toggle:
             blockAnimations.toggle()
@@ -44,16 +45,15 @@ struct BlockAnimations: AppIntent, CustomIntentMigratedAppIntent {
         default:
             break
         }
-        
+
         userDefaults.set(blockAnimations, forKey: "blockAnimations")
-        
+
         #if !os(visionOS)
-        if #available(iOS 18.0, macOS 26, *) {
-            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.blockAnimations")
-        }
+            if #available(iOS 18.0, macOS 26, *) {
+                ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.blockAnimations")
+            }
         #endif
-        
+
         return .result()
     }
 }
-

@@ -20,7 +20,7 @@ struct ChangeIconView: View {
         .navigationTitle("Change App Icon")
         .navigationBarTitleDisplayMode(.inline)
     }
-    
+
     private func iconItem(iconName: String, iconID: String) -> some View {
         HStack {
             Image(iconID + "-pre")

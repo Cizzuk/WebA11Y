@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+
 #if !os(visionOS)
-import WidgetKit
+    import WidgetKit
 #endif
 
 struct MainView: View {
@@ -17,31 +18,31 @@ struct MainView: View {
     @AppStorage("blockAnimations", store: userDefaults) var blockAnimations: Bool = false
     @AppStorage("fontChange", store: userDefaults) var fontChange: Bool = false
     @AppStorage("insertCSS", store: userDefaults) var insertCSS: Bool = false
-    
+
     var body: some View {
         NavigationView {
             List {
                 Section {
                     #if !targetEnvironment(macCatalyst)
-                    Button(action: {
-                        if let url = URL(string: "App-Prefs:com.apple.mobilesafari") {
-                            UIApplication.shared.open(url)
+                        Button(action: {
+                            if let url = URL(string: "App-Prefs:com.apple.mobilesafari") {
+                                UIApplication.shared.open(url)
+                            }
+                        }) {
+                            IconLabel(icon: "gear", text: "Open Settings")
+                                #if !os(visionOS)
+                                    .foregroundStyle(.accent)
+                                #endif
                         }
-                    }) {
-                        IconLabel(icon: "gear", text: "Open Settings")
-                            #if !os(visionOS)
-                            .foregroundStyle(.accent)
-                            #endif
-                    }
                     #endif
                 } footer: {
                     #if targetEnvironment(macCatalyst)
-                    Text("Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y.")
+                        Text("Open Safari, go to Safari → Settings..., select 'Extensions' tab and enable WebA11Y.")
                     #else
-                    Text("Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension.")
+                        Text("Go to Settings → Apps → Safari → Extensions → WebA11Y and allow extension.")
                     #endif
                 }
-                
+
                 // Bold Text
                 Section {
                     Toggle(isOn: $boldText) {
@@ -50,18 +51,18 @@ struct MainView: View {
                     .tint(.accent)
                     .onChange(of: boldText) { _ in
                         #if !os(visionOS)
-                        if #available(iOS 18.0, macOS 26, *) {
-                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.boldText")
-                        }
+                            if #available(iOS 18.0, macOS 26, *) {
+                                ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.boldText")
+                            }
                         #endif
                     }
                 } footer: {
-                    VStack(alignment : .leading) {
+                    VStack(alignment: .leading) {
                         Text("Boldens all text.")
                         Text("It does not apply to some texts, such as those that are already bold.")
                     }
                 }
-                
+
                 // Button Shape
                 Section {
                     Toggle(isOn: $buttonShape) {
@@ -70,18 +71,18 @@ struct MainView: View {
                     .tint(.accent)
                     .onChange(of: buttonShape) { _ in
                         #if !os(visionOS)
-                        if #available(iOS 18.0, macOS 26, *) {
-                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.buttonShape")
-                        }
+                            if #available(iOS 18.0, macOS 26, *) {
+                                ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.buttonShape")
+                            }
                         #endif
                     }
                 } footer: {
-                    VStack(alignment : .leading) {
+                    VStack(alignment: .leading) {
                         Text("Underlines links and buttons.")
                         Text("It does not apply to non-text buttons.")
                     }
                 }
-                
+
                 // Block Animations
                 Section {
                     Toggle(isOn: $blockAnimations) {
@@ -90,18 +91,18 @@ struct MainView: View {
                     .tint(.accent)
                     .onChange(of: blockAnimations) { _ in
                         #if !os(visionOS)
-                        if #available(iOS 18.0, macOS 26, *) {
-                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.blockAnimations")
-                        }
+                            if #available(iOS 18.0, macOS 26, *) {
+                                ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.blockAnimations")
+                            }
                         #endif
                     }
                 } footer: {
-                    VStack(alignment : .leading) {
+                    VStack(alignment: .leading) {
                         Text("Blocks some animations and transitions.")
                         Text("Some pages may not display correctly. Also recommended to enable \"Reduce Motion\" in device settings.")
                     }
                 }
-                
+
                 // Custom Font
                 Section {
                     NavigationLink(destination: CustomFontView()) {
@@ -114,12 +115,12 @@ struct MainView: View {
                         }
                     }
                 } footer: {
-                    VStack(alignment : .leading) {
+                    VStack(alignment: .leading) {
                         Text("Change the font.")
                         Text("Icons will not display correctly on some pages.")
                     }
                 }
-                
+
                 // Custom CSS
                 Section {
                     NavigationLink(destination: CustomCSSView()) {
@@ -134,7 +135,7 @@ struct MainView: View {
                 } footer: {
                     Text("Insert custom styles into pages.")
                 }
-                
+
                 // Support Section
                 Section {
                     NavigationLink(destination: AboutView()) {
@@ -156,14 +157,14 @@ struct MainView: View {
 
 struct IconLabel: View {
     @Environment(\.dynamicTypeSize) var dynamicTypeSize
-    
+
     let icon: String
     let text: String.LocalizationValue
-    
+
     let customIconNames: Set<String> = [
         "circle.dotted.and.circle"
     ]
-    
+
     var body: some View {
         HStack {
             if dynamicTypeSize <= .xxxLarge {

@@ -5,10 +5,11 @@
 //  Created by Cizzuk on 2024/08/31.
 //
 
-import Foundation
 import AppIntents
+import Foundation
+
 #if !os(visionOS)
-import WidgetKit
+    import WidgetKit
 #endif
 
 @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
@@ -31,11 +32,11 @@ struct FontChange: AppIntent, CustomIntentMigratedAppIntent {
             Summary("\(\.$toggle) Use Custom Font on the Web")
         }
     }
-    
+
     func perform() async throws -> some IntentResult {
         let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
         var fontChange: Bool = userDefaults.bool(forKey: "fontChange")
-        
+
         switch toggle {
         case .toggle:
             fontChange.toggle()
@@ -44,16 +45,15 @@ struct FontChange: AppIntent, CustomIntentMigratedAppIntent {
         default:
             break
         }
-        
+
         userDefaults.set(fontChange, forKey: "fontChange")
-        
+
         #if !os(visionOS)
-        if #available(iOS 18.0, macOS 26, *) {
-            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
-        }
+            if #available(iOS 18.0, macOS 26, *) {
+                ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
+            }
         #endif
-        
+
         return .result()
     }
 }
-
