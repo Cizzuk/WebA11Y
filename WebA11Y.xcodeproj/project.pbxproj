@@ -117,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				90A07ED52BADCCD90080FD85 /* PrivacyInfo.xcprivacy */,
-				BEACDDDD2EF0EC5D00C4C273 /* WebA11Y */,
 				BEACDDEF2EF0EC6000C4C273 /* SafariExtension */,
+				BEACDDDD2EF0EC5D00C4C273 /* WebA11Y */,
 				BEACDDC72EF0EC0700C4C273 /* WidgetExtension */,
 				BEACDDC22EF0EC0700C4C273 /* Frameworks */,
 				9096918A29668D2B009AE45F /* Products */,
