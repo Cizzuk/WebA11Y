@@ -20,7 +20,7 @@ struct BoldText: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the Bold Text to on or off on the Web.")
 
     @Parameter(title: "Operation", default: .turn)
-    var toggle: IntentTurnEnum?
+    var toggle: IntentTurnEnum
 
     @Parameter(title: "State", default: false)
     var state: Bool
@@ -42,8 +42,6 @@ struct BoldText: AppIntent, CustomIntentMigratedAppIntent {
             boldText.toggle()
         case .turn:
             boldText = state
-        default:
-            break
         }
 
         userDefaults.set(boldText, forKey: "boldText")

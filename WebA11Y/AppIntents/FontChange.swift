@@ -20,7 +20,7 @@ struct FontChange: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the Custom Font to on or off on the Web.")
 
     @Parameter(title: "Operation", default: .turn)
-    var toggle: IntentTurnEnum?
+    var toggle: IntentTurnEnum
 
     @Parameter(title: "State", default: false)
     var state: Bool
@@ -42,8 +42,6 @@ struct FontChange: AppIntent, CustomIntentMigratedAppIntent {
             fontChange.toggle()
         case .turn:
             fontChange = state
-        default:
-            break
         }
 
         userDefaults.set(fontChange, forKey: "fontChange")

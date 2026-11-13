@@ -20,7 +20,7 @@ struct ButtonShape: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the Button Shape to on or off on the Web.")
 
     @Parameter(title: "Operation", default: .turn)
-    var toggle: IntentTurnEnum?
+    var toggle: IntentTurnEnum
 
     @Parameter(title: "State", default: false)
     var state: Bool
@@ -42,8 +42,6 @@ struct ButtonShape: AppIntent, CustomIntentMigratedAppIntent {
             buttonShape.toggle()
         case .turn:
             buttonShape = state
-        default:
-            break
         }
 
         userDefaults.set(buttonShape, forKey: "buttonShape")

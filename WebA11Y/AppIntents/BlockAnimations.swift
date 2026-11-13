@@ -20,7 +20,7 @@ struct BlockAnimations: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the Block Animations to on or off on the Web.")
 
     @Parameter(title: "Operation", default: .turn)
-    var toggle: IntentTurnEnum?
+    var toggle: IntentTurnEnum
 
     @Parameter(title: "State", default: false)
     var state: Bool
@@ -42,8 +42,6 @@ struct BlockAnimations: AppIntent, CustomIntentMigratedAppIntent {
             blockAnimations.toggle()
         case .turn:
             blockAnimations = state
-        default:
-            break
         }
 
         userDefaults.set(blockAnimations, forKey: "blockAnimations")

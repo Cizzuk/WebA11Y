@@ -16,7 +16,7 @@ struct EditFont: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the font name to be used on the Web.")
 
     @Parameter(title: "Font name", default: "system-ui, sans-serif")
-    var fontFamily: String?
+    var fontFamily: String
 
     static var parameterSummary: some ParameterSummary {
         Summary("Set font on the web to \(\.$fontFamily)")

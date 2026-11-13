@@ -20,7 +20,7 @@ struct InsertCSS: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the Insert Custom CSS to on or off on the Web.")
 
     @Parameter(title: "Operation", default: .turn)
-    var toggle: IntentTurnEnum?
+    var toggle: IntentTurnEnum
 
     @Parameter(title: "State", default: false)
     var state: Bool
@@ -42,8 +42,6 @@ struct InsertCSS: AppIntent, CustomIntentMigratedAppIntent {
             insertCSS.toggle()
         case .turn:
             insertCSS = state
-        default:
-            break
         }
 
         userDefaults.set(insertCSS, forKey: "insertCSS")

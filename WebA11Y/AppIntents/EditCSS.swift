@@ -16,7 +16,7 @@ struct EditCSS: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the custom CSS to be used on the Web.")
 
     @Parameter(title: "Custom CSS", default: "")
-    var editCSS: String?
+    var editCSS: String
 
     static var parameterSummary: some ParameterSummary {
         Summary("Set custom CSS on the web to \(\.$editCSS)")
