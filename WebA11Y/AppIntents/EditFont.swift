@@ -29,7 +29,11 @@ struct EditFont: AppIntent, CustomIntentMigratedAppIntent {
             throw IntentError.notAllowedEditingFromShortcut
         }
 
-        userDefaults.set(fontFamily, forKey: "fontFamily")
+        let formattedFontFamily = fontFamily.filter { char in
+            char.isLetter || char.isNumber || char.isWhitespace || char == "-" || char == "_" || char == "." || char == "," || char == "'" || char == "\""
+        }
+
+        userDefaults.set(formattedFontFamily, forKey: "fontFamily")
         return .result()
     }
 }
