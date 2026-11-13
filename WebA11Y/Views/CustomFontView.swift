@@ -24,13 +24,13 @@ struct CustomFontView: View {
                     IconLabel(icon: "textformat", text: "Custom Font")
                 }
                 .tint(.accent)
-                .onChange(of: fontChange) { _ in
-                    #if !os(visionOS)
+                #if !os(visionOS)
+                    .onChange(of: fontChange) { _ in
                         if #available(iOS 18.0, macOS 26, *) {
                             ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
                         }
-                    #endif
-                }
+                    }
+                #endif
             }
 
             if fontChange {

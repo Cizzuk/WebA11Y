@@ -28,13 +28,13 @@ struct CustomCSSView: View {
                     IconLabel(icon: "curlybraces", text: "Custom CSS")
                 }
                 .tint(.accent)
-                .onChange(of: insertCSS) { _ in
-                    #if !os(visionOS)
+                #if !os(visionOS)
+                    .onChange(of: insertCSS) { _ in
                         if #available(iOS 18.0, macOS 26, *) {
                             ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.insertCSS")
                         }
-                    #endif
-                }
+                    }
+                #endif
             }
 
             if insertCSS {

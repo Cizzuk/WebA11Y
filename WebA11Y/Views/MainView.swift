@@ -49,13 +49,13 @@ struct MainView: View {
                         IconLabel(icon: "bold", text: "Bold Text")
                     }
                     .tint(.accent)
-                    .onChange(of: boldText) { _ in
-                        #if !os(visionOS)
+                    #if !os(visionOS)
+                        .onChange(of: boldText) { _ in
                             if #available(iOS 18.0, macOS 26, *) {
                                 ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.boldText")
                             }
-                        #endif
-                    }
+                        }
+                    #endif
                 } footer: {
                     VStack(alignment: .leading) {
                         Text("Boldens all text.")
@@ -69,13 +69,13 @@ struct MainView: View {
                         IconLabel(icon: "underline", text: "Button Shape")
                     }
                     .tint(.accent)
-                    .onChange(of: buttonShape) { _ in
-                        #if !os(visionOS)
+                    #if !os(visionOS)
+                        .onChange(of: buttonShape) { _ in
                             if #available(iOS 18.0, macOS 26, *) {
                                 ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.buttonShape")
                             }
-                        #endif
-                    }
+                        }
+                    #endif
                 } footer: {
                     VStack(alignment: .leading) {
                         Text("Underlines links and buttons.")
@@ -89,13 +89,13 @@ struct MainView: View {
                         IconLabel(icon: "circle.dotted.and.circle", text: "Block Animations")
                     }
                     .tint(.accent)
-                    .onChange(of: blockAnimations) { _ in
-                        #if !os(visionOS)
+                    #if !os(visionOS)
+                        .onChange(of: blockAnimations) { _ in
                             if #available(iOS 18.0, macOS 26, *) {
                                 ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.blockAnimations")
                             }
-                        #endif
-                    }
+                        }
+                    #endif
                 } footer: {
                     VStack(alignment: .leading) {
                         Text("Blocks some animations and transitions.")
