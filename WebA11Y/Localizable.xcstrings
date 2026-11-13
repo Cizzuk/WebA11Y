@@ -340,6 +340,16 @@
         }
       }
     },
+    "Editing this setting from Shortcuts is not allowed in WebA11Y settings." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ショートカットによるこの設定の編集は、WebA11Yの設定で無効化されています。"
+          }
+        }
+      }
+    },
     "Enter the names of fonts available in Safari." : {
       "localizations" : {
         "ja" : {
