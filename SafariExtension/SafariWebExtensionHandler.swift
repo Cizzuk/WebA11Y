@@ -55,8 +55,8 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         if blockAnimations {
             styleSheet += """
                 * {
-                  animation: none !important;
-                  transition: note !important;
+                  animation-duration: 0s !important;
+                  transition-duration: 0s !important;
                   view-transition-name: none !important;
                 }
                 @view-transition {
