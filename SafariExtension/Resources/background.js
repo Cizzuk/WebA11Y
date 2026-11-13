@@ -16,7 +16,7 @@ const insertCSS = (tabId) => {
             return;
         }
         
-        console.log(tabId, "Trying to insert CSS:", resData.style);
+        console.log(tabId, "Trying to insert CSS");
         browser.scripting.insertCSS({
             target: {
                 tabId: tabId,
