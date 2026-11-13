@@ -64,6 +64,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
                   animation-delay: 0.01ms !important;
                   transition-duration: 0.01ms !important;
                   transition-delay: 0.01ms !important;
+                  scroll-behavior: auto !important;
                   view-transition-name: none !important;
                 }
                 @view-transition {
