@@ -449,12 +449,12 @@
     "monospace" : {
       "shouldTranslate" : false
     },
-    "monospace: ABC 123 inm" : {
+    "monospace: ABC 123 +/-" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "monospace: あ漢 123 inm"
+            "value" : "monospace: あ漢 123 +/-"
           }
         }
       }
@@ -532,12 +532,12 @@
     "sans-serif" : {
       "shouldTranslate" : false
     },
-    "sans-serif: ABC 123 inm" : {
+    "sans-serif: ABC 123 +/-" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "sans-serif: あ漢 123 inm"
+            "value" : "sans-serif: あ漢 123 +/-"
           }
         }
       }
@@ -545,12 +545,12 @@
     "serif" : {
       "shouldTranslate" : false
     },
-    "serif: ABC 123 inm" : {
+    "serif: ABC 123 +/-" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "serif: あ漢 123 inm"
+            "value" : "serif: あ漢 123 +/-"
           }
         }
       }
