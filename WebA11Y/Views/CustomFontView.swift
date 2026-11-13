@@ -15,6 +15,8 @@ struct CustomFontView: View {
     @AppStorage("fontChange", store: userDefaults) var fontChange: Bool = false
     @AppStorage("fontFamily", store: userDefaults) var fontFamily: String = "system-ui, sans-serif"
 
+    @AppStorage("disableEditFontFamilyFromShortcuts", store: userDefaults) var disableEditFontFamilyFromShortcuts: Bool = false
+
     var body: some View {
         List {
             Section {
@@ -66,6 +68,11 @@ struct CustomFontView: View {
                         .accessibilityTextContentType(.sourceCode)
                     }
                 }
+            }
+
+            Section {
+                Toggle("Disable Editing Custom Font from Shortcuts", isOn: $disableEditFontFamilyFromShortcuts)
+                    .tint(.accent)
             }
         }
         .animation(.default, value: fontChange)

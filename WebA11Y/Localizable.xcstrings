@@ -290,6 +290,26 @@
         }
       }
     },
+    "Disable Editing Custom CSS from Shortcuts" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ショートカットによるカスタムCSSの編集を無効化"
+          }
+        }
+      }
+    },
+    "Disable Editing Custom Font from Shortcuts" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ショートカットによるカスタムフォントの編集を無効化"
+          }
+        }
+      }
+    },
     "Done" : {
       "localizations" : {
         "ja" : {

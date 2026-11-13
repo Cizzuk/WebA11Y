@@ -7,6 +7,7 @@
 
 import AppIntents
 import Foundation
+import SwiftUI
 
 @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
 enum IntentTurnEnum: String, AppEnum {
@@ -18,4 +19,8 @@ enum IntentTurnEnum: String, AppEnum {
         .turn: "Turn",
         .toggle: "Toggle",
     ]
+}
+
+enum IntentError: Error {
+    case notAllowedEditingFromShortcut
 }

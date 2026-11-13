@@ -23,7 +23,13 @@ struct EditFont: AppIntent, CustomIntentMigratedAppIntent {
     }
 
     func perform() async throws -> some IntentResult {
-        UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.set(fontFamily, forKey: "fontFamily")
+        let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
+
+        if userDefaults.bool(forKey: "disableEditFontFamilyFromShortcuts") {
+            throw IntentError.notAllowedEditingFromShortcut
+        }
+
+        userDefaults.set(fontFamily, forKey: "fontFamily")
         return .result()
     }
 }

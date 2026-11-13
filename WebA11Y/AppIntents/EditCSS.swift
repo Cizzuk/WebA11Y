@@ -23,7 +23,13 @@ struct EditCSS: AppIntent, CustomIntentMigratedAppIntent {
     }
 
     func perform() async throws -> some IntentResult {
-        UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.set(editCSS, forKey: "customCSS")
+        let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
+
+        if userDefaults.bool(forKey: "disableEditCustomCSSFromShortcuts") {
+            throw IntentError.notAllowedEditingFromShortcut
+        }
+
+        userDefaults.set(editCSS, forKey: "customCSS")
         return .result()
     }
 }

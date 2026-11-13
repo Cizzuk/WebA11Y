@@ -19,6 +19,8 @@ struct CustomCSSView: View {
         }
         """
 
+    @AppStorage("disableEditCustomCSSFromShortcuts", store: userDefaults) var disableEditCustomCSSFromShortcuts: Bool = false
+
     var body: some View {
         List {
             Section {
@@ -52,6 +54,11 @@ struct CustomCSSView: View {
                     }
                     .font(.footnote)
                 }
+            }
+
+            Section {
+                Toggle("Disable Editing Custom CSS from Shortcuts", isOn: $disableEditCustomCSSFromShortcuts)
+                    .tint(.accent)
             }
         }
         .animation(.default, value: insertCSS)
