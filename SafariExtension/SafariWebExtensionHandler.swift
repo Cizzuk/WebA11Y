@@ -30,7 +30,12 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         let fontFamilyFixed: String = fontFamily == "" ? "system-ui, sans-serif" : fontFamily
 
         // Set custom CSS
-        let customCSS: String = userDefaults.string(forKey: "customCSS") ?? ""
+        let customCSS: String =
+            userDefaults.string(forKey: "customCSS") ?? """
+                * {
+                  font: medium/1.5 system-ui, sans-serif !important;
+                }
+                """
 
         // Create style sheet
         var styleSheet: String = ""
