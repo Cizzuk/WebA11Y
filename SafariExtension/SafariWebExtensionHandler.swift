@@ -36,7 +36,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         var styleSheet: String = ""
         if boldText {
             styleSheet += """
-                * {
+                *, *::before, *::after {
                   font-weight: bold !important;
                 }
                 """
@@ -54,9 +54,11 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         }
         if blockAnimations {
             styleSheet += """
-                * {
-                  animation-duration: 0s !important;
-                  transition-duration: 0s !important;
+                *, *::before, *::after {
+                  animation-duration: 0.01ms !important;
+                  animation-delay: 0.01ms !important;
+                  transition-duration: 0.01ms !important;
+                  transition-delay: 0.01ms !important;
                   view-transition-name: none !important;
                 }
                 @view-transition {
