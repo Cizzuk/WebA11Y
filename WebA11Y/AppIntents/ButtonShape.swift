@@ -5,10 +5,11 @@
 //  Created by Cizzuk on 2024/08/31.
 //
 
-import Foundation
 import AppIntents
+import Foundation
+
 #if !os(visionOS)
-import WidgetKit
+    import WidgetKit
 #endif
 
 @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
@@ -19,7 +20,7 @@ struct ButtonShape: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the Button Shape to on or off on the Web.")
 
     @Parameter(title: "Operation", default: .turn)
-    var toggle: IntentTurnEnum?
+    var toggle: IntentTurnEnum
 
     @Parameter(title: "State", default: false)
     var state: Bool
@@ -31,29 +32,26 @@ struct ButtonShape: AppIntent, CustomIntentMigratedAppIntent {
             Summary("\(\.$toggle) Button Shape on the Web")
         }
     }
-    
+
     func perform() async throws -> some IntentResult {
         let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
         var buttonShape: Bool = userDefaults.bool(forKey: "buttonShape")
-        
+
         switch toggle {
         case .toggle:
             buttonShape.toggle()
         case .turn:
             buttonShape = state
-        default:
-            break
         }
-        
+
         userDefaults.set(buttonShape, forKey: "buttonShape")
-        
+
         #if !os(visionOS)
-        if #available(iOS 18.0, macOS 26, *) {
-            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.buttonShape")
-        }
+            if #available(iOS 18.0, macOS 26, *) {
+                ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.buttonShape")
+            }
         #endif
-        
+
         return .result()
     }
 }
-

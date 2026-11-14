@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+
 #if !os(visionOS)
-import WidgetKit
+    import WidgetKit
 #endif
 
 struct CustomFontView: View {
     @AppStorage("fontChange", store: userDefaults) var fontChange: Bool = false
     @AppStorage("fontFamily", store: userDefaults) var fontFamily: String = "system-ui, sans-serif"
+
+    @AppStorage("disableEditFontFamilyFromShortcuts", store: userDefaults) var disableEditFontFamilyFromShortcuts: Bool = false
 
     var body: some View {
         List {
@@ -21,15 +24,15 @@ struct CustomFontView: View {
                     IconLabel(icon: "textformat", text: "Custom Font")
                 }
                 .tint(.accent)
-                .onChange(of: fontChange) { _ in
-                    #if !os(visionOS)
-                    if #available(iOS 18.0, macOS 26, *) {
-                        ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
+                #if !os(visionOS)
+                    .onChange(of: fontChange) { _ in
+                        if #available(iOS 18.0, macOS 26, *) {
+                            ControlCenter.shared.reloadControls(ofKind: "com.tsg0o0.weba11y.CCWidget.fontChange")
+                        }
                     }
-                    #endif
-                }
+                #endif
             }
-            
+
             if fontChange {
                 Section {
                     TextField("system-ui, sans-serif", text: $fontFamily)
@@ -40,26 +43,24 @@ struct CustomFontView: View {
                             // Remove invalid characters
                             // Note: Safari automatically handles quotes even if they are not closed
                             fontFamily = newValue.filter { char in
-                                char.isLetter || char.isNumber || char.isWhitespace ||
-                                char == "-" || char == "_" || char == "." ||
-                                char == "," || char == "'" || char == "\""
+                                char.isLetter || char.isNumber || char.isWhitespace || char == "-" || char == "_" || char == "." || char == "," || char == "'" || char == "\""
                             }
                         }
                 } footer: {
-                    VStack(alignment : .leading) {
+                    VStack(alignment: .leading) {
                         Text("Enter the names of fonts available in Safari.")
                         Spacer()
                         Text("Font example:")
                         Group {
-                            Text("sans-serif: ABC 123 inm")
+                            Text("sans-serif: ABC 123 +/-")
                                 .font(.system(.caption, design: .default))
                                 .bold()
                                 .accessibilityLabel("sans-serif")
-                            Text("serif: ABC 123 inm")
+                            Text("serif: ABC 123 +/-")
                                 .font(.system(.caption, design: .serif))
                                 .bold()
                                 .accessibilityLabel("serif")
-                            Text("monospace: ABC 123 inm")
+                            Text("monospace: ABC 123 +/-")
                                 .font(.system(.caption, design: .monospaced))
                                 .bold()
                                 .accessibilityLabel("monospace")
@@ -68,22 +69,26 @@ struct CustomFontView: View {
                     }
                 }
             }
+
+            Section {
+                Toggle("Disable Editing Custom Font from Shortcuts", isOn: $disableEditFontFamilyFromShortcuts)
+                    .tint(.accent)
+            }
         }
         .animation(.default, value: fontChange)
         .navigationTitle("Custom Font")
         .navigationBarTitleDisplayMode(.inline)
         #if !os(visionOS)
-        .toolbar {
-            ToolbarItemGroup(placement: .keyboard) {
-                Spacer()
-                Button {
-                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                } label: {
-                    Label("Done", systemImage: "checkmark")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button {
+                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    } label: {
+                        Label("Done", systemImage: "checkmark")
+                    }
                 }
             }
-        }
         #endif
     }
 }
-

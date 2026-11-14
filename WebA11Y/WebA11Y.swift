@@ -22,7 +22,7 @@ struct WebA11Y: App {
             if #available(iOS 16.0, *) {
                 MainView()
                     #if !os(visionOS)
-                    .scrollDismissesKeyboard(.interactively)
+                        .scrollDismissesKeyboard(.interactively)
                     #endif
             } else {
                 MainView()
@@ -37,24 +37,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         let lastVersion: String = userDefaults.string(forKey: "LastAppVer") ?? ""
-        
+
         if lastVersion.isEmpty {
             // Get current device accessibility settings
-            
+
             // Bold Text
             let isBoldTextEnabled = UIAccessibility.isBoldTextEnabled
             userDefaults.set(isBoldTextEnabled, forKey: "boldText")
-            
+
             // Button Shapes (iOS 26+: Show Borders)
             let isButtonShapesEnabled = UIAccessibility.buttonShapesEnabled
             userDefaults.set(isButtonShapesEnabled, forKey: "buttonShape")
         }
-        
+
         // Save last opened version
         userDefaults.set(currentVersion, forKey: "LastAppVer")
-        
+
         return true
     }
 

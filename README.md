@@ -4,7 +4,7 @@ Safari Extension to improve web accessibility.
 
 **[Download on the App Store](https://apps.apple.com/app/weba11y/id6445839110)**
 
-**[AltStore PAL Source](https://i.cizzuk.net/altstore/)**
+**[AltStore PAL Source](https://cizzuk.net/altstore/)**
 
 ## Features
 

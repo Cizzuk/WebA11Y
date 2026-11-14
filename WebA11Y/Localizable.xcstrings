@@ -290,6 +290,26 @@
         }
       }
     },
+    "Disable Editing Custom CSS from Shortcuts" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ショートカットによるカスタムCSSの編集を無効化"
+          }
+        }
+      }
+    },
+    "Disable Editing Custom Font from Shortcuts" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ショートカットによるカスタムフォントの編集を無効化"
+          }
+        }
+      }
+    },
     "Done" : {
       "localizations" : {
         "ja" : {
@@ -316,6 +336,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Web上で使用するフォントを編集"
+          }
+        }
+      }
+    },
+    "Editing this setting from Shortcuts is not allowed in WebA11Y settings." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ショートカットによるこの設定の編集は、WebA11Yの設定で無効化されています。"
           }
         }
       }
@@ -429,12 +459,12 @@
     "monospace" : {
       "shouldTranslate" : false
     },
-    "monospace: ABC 123 inm" : {
+    "monospace: ABC 123 +/-" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "monospace: あ漢 123 inm"
+            "value" : "monospace: あ漢 123 +/-"
           }
         }
       }
@@ -512,12 +542,12 @@
     "sans-serif" : {
       "shouldTranslate" : false
     },
-    "sans-serif: ABC 123 inm" : {
+    "sans-serif: ABC 123 +/-" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "sans-serif: あ漢 123 inm"
+            "value" : "sans-serif: あ漢 123 +/-"
           }
         }
       }
@@ -525,12 +555,12 @@
     "serif" : {
       "shouldTranslate" : false
     },
-    "serif: ABC 123 inm" : {
+    "serif: ABC 123 +/-" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "serif: あ漢 123 inm"
+            "value" : "serif: あ漢 123 +/-"
           }
         }
       }

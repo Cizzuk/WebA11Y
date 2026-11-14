@@ -5,8 +5,8 @@
 //  Created by Cizzuk on 2024/09/08.
 //
 
-import Foundation
 import AppIntents
+import Foundation
 
 @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
 struct EditFont: AppIntent, CustomIntentMigratedAppIntent {
@@ -16,15 +16,24 @@ struct EditFont: AppIntent, CustomIntentMigratedAppIntent {
     static var description = IntentDescription("Sets the font name to be used on the Web.")
 
     @Parameter(title: "Font name", default: "system-ui, sans-serif")
-    var fontFamily: String?
+    var fontFamily: String
 
     static var parameterSummary: some ParameterSummary {
         Summary("Set font on the web to \(\.$fontFamily)")
     }
 
     func perform() async throws -> some IntentResult {
-        UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!.set(fontFamily, forKey: "fontFamily")
+        let userDefaults = UserDefaults(suiteName: "group.com.tsg0o0.safariweba11y")!
+
+        if userDefaults.bool(forKey: "disableEditFontFamilyFromShortcuts") {
+            throw IntentError.notAllowedEditingFromShortcut
+        }
+
+        let formattedFontFamily = fontFamily.filter { char in
+            char.isLetter || char.isNumber || char.isWhitespace || char == "-" || char == "_" || char == "." || char == "," || char == "'" || char == "\""
+        }
+
+        userDefaults.set(formattedFontFamily, forKey: "fontFamily")
         return .result()
     }
 }
-
